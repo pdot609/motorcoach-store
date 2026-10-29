@@ -1,0 +1,9 @@
+private/
+private/
+**/mail.env
+.env
+.env.*
+node_modules/
+.DS_Store
+docs/screenshots/
+.playwright-mcp/
