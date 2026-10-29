@@ -7,6 +7,23 @@ headerToggle?.addEventListener("click", () => {
   headerToggle.textContent = open ? "Close" : "Menu";
 });
 
+/* <base href> rewrites bare #hashes to the site root; keep in-page anchors on this document. */
+document.addEventListener("click", (event) => {
+  const link = event.target.closest('a[href^="#"]');
+  if (!link) return;
+  const href = link.getAttribute("href");
+  if (!href || href === "#" || href.startsWith("#/")) return;
+  const id = decodeURIComponent(href.slice(1));
+  if (!id) return;
+  const target = document.getElementById(id);
+  if (!target) return;
+  event.preventDefault();
+  target.scrollIntoView({ behavior: "smooth", block: "start" });
+  history.pushState(null, "", `#${id}`);
+  const focusable = target.querySelector("input, textarea, select, button");
+  if (focusable instanceof HTMLElement) focusable.focus({ preventScroll: true });
+});
+
 document.querySelectorAll(".nav-item > .menu-toggle").forEach((button) => {
   button.addEventListener("click", () => {
     const item = button.closest(".nav-item");

@@ -1,0 +1,90 @@
+name: Showroom inquiry email
+on:
+  repository_dispatch:
+    types: [showroom_inquiry]
+  workflow_dispatch:
+    inputs:
+      payload_json:
+        description: JSON inquiry payload
+        required: true
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deliver to sales@themotorcoach.store
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EVENT_NAME: ${{ github.event_name }}
+          CLIENT_PAYLOAD: ${{ toJson(github.event.client_payload) }}
+          INPUT_JSON: ${{ github.event.inputs.payload_json }}
+        run: |
+          python3 << 'PY'
+          import json, os, re, smtplib, ssl, time
+          from email.message import EmailMessage
+          from email.utils import formataddr
+
+          SALES = "sales@themotorcoach.store"
+          SERVICE = "service@themotorcoach.store"
+          SERVICE_INTENTS = {"ceramic", "service-appointment"}
+          EMAIL = re.compile(r"^[^\s@]+@[^\s@]+\.[^\s@]+$")
+
+          raw = os.environ.get("INPUT_JSON") or os.environ.get("CLIENT_PAYLOAD") or "{}"
+          data = json.loads(raw)
+          # repository_dispatch wraps fields sometimes
+          if "inquiry" in data and isinstance(data["inquiry"], dict):
+              data = data["inquiry"]
+
+          fields = {k: str(data.get(k) or "").strip() for k in (
+              "intent","firstName","lastName","email","phone","preferredDate","coach",
+              "year","make","model","miles","location","interest","smsConsent","message","company","page"
+          )}
+          if fields.get("company"):
+              print("honeypot"); raise SystemExit(0)
+          if not fields["firstName"] or not fields["lastName"] or not EMAIL.match(fields["email"]):
+              raise SystemExit("invalid fields")
+          if len(re.sub(r"\D", "", fields["phone"])) < 7:
+              raise SystemExit("invalid phone")
+
+          ref = "MCS-" + format(int(time.time() * 1000), "X")
+          addressed = SERVICE if fields["intent"] in SERVICE_INTENTS else SALES
+          rows = [
+              ("Reference", ref),
+              ("Request", fields["intent"] or "contact"),
+              ("Addressed to", addressed),
+              ("Delivered to", SALES),
+              ("Name", f"{fields['firstName']} {fields['lastName']}"),
+              ("Email", fields["email"]),
+              ("Phone", fields["phone"]),
+              ("Preferred date", fields["preferredDate"]),
+              ("Coach", fields["coach"]),
+              ("Year", fields["year"]),
+              ("Make", fields["make"]),
+              ("Model", fields["model"]),
+              ("Miles", fields["miles"]),
+              ("Location", fields["location"]),
+              ("Interest", fields["interest"]),
+              ("Message", fields["message"]),
+              ("Page", fields["page"]),
+          ]
+          msg = EmailMessage()
+          msg["Subject"] = f"Showroom request {ref}"
+          msg["From"] = formataddr(("The Motorcoach Store", SALES))
+          msg["To"] = SALES
+          msg["Reply-To"] = formataddr((f"{fields['firstName']} {fields['lastName']}", fields["email"]))
+          if addressed != SALES:
+              msg["X-Original-To"] = addressed
+          msg.set_content("\n".join(f"{k}: {v}" for k, v in rows if v))
+
+          ctx = ssl.create_default_context()
+          with smtplib.SMTP(os.environ["SMTP_HOST"], int(os.environ["SMTP_PORT"]), timeout=30) as smtp:
+              smtp.ehlo(); smtp.starttls(context=ctx); smtp.ehlo()
+              smtp.login(os.environ["SMTP_USER"], os.environ["SMTP_PASSWORD"])
+              smtp.send_message(msg)
+          print(f"sent {ref} to {SALES}")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write(f"reference={ref}\n")
+          PY

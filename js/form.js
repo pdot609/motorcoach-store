@@ -1,4 +1,5 @@
 const SALES_EMAIL = "sales@themotorcoach.store";
+const SERVICE_EMAIL = "service@themotorcoach.store";
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const SSN = /\b\d{3}-\d{2}-\d{4}\b/;
 const VEHICLE = new Set(["sell", "trade"]);
@@ -13,6 +14,7 @@ const BUY_INTENTS = new Set([
   "insurance",
 ]);
 const SELL_INTENTS = new Set(["sell", "trade"]);
+const SERVICE_INTENTS = new Set(["ceramic", "service-appointment"]);
 
 document.querySelectorAll("form.form").forEach((form) => {
   form.addEventListener("submit", async (event) => {
@@ -55,20 +57,75 @@ document.querySelectorAll("form.form").forEach((form) => {
   });
 });
 
-async function deliverInquiry(fields) {
-  const staticHost = /\.github\.io$/i.test(location.hostname);
-  if (!staticHost) {
-    const local = await sendLocalApi(fields);
-    if (local.ok || local.errors || (local.status && local.status !== 404 && local.status !== 405 && local.status !== 502)) {
-      return local;
-    }
-  }
-  return sendHubSpot(fields);
+function isLocalDev() {
+  const host = location.hostname;
+  return host === "localhost" || host === "127.0.0.1" || host === "[::1]";
 }
 
-async function sendLocalApi(fields) {
+function mailApiBase() {
+  if (typeof window.__MAIL_API_BASE__ === "string" && window.__MAIL_API_BASE__) {
+    return window.__MAIL_API_BASE__.replace(/\/$/, "");
+  }
+  if (isLocalDev()) return "";
+  return "";
+}
+
+async function deliverInquiry(fields) {
+  const reference = makeReference();
+  const addressed = SERVICE_INTENTS.has(fields.intent) ? SERVICE_EMAIL : SALES_EMAIL;
+
+  /* 1) Local showroom server (python server.py) */
+  if (isLocalDev()) {
+    const local = await sendJsonApi(sitePath("/api/inquiries"), fields);
+    if (local.ok || local.errors) return local;
+  }
+
+  /* 2) Optional hosted mail relay (same SMTP → sales@) */
+  const relay = mailApiBase();
+  if (relay) {
+    const remote = await sendJsonApi(`${relay}/api/inquiries`, fields);
+    if (remote.ok) {
+      return {
+        ok: true,
+        reference: remote.reference || reference,
+        to: SALES_EMAIL,
+        redirectedFrom: addressed === SERVICE_EMAIL ? SERVICE_EMAIL : undefined,
+      };
+    }
+  }
+
+  /* 3) Direct mailbox API (Web3Forms → sales@) when configured */
+  const direct = await sendWeb3Forms(fields, reference, addressed);
+  if (direct.ok) {
+    sendHubSpot(fields, reference).catch(() => {});
+    return {
+      ok: true,
+      reference,
+      to: SALES_EMAIL,
+      redirectedFrom: addressed === SERVICE_EMAIL ? SERVICE_EMAIL : undefined,
+    };
+  }
+
+  /* 4) HubSpot CRM capture (may not land in sales@ inbox) */
+  const hub = await sendHubSpot(fields, reference);
+  if (hub.ok) {
+    return {
+      ok: true,
+      reference,
+      to: SALES_EMAIL,
+      redirectedFrom: addressed === SERVICE_EMAIL ? SERVICE_EMAIL : undefined,
+    };
+  }
+
+  return {
+    ok: false,
+    error: direct.error || hub.error || "The sales mailbox did not accept the message. Call 941 283 2516.",
+  };
+}
+
+async function sendJsonApi(url, fields) {
   try {
-    const response = await fetch(sitePath("/api/inquiries"), {
+    const response = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json", Accept: "application/json" },
       body: JSON.stringify(fields),
@@ -82,14 +139,53 @@ async function sendLocalApi(fields) {
       error: payload.error,
     };
   } catch {
-    return { ok: false, status: 0, error: "The local sales mailbox could not be reached." };
+    return { ok: false, status: 0, error: "The sales mailbox could not be reached." };
   }
 }
 
-async function sendHubSpot(fields) {
-  const reference = makeReference();
+async function sendWeb3Forms(fields, reference, addressed) {
+  const key = window.__WEB3FORMS_KEY__;
+  if (!key) return { ok: false, error: "Mailbox relay is not configured." };
+
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Accept: "application/json" },
+    body: JSON.stringify({
+      access_key: key,
+      subject: `Showroom request ${reference}`,
+      from_name: `${fields.firstName || ""} ${fields.lastName || ""}`.trim() || "Showroom visitor",
+      email: fields.email || "",
+      phone: fields.phone || "",
+      name: `${fields.firstName || ""} ${fields.lastName || ""}`.trim(),
+      interest: lookingFor(fields),
+      intent: fields.intent || "contact",
+      addressed_to: addressed,
+      delivered_to: SALES_EMAIL,
+      coach: fields.coach || "",
+      year: fields.year || "",
+      make: fields.make || "",
+      model: fields.model || "",
+      miles: fields.miles || "",
+      location: fields.location || "",
+      preferredDate: fields.preferredDate || "",
+      message: buildMessage(fields, reference),
+      page: location.href,
+      botcheck: "",
+    }),
+  });
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok || payload.success === false) {
+    return {
+      ok: false,
+      error: payload.message || "The sales mailbox did not accept the message. Call 941 283 2516.",
+    };
+  }
+  return { ok: true };
+}
+
+async function sendHubSpot(fields, reference) {
   const interest = lookingFor(fields);
-  const message = buildMessage(fields, reference);
+  const message = buildMessage(fields, reference || makeReference());
   const body = {
     fields: [
       { objectTypeId: "0-1", name: "firstname", value: fields.firstName || "" },
@@ -124,7 +220,7 @@ async function sendHubSpot(fields) {
       error: hubError || "The sales mailbox did not accept the message. Call 941 283 2516.",
     };
   }
-  return { ok: true, reference, to: SALES_EMAIL };
+  return { ok: true };
 }
 
 function lookingFor(fields) {
@@ -132,15 +228,19 @@ function lookingFor(fields) {
     return fields.interest;
   }
   const intent = fields.intent || "contact";
+  if (SERVICE_INTENTS.has(intent)) return "Other";
   if (BUY_INTENTS.has(intent)) return "Buy a Coach";
   if (SELL_INTENTS.has(intent)) return "Sell a Coach";
   return "Other";
 }
 
 function buildMessage(fields, reference) {
+  const addressed = SERVICE_INTENTS.has(fields.intent) ? SERVICE_EMAIL : SALES_EMAIL;
   const rows = [
     ["Reference", reference],
     ["Request", fields.intent || "contact"],
+    ["Addressed to", addressed],
+    ["Delivered to", SALES_EMAIL],
     ["Preferred date", fields.preferredDate],
     ["Coach", fields.coach],
     ["Year", fields.year],
