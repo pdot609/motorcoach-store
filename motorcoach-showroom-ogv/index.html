@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+(function () {
+  var base = "/";
+  if (/\.github\.io$/i.test(location.hostname)) {
+    var seg = location.pathname.split("/").filter(Boolean)[0];
+    if (seg) base = "/" + seg + "/";
+  }
+  document.write('<base href="' + base + '">');
+  window.__SITE_BASE__ = base;
+})();
+</script>
+
   <meta charset="utf-8">
   <meta http-equiv="refresh" content="0;url=/showrooms/ogv/">
   <title>Redirecting…</title>
-  <link rel="canonical" href="/showrooms/ogv/">
+  <link rel="canonical" href="showrooms/ogv/">
   <script>location.replace("/showrooms/ogv/");</script>
 </head>
 <body>
-  <p><a href="/showrooms/ogv/">Continue</a></p>
+  <p><a href="showrooms/ogv/">Continue</a></p>
 </body>
 </html>

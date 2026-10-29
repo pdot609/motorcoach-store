@@ -5,7 +5,7 @@
     return;
   }
 
-  fetch("/data/explore-showrooms.json")
+  fetch(sitePath("/data/explore-showrooms.json"))
     .then((response) => {
       if (!response.ok) throw new Error(String(response.status));
       return response.json();
@@ -94,7 +94,7 @@ function band(showroom) {
 function enter(showroom) {
   const wrap = el("p", "explore-enter");
   const link = el("a", "btn btn-frame");
-  link.href = showroom.enterHref;
+  link.href = sitePath(showroom.enterHref);
   link.textContent = showroom.enterLabel;
   wrap.append(link);
   return wrap;
@@ -106,7 +106,7 @@ function rail(showroom) {
   const track = el("div", "explore-rail-track");
   (showroom.cards || []).forEach((card) => track.append(railCard(card)));
   const viewAll = el("a", "explore-view-all");
-  viewAll.href = showroom.enterHref;
+  viewAll.href = sitePath(showroom.enterHref);
   const label = el("span");
   label.textContent = "View All";
   viewAll.append(label, arrowSvg());
@@ -121,7 +121,7 @@ function rail(showroom) {
 function railCard(card) {
   const article = el("article", "rail-card");
   const media = el("a", "rail-media");
-  media.href = card.href;
+  media.href = sitePath(card.href);
   media.setAttribute("aria-label", card.title);
   const img = el("img");
   img.src = card.image;
@@ -132,7 +132,7 @@ function railCard(card) {
   const copy = el("div", "rail-copy");
   const heading = el("h3");
   const title = el("a");
-  title.href = card.href;
+  title.href = sitePath(card.href);
   title.textContent = card.title;
   heading.append(title);
   copy.append(heading);
@@ -153,7 +153,7 @@ function railCard(card) {
   }
 
   const more = el("a", "rail-more");
-  more.href = card.href;
+  more.href = sitePath(card.href);
   more.textContent = "Learn More";
   article.append(media, copy, more);
   return article;
@@ -169,7 +169,7 @@ function closeSection(close) {
   const p = el("p");
   p.textContent = close.copy || "";
   const cta = el("a", "btn btn-frame btn-gold");
-  cta.href = close.ctaHref || "/schedule-appointment";
+  cta.href = sitePath(close.ctaHref || "/schedule-appointment");
   cta.textContent = close.ctaLabel || "Schedule Appointment";
   copy.append(p, cta);
   const media = el("div", "explore-close-media");

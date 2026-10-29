@@ -1,1 +1,13 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=/trade-in/"><title>Redirecting…</title><link rel="canonical" href="/trade-in/"><script>location.replace("/trade-in/");</script></head><body><p><a href="/trade-in/">Continue</a></p></body></html>
+<!DOCTYPE html><html lang="en"><head>
+  <script>
+(function () {
+  var base = "/";
+  if (/\.github\.io$/i.test(location.hostname)) {
+    var seg = location.pathname.split("/").filter(Boolean)[0];
+    if (seg) base = "/" + seg + "/";
+  }
+  document.write('<base href="' + base + '">');
+  window.__SITE_BASE__ = base;
+})();
+</script>
+<meta charset="utf-8"><meta http-equiv="refresh" content="0;url=/trade-in/"><title>Redirecting…</title><link rel="canonical" href="trade-in/"><script>location.replace("/trade-in/");</script></head><body><p><a href="trade-in/">Continue</a></p></body></html>

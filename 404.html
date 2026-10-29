@@ -1,1 +1,12 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Page not found - The Motorcoach Store</title><link rel="stylesheet" href="/css/site.css"></head><body><main id="content"><section class="section"><p class="section-kicker">404</p><h1>That page is not in the showroom</h1><p class="lede">The address may have changed. The new and pre-owned listings are still available.</p><div class="inline-actions" style="justify-content:flex-start;margin-top:24px"><a class="btn" href="/showrooms">New showrooms</a><a class="btn" href="/pre-owned">Pre-owned showroom</a></div></section></main></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Page not found - The Motorcoach Store</title>  <script>
+(function () {
+  var base = "/";
+  if (/\.github\.io$/i.test(location.hostname)) {
+    var seg = location.pathname.split("/").filter(Boolean)[0];
+    if (seg) base = "/" + seg + "/";
+  }
+  document.write('<base href="' + base + '">');
+  window.__SITE_BASE__ = base;
+})();
+</script>
+<link rel="stylesheet" href="css/site.css"></head><body><main id="content"><section class="section"><p class="section-kicker">404</p><h1>That page is not in the showroom</h1><p class="lede">The address may have changed. The new and pre-owned listings are still available.</p><div class="inline-actions" style="justify-content:flex-start;margin-top:24px"><a class="btn" href="showrooms">New showrooms</a><a class="btn" href="pre-owned">Pre-owned showroom</a></div></section></main></body></html>

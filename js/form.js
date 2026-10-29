@@ -21,7 +21,7 @@ document.querySelectorAll("form.form").forEach((form) => {
     button.disabled = true;
     button.textContent = "Sending";
     try {
-      const response = await fetch("/api/inquiries", {
+      const response = await fetch(sitePath("/api/inquiries"), {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(fields),

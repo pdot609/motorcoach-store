@@ -50,7 +50,7 @@ async function loadInventory(mount) {
   };
   let coaches = [];
   try {
-    const response = await fetch("/data/coaches.json");
+    const response = await fetch(sitePath("/data/coaches.json"));
     if (!response.ok) throw new Error(String(response.status));
     coaches = await response.json();
     mount._coaches = coaches;
@@ -163,7 +163,7 @@ function card(coach) {
   article.className = "coach-card";
   const media = document.createElement("a");
   media.className = "media";
-  media.href = `/coaches/${coach.slug}`;
+  media.href = sitePath(`/coaches/${coach.slug}`);
   media.setAttribute("aria-label", coach.title);
   const img = document.createElement("img");
   img.src = coach.image;
@@ -180,7 +180,7 @@ function card(coach) {
   body.className = "coach-body";
   const heading = document.createElement("h3");
   const title = document.createElement("a");
-  title.href = `/coaches/${coach.slug}`;
+  title.href = sitePath(`/coaches/${coach.slug}`);
   title.textContent = coach.title;
   heading.append(title);
   const specs = document.createElement("div");
@@ -213,7 +213,7 @@ function card(coach) {
   }
   const more = document.createElement("a");
   more.className = "btn";
-  more.href = `/coaches/${coach.slug}`;
+  more.href = sitePath(`/coaches/${coach.slug}`);
   more.textContent = coach.status === "sold" ? "View record" : "Learn more";
   const stock = document.createElement("p");
   stock.className = "specs";
@@ -324,7 +324,7 @@ function showroomCard(coach) {
   article.className = "showroom-card";
   const media = document.createElement("a");
   media.className = "media";
-  media.href = `/coaches/${coach.slug}`;
+  media.href = sitePath(`/coaches/${coach.slug}`);
   media.setAttribute("aria-label", coach.title);
   const img = document.createElement("img");
   img.src = coach.image;
@@ -336,7 +336,7 @@ function showroomCard(coach) {
   body.className = "showroom-body";
   const heading = document.createElement("h2");
   const title = document.createElement("a");
-  title.href = `/coaches/${coach.slug}`;
+  title.href = sitePath(`/coaches/${coach.slug}`);
   title.textContent = coach.title;
   heading.append(title);
   const specs = document.createElement("div");
@@ -385,7 +385,7 @@ function showroomCard(coach) {
   }
   const more = document.createElement("a");
   more.className = "btn";
-  more.href = `/coaches/${coach.slug}`;
+  more.href = sitePath(`/coaches/${coach.slug}`);
   more.textContent = "Learn More";
   body.append(more);
   article.append(media, body);
