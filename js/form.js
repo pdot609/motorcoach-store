@@ -118,9 +118,10 @@ async function deliverInquiry(fields) {
     };
   }
 
-  /* 5) HubSpot CRM capture (may not land in sales@ inbox) */
-  const hub = await sendHubSpot(fields, reference);
-  if (hub.ok) {
+  /* 5) FormSubmit → sales@ (no API key; first browser submit confirms the mailbox) */
+  const formSubmit = await sendFormSubmit(fields, reference, addressed);
+  if (formSubmit.ok) {
+    sendHubSpot(fields, reference).catch(() => {});
     return {
       ok: true,
       reference,
@@ -129,9 +130,15 @@ async function deliverInquiry(fields) {
     };
   }
 
+  /* 6) HubSpot CRM only — does not deliver into sales@ inbox */
+  sendHubSpot(fields, reference).catch(() => {});
   return {
     ok: false,
-    error: direct.error || dispatched.error || hub.error || "The sales mailbox did not accept the message. Call 941 283 2516.",
+    error:
+      formSubmit.error ||
+      dispatched.error ||
+      direct.error ||
+      "The sales mailbox did not accept the message. Call 941 283 2516.",
   };
 }
 
@@ -152,6 +159,47 @@ async function sendJsonApi(url, fields) {
     };
   } catch {
     return { ok: false, status: 0, error: "The sales mailbox could not be reached." };
+  }
+}
+
+
+async function sendFormSubmit(fields, reference, addressed) {
+  try {
+    const response = await fetch("https://formsubmit.co/ajax/" + encodeURIComponent(SALES_EMAIL), {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        name: `${fields.firstName || ""} ${fields.lastName || ""}`.trim() || "Showroom visitor",
+        email: fields.email || "",
+        phone: fields.phone || "",
+        _subject: `Showroom request ${reference}`,
+        _template: "table",
+        _captcha: "false",
+        _honey: fields.company || "",
+        intent: fields.intent || "contact",
+        addressed_to: addressed,
+        delivered_to: SALES_EMAIL,
+        coach: fields.coach || "",
+        year: fields.year || "",
+        make: fields.make || "",
+        model: fields.model || "",
+        miles: fields.miles || "",
+        location: fields.location || "",
+        preferredDate: fields.preferredDate || "",
+        message: buildMessage(fields, reference),
+        page: location.href,
+      }),
+    });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok || payload.success === "false" || payload.success === false) {
+      return {
+        ok: false,
+        error: payload.message || "The sales mailbox did not accept the message. Call 941 283 2516.",
+      };
+    }
+    return { ok: true };
+  } catch {
+    return { ok: false, error: "The sales mailbox could not be reached." };
   }
 }
 
