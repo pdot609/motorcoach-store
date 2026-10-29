@@ -284,7 +284,7 @@ class Handler(SimpleHTTPRequestHandler):
             self.respond(403, {"error": "Open the showroom site and send the form from there."})
             return
         if not allow(self.client_address[0]):
-            self.respond(429, {"error": "Too many requests from this connection. Call 941 896 4819."})
+            self.respond(429, {"error": "Too many requests from this connection. Call 941 283 2516."})
             return
         try:
             length = int(self.headers.get("Content-Length") or 0)
@@ -310,7 +310,7 @@ class Handler(SimpleHTTPRequestHandler):
         try:
             deliver(CONFIG, fields, ref)
         except (OSError, smtplib.SMTPException):
-            self.respond(502, {"error": "The sales mailbox did not accept the message. Call 941 896 4819."})
+            self.respond(502, {"error": "The sales mailbox did not accept the message. Call 941 283 2516."})
             return
         if addressed == SALES:
             print(f"sent {ref} to {SALES}", flush=True)

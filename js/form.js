@@ -28,7 +28,7 @@ document.querySelectorAll("form.form").forEach((form) => {
       });
       const payload = await response.json().catch(() => ({}));
       if (!response.ok || !payload.ok) {
-        paint(form, payload.errors || { form: payload.error || "The sales mailbox did not accept the message. Call 941 896 4819." });
+        paint(form, payload.errors || { form: payload.error || "The sales mailbox did not accept the message. Call 941 283 2516." });
         button.disabled = false;
         button.textContent = label;
         return;
@@ -39,10 +39,10 @@ document.querySelectorAll("form.form").forEach((form) => {
       showSent(
         form,
         "Request sent",
-        `Reference ${payload.reference}. ${destination} Call 941 896 4819 if you need a time today.`
+        `Reference ${payload.reference}. ${destination} Call 941 283 2516 if you need a time today.`
       );
     } catch {
-      paint(form, { form: "The message did not leave this page. Check the connection and try again, or call 941 896 4819." });
+      paint(form, { form: "The message did not leave this page. Check the connection and try again, or call 941 283 2516." });
       button.disabled = false;
       button.textContent = label;
     }
