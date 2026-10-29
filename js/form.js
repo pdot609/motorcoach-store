@@ -258,7 +258,7 @@ async function sendGitHubDispatch(fields, reference, addressed) {
 
 async function sendWeb3Forms(fields, reference, addressed) {
 
-  const key = window.__WEB3FORMS_KEY__ || "56c8c168-b225-495b-a8b7-7eac15d5f879";
+  const key = window.__WEB3FORMS_KEY__ || "200e0f0b-da5c-46f8-bdab-5ca29f8a16b0";
   if (!key) return { ok: false, error: "Mailbox relay is not configured." };
 
   const response = await fetch("https://api.web3forms.com/submit", {
