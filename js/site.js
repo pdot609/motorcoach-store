@@ -8,21 +8,45 @@ headerToggle?.addEventListener("click", () => {
 });
 
 /* <base href> rewrites bare #hashes to the site root; keep in-page anchors on this document. */
-document.addEventListener("click", (event) => {
-  const link = event.target.closest('a[href^="#"]');
-  if (!link) return;
-  const href = link.getAttribute("href");
-  if (!href || href === "#" || href.startsWith("#/")) return;
-  const id = decodeURIComponent(href.slice(1));
-  if (!id) return;
-  const target = document.getElementById(id);
-  if (!target) return;
-  event.preventDefault();
-  target.scrollIntoView({ behavior: "smooth", block: "start" });
-  history.pushState(null, "", `#${id}`);
-  const focusable = target.querySelector("input, textarea, select, button");
-  if (focusable instanceof HTMLElement) focusable.focus({ preventScroll: true });
-});
+document.addEventListener(
+  "click",
+  (event) => {
+    const link = event.target.closest("a[href]");
+    if (!link) return;
+    const raw = link.getAttribute("href") || "";
+    let id = "";
+    if (raw.startsWith("#") && raw !== "#" && !raw.startsWith("#/")) {
+      id = decodeURIComponent(raw.slice(1));
+    } else {
+      try {
+        const url = new URL(link.href, location.href);
+        if (url.origin !== location.origin) return;
+        if (!url.hash || url.hash === "#") return;
+        /* Ignore cross-path hash jumps caused by <base href="/"> */
+        const samePath =
+          url.pathname.replace(/\/+$/, "") === location.pathname.replace(/\/+$/, "") ||
+          raw.startsWith("#");
+        if (!samePath && !document.getElementById(decodeURIComponent(url.hash.slice(1)))) {
+          /* If the hash target exists on THIS page, stay here even when base rewrote the path. */
+        }
+        id = decodeURIComponent(url.hash.slice(1));
+        if (!document.getElementById(id)) return;
+      } catch {
+        return;
+      }
+    }
+    if (!id) return;
+    const target = document.getElementById(id);
+    if (!target) return;
+    event.preventDefault();
+    event.stopPropagation();
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    history.pushState(null, "", `${location.pathname}${location.search}#${id}`);
+    const focusable = target.querySelector("input, textarea, select, button");
+    if (focusable instanceof HTMLElement) focusable.focus({ preventScroll: true });
+  },
+  true,
+);
 
 document.querySelectorAll(".nav-item > .menu-toggle").forEach((button) => {
   button.addEventListener("click", () => {

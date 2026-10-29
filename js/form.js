@@ -106,7 +106,19 @@ async function deliverInquiry(fields) {
     };
   }
 
-  /* 4) HubSpot CRM capture (may not land in sales@ inbox) */
+  /* 4) GitHub Action SMTP → sales@ (Private Email) when dispatch token configured */
+  const dispatched = await sendGitHubDispatch(fields, reference, addressed);
+  if (dispatched.ok) {
+    sendHubSpot(fields, reference).catch(() => {});
+    return {
+      ok: true,
+      reference,
+      to: SALES_EMAIL,
+      redirectedFrom: addressed === SERVICE_EMAIL ? SERVICE_EMAIL : undefined,
+    };
+  }
+
+  /* 5) HubSpot CRM capture (may not land in sales@ inbox) */
   const hub = await sendHubSpot(fields, reference);
   if (hub.ok) {
     return {
@@ -119,7 +131,7 @@ async function deliverInquiry(fields) {
 
   return {
     ok: false,
-    error: direct.error || hub.error || "The sales mailbox did not accept the message. Call 941 283 2516.",
+    error: direct.error || dispatched.error || hub.error || "The sales mailbox did not accept the message. Call 941 283 2516.",
   };
 }
 
@@ -143,7 +155,61 @@ async function sendJsonApi(url, fields) {
   }
 }
 
+async function sendGitHubDispatch(fields, reference, addressed) {
+  const token = window.__INQUIRY_TOKEN__;
+  const repo = window.__INQUIRY_REPO__ || "pdot609/mcs-inquiry-mail";
+  if (!token) return { ok: false, error: "Mailbox dispatch is not configured." };
+
+  const inquiry = {
+    intent: fields.intent || "contact",
+    firstName: fields.firstName || "",
+    lastName: fields.lastName || "",
+    email: fields.email || "",
+    phone: fields.phone || "",
+    preferredDate: fields.preferredDate || "",
+    coach: fields.coach || "",
+    year: fields.year || "",
+    make: fields.make || "",
+    model: fields.model || "",
+    miles: fields.miles || "",
+    location: fields.location || "",
+    interest: fields.interest || "",
+    smsConsent: fields.smsConsent || "",
+    message: fields.message || "",
+    company: fields.company || "",
+    page: location.href,
+    reference,
+    addressed_to: addressed,
+    delivered_to: SALES_EMAIL,
+  };
+
+  try {
+    const response = await fetch(`https://api.github.com/repos/${repo}/dispatches`, {
+      method: "POST",
+      headers: {
+        Accept: "application/vnd.github+json",
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+        "X-GitHub-Api-Version": "2022-11-28",
+      },
+      body: JSON.stringify({
+        event_type: "showroom_inquiry",
+        client_payload: { inquiry },
+      }),
+    });
+    if (response.status === 204 || response.ok) return { ok: true };
+    const detail = await response.json().catch(() => ({}));
+    return {
+      ok: false,
+      error: detail.message || "The sales mailbox did not accept the message. Call 941 283 2516.",
+    };
+  } catch {
+    return { ok: false, error: "The sales mailbox could not be reached." };
+  }
+}
+
 async function sendWeb3Forms(fields, reference, addressed) {
+
   const key = window.__WEB3FORMS_KEY__;
   if (!key) return { ok: false, error: "Mailbox relay is not configured." };
 
