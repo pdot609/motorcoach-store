@@ -2,6 +2,17 @@ const SALES_EMAIL = "sales@themotorcoach.store";
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const SSN = /\b\d{3}-\d{2}-\d{4}\b/;
 const VEHICLE = new Set(["sell", "trade"]);
+const HUBSPOT_PORTAL = "47169059";
+const HUBSPOT_FORM = "df83503a-34e8-41d1-892f-3021fb7a9a4b";
+const BUY_INTENTS = new Set([
+  "buy",
+  "coach-inquiry",
+  "sales-appointment",
+  "financing",
+  "fractional",
+  "insurance",
+]);
+const SELL_INTENTS = new Set(["sell", "trade"]);
 
 document.querySelectorAll("form.form").forEach((form) => {
   form.addEventListener("submit", async (event) => {
@@ -21,13 +32,8 @@ document.querySelectorAll("form.form").forEach((form) => {
     button.disabled = true;
     button.textContent = "Sending";
     try {
-      const response = await fetch(sitePath("/api/inquiries"), {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(fields),
-      });
-      const payload = await response.json().catch(() => ({}));
-      if (!response.ok || !payload.ok) {
+      const payload = await deliverInquiry(fields);
+      if (!payload.ok) {
         paint(form, payload.errors || { form: payload.error || "The sales mailbox did not accept the message. Call 941 283 2516." });
         button.disabled = false;
         button.textContent = label;
@@ -48,6 +54,121 @@ document.querySelectorAll("form.form").forEach((form) => {
     }
   });
 });
+
+async function deliverInquiry(fields) {
+  const staticHost = /\.github\.io$/i.test(location.hostname);
+  if (!staticHost) {
+    const local = await sendLocalApi(fields);
+    if (local.ok || local.errors || (local.status && local.status !== 404 && local.status !== 405 && local.status !== 502)) {
+      return local;
+    }
+  }
+  return sendHubSpot(fields);
+}
+
+async function sendLocalApi(fields) {
+  try {
+    const response = await fetch(sitePath("/api/inquiries"), {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(fields),
+    });
+    const payload = await response.json().catch(() => ({}));
+    if (response.ok && payload.ok) return payload;
+    return {
+      ok: false,
+      status: response.status,
+      errors: payload.errors,
+      error: payload.error,
+    };
+  } catch {
+    return { ok: false, status: 0, error: "The local sales mailbox could not be reached." };
+  }
+}
+
+async function sendHubSpot(fields) {
+  const reference = makeReference();
+  const interest = lookingFor(fields);
+  const message = buildMessage(fields, reference);
+  const body = {
+    fields: [
+      { objectTypeId: "0-1", name: "firstname", value: fields.firstName || "" },
+      { objectTypeId: "0-1", name: "lastname", value: fields.lastName || "" },
+      { objectTypeId: "0-1", name: "email", value: fields.email || "" },
+      { objectTypeId: "0-1", name: "manual_phone_number", value: fields.phone || "" },
+      { objectTypeId: "0-1", name: "what_are_you_looking_for_", value: interest },
+      { objectTypeId: "0-1", name: "message", value: message },
+      { objectTypeId: "0-1", name: "inventory_item", value: fields.coach || "" },
+      { objectTypeId: "0-1", name: "inventory_url", value: location.href },
+    ],
+    context: {
+      pageUri: location.href,
+      pageName: document.title || "The Motorcoach Store",
+    },
+  };
+
+  const response = await fetch(
+    `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL}/${HUBSPOT_FORM}`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(body),
+    }
+  );
+  if (!response.ok) {
+    const detail = await response.json().catch(() => ({}));
+    const hubError = detail?.errors?.[0]?.message || detail?.message;
+    return {
+      ok: false,
+      status: response.status,
+      error: hubError || "The sales mailbox did not accept the message. Call 941 283 2516.",
+    };
+  }
+  return { ok: true, reference, to: SALES_EMAIL };
+}
+
+function lookingFor(fields) {
+  if (fields.interest && ["Buy a Coach", "Sell a Coach", "Other"].includes(fields.interest)) {
+    return fields.interest;
+  }
+  const intent = fields.intent || "contact";
+  if (BUY_INTENTS.has(intent)) return "Buy a Coach";
+  if (SELL_INTENTS.has(intent)) return "Sell a Coach";
+  return "Other";
+}
+
+function buildMessage(fields, reference) {
+  const rows = [
+    ["Reference", reference],
+    ["Request", fields.intent || "contact"],
+    ["Preferred date", fields.preferredDate],
+    ["Coach", fields.coach],
+    ["Year", fields.year],
+    ["Make", fields.make],
+    ["Model", fields.model],
+    ["Miles", fields.miles],
+    ["Location", fields.location],
+    ["Interest", fields.interest],
+    ["SMS consent", fields.smsConsent],
+    ["Message", fields.message],
+    ["Submitted from", location.href],
+  ];
+  return rows
+    .filter(([, value]) => value)
+    .map(([label, value]) => `${label}: ${value}`)
+    .join("\n");
+}
+
+function makeReference() {
+  const alphabet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let number = Date.now();
+  let out = "";
+  while (number > 0) {
+    out = alphabet[number % 36] + out;
+    number = Math.floor(number / 36);
+  }
+  return `MCS-${out}`;
+}
 
 function showSent(form, titleText, copyText) {
   const status = document.createElement("div");

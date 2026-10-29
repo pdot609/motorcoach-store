@@ -180,6 +180,24 @@ def allow(ip):
         return True
 
 
+def same_origin(origin, host):
+    """Accept matching hosts, and treat localhost / 127.0.0.1 as equivalent."""
+    if not origin or not host:
+        return False
+    origin_host = urlparse(origin).netloc.lower()
+    request_host = host.lower().split(",")[0].strip()
+    if origin_host == request_host:
+        return True
+
+    def normalize(netloc):
+        name, sep, port = netloc.partition(":")
+        if name in {"localhost", "127.0.0.1", "::1", "[::1]"}:
+            name = "local"
+        return f"{name}{sep}{port}"
+
+    return normalize(origin_host) == normalize(request_host)
+
+
 def deliver(config, fields, ref):
     addressed = SERVICE if fields["intent"] in SERVICE_INTENTS else SALES
     rows = [
@@ -280,7 +298,7 @@ class Handler(SimpleHTTPRequestHandler):
             return
         host = self.headers.get("Host", "")
         origin = self.headers.get("Origin", "")
-        if not origin or urlparse(origin).netloc != host:
+        if not same_origin(origin, host):
             self.respond(403, {"error": "Open the showroom site and send the form from there."})
             return
         if not allow(self.client_address[0]):
@@ -309,7 +327,8 @@ class Handler(SimpleHTTPRequestHandler):
         addressed = SERVICE if fields["intent"] in SERVICE_INTENTS else SALES
         try:
             deliver(CONFIG, fields, ref)
-        except (OSError, smtplib.SMTPException):
+        except (OSError, smtplib.SMTPException) as exc:
+            print(f"smtp_fail {ref} {type(exc).__name__}: {exc}", flush=True)
             self.respond(502, {"error": "The sales mailbox did not accept the message. Call 941 283 2516."})
             return
         if addressed == SALES:
