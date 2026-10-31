@@ -19,7 +19,7 @@ HOST = "127.0.0.1"
 PORT = 3460
 SALES = "sales@themotorcoach.store"
 SERVICE = "service@themotorcoach.store"
-SERVICE_INTENTS = {"ceramic", "service-appointment"}
+SERVICE_INTENTS = {"ceramic", "service-appointment", "paint-appointment"}
 MAX_BODY = 12_000
 WINDOW = 600
 LIMIT = 8
@@ -199,12 +199,11 @@ def same_origin(origin, host):
 
 
 def deliver(config, fields, ref):
-    addressed = SERVICE if fields["intent"] in SERVICE_INTENTS else SALES
+    destination = SERVICE if fields["intent"] in SERVICE_INTENTS else SALES
     rows = [
         ("Reference", ref),
         ("Request", fields["intent"]),
-        ("Addressed to", addressed if addressed != SALES else ""),
-        ("Delivered to", SALES if addressed != SALES else ""),
+        ("Delivered to", destination),
         ("Name", f"{fields['firstName']} {fields['lastName']}"),
         ("Email", fields["email"]),
         ("Phone", fields["phone"]),
@@ -222,10 +221,8 @@ def deliver(config, fields, ref):
     message = EmailMessage()
     message["Subject"] = f"Showroom request {ref}"
     message["From"] = formataddr(("The Motorcoach Store", SALES))
-    message["To"] = SALES
+    message["To"] = destination
     message["Reply-To"] = formataddr((f"{fields['firstName']} {fields['lastName']}", fields["email"]))
-    if addressed != SALES:
-        message["X-Original-To"] = addressed
     message.set_content("\n".join(f"{label}: {value}" for label, value in rows if value))
     context = ssl.create_default_context()
     with smtplib.SMTP(config["SMTP_HOST"], int(config["SMTP_PORT"]), timeout=30) as smtp:
@@ -324,21 +321,15 @@ class Handler(SimpleHTTPRequestHandler):
         if fields["company"]:
             self.respond(200, {"ok": True, "reference": ref})
             return
-        addressed = SERVICE if fields["intent"] in SERVICE_INTENTS else SALES
+        destination = SERVICE if fields["intent"] in SERVICE_INTENTS else SALES
         try:
             deliver(CONFIG, fields, ref)
         except (OSError, smtplib.SMTPException) as exc:
             print(f"smtp_fail {ref} {type(exc).__name__}: {exc}", flush=True)
-            self.respond(502, {"error": "The sales mailbox did not accept the message. Call 941 283 2516."})
+            self.respond(502, {"error": "The mailbox did not accept the message. Call 941 283 2516."})
             return
-        if addressed == SALES:
-            print(f"sent {ref} to {SALES}", flush=True)
-        else:
-            print(f"sent {ref} addressed to {addressed} and delivered to {SALES}", flush=True)
-        payload = {"ok": True, "reference": ref, "to": SALES}
-        if addressed != SALES:
-            payload["redirectedFrom"] = addressed
-        self.respond(200, payload)
+        print(f"sent {ref} to {destination}", flush=True)
+        self.respond(200, {"ok": True, "reference": ref, "to": destination})
 
     def respond(self, status, payload):
         body = json.dumps(payload).encode("utf-8")

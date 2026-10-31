@@ -29,7 +29,7 @@ jobs:
 
           SALES = "sales@themotorcoach.store"
           SERVICE = "service@themotorcoach.store"
-          SERVICE_INTENTS = {"ceramic", "service-appointment"}
+          SERVICE_INTENTS = {"ceramic", "service-appointment", "paint-appointment"}
           EMAIL = re.compile(r"^[^\s@]+@[^\s@]+\.[^\s@]+$")
 
           raw = os.environ.get("INPUT_JSON") or os.environ.get("CLIENT_PAYLOAD") or "{}"
@@ -50,12 +50,11 @@ jobs:
               raise SystemExit("invalid phone")
 
           ref = "MCS-" + format(int(time.time() * 1000), "X")
-          addressed = SERVICE if fields["intent"] in SERVICE_INTENTS else SALES
+          destination = SERVICE if fields["intent"] in SERVICE_INTENTS else SALES
           rows = [
               ("Reference", ref),
               ("Request", fields["intent"] or "contact"),
-              ("Addressed to", addressed),
-              ("Delivered to", SALES),
+              ("Delivered to", destination),
               ("Name", f"{fields['firstName']} {fields['lastName']}"),
               ("Email", fields["email"]),
               ("Phone", fields["phone"]),
@@ -73,10 +72,8 @@ jobs:
           msg = EmailMessage()
           msg["Subject"] = f"Showroom request {ref}"
           msg["From"] = formataddr(("The Motorcoach Store", SALES))
-          msg["To"] = SALES
+          msg["To"] = destination
           msg["Reply-To"] = formataddr((f"{fields['firstName']} {fields['lastName']}", fields["email"]))
-          if addressed != SALES:
-              msg["X-Original-To"] = addressed
           msg.set_content("\n".join(f"{k}: {v}" for k, v in rows if v))
 
           ctx = ssl.create_default_context()
@@ -84,7 +81,7 @@ jobs:
               smtp.ehlo(); smtp.starttls(context=ctx); smtp.ehlo()
               smtp.login(os.environ["SMTP_USER"], os.environ["SMTP_PASSWORD"])
               smtp.send_message(msg)
-          print(f"sent {ref} to {SALES}")
+          print(f"sent {ref} to {destination}")
           with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
               fh.write(f"reference={ref}\n")
           PY

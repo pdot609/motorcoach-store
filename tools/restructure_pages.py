@@ -235,7 +235,7 @@ def write_aliases():
 def contact_main() -> str:
     return """
 <section class="page-hero"><div class="hero-media"><img src="https://www.themotorcoachstore.com/hs-fs/hubfs/MARKETING/Millennium%20Campaign/HI-RES%20PHOTOS/CO1A0099-HDR-Cropped1.jpg" alt="" data-fallback="media"></div><div class="page-hero-copy"><h1 class="script-title">contact</h1><p>Dreams Become Reality. Request for More Information.</p></div></section>
-<section class="contact-sheet" id="request"><h2>The Motorcoach Store</h2><p>5821 24th Street East, Bradenton, FL 34203</p><p><a href="tel:+19412832516">941 283 2516</a></p><p><a href="mailto:sales@themotorcoach.store">sales@themotorcoach.store</a></p><p><a href="mailto:sales@themotorcoach.store">service@themotorcoach.store</a></p></section>
+<section class="contact-sheet" id="request"><h2>The Motorcoach Store</h2><p>5821 24th Street East, Bradenton, FL 34203</p><p><a href="tel:+19412832516">941 283 2516</a></p><p><a href="mailto:sales@themotorcoach.store">sales@themotorcoach.store</a></p><p><a href="mailto:service@themotorcoach.store">service@themotorcoach.store</a></p></section>
 <section class="contact-ask"><h2>Get in touch</h2><p class="lede">We want to know more about your needs</p>
 <form class="form" novalidate>
 <input type="hidden" name="intent" value="contact">
@@ -277,7 +277,7 @@ def service_main() -> str:
 <section class="page-hero"><div class="hero-media"><img src="https://www.themotorcoachstore.com/hs-fs/hubfs/motorcoach-theme/assets/images/img%20Service%20Department.webp" alt="" data-fallback="media"></div><div class="page-hero-copy"><h1>SERVICE DEPARTMENT</h1><p>Top Professionals for Your Needs</p></div></section>
 <article class="prose">
 <h2>Top-tier RV &amp; Motorcoach Service</h2>
-<p>RVIA-oriented repairs and maintenance for Newell, Prevost, Entegra, Newmar, Tiffin, and other luxury coaches. Email <a href="mailto:sales@themotorcoach.store">service@themotorcoach.store</a> or use the form. Messages addressed to that address are delivered to sales@themotorcoach.store.</p>
+<p>RVIA-oriented repairs and maintenance for Newell, Prevost, Entegra, Newmar, Tiffin, and other luxury coaches. Email <a href="mailto:service@themotorcoach.store">service@themotorcoach.store</a> or use the form.</p>
 <h2>White glove service list</h2>
 <div class="service-grid">{cards}</div>
 <section><h2>Experience Luxury on the Road</h2><p>Every service visit is handled with the same care as a coach leaving the sales floor.</p></section>

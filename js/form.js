@@ -14,7 +14,7 @@ const BUY_INTENTS = new Set([
   "insurance",
 ]);
 const SELL_INTENTS = new Set(["sell", "trade"]);
-const SERVICE_INTENTS = new Set(["ceramic", "service-appointment"]);
+const SERVICE_INTENTS = new Set(["ceramic", "service-appointment", "paint-appointment"]);
 
 document.querySelectorAll("form.form").forEach((form) => {
   form.addEventListener("submit", async (event) => {
@@ -41,13 +41,10 @@ document.querySelectorAll("form.form").forEach((form) => {
         button.textContent = label;
         return;
       }
-      const destination = payload.redirectedFrom
-        ? `This request was addressed to ${payload.redirectedFrom} and delivered to ${payload.to || SALES_EMAIL}.`
-        : `This request was delivered to ${payload.to || SALES_EMAIL}.`;
       showSent(
         form,
         "Request sent",
-        `Reference ${payload.reference}. ${destination} Call 941 283 2516 if you need a time today.`
+        `Reference ${payload.reference}. This request was delivered to ${payload.to || SALES_EMAIL}. Call 941 283 2516 if you need a time today.`
       );
     } catch {
       paint(form, { form: "The message did not leave this page. Check the connection and try again, or call 941 283 2516." });
@@ -72,7 +69,7 @@ function mailApiBase() {
 
 async function deliverInquiry(fields) {
   const reference = makeReference();
-  const addressed = SERVICE_INTENTS.has(fields.intent) ? SERVICE_EMAIL : SALES_EMAIL;
+  const destination = SERVICE_INTENTS.has(fields.intent) ? SERVICE_EMAIL : SALES_EMAIL;
 
   /* 1) Local showroom server (python server.py) */
   if (isLocalDev()) {
@@ -80,7 +77,7 @@ async function deliverInquiry(fields) {
     if (local.ok || local.errors) return local;
   }
 
-  /* 2) Optional hosted mail relay (same SMTP → sales@) */
+  /* 2) Optional hosted mail relay (SMTP → sales@ or service@ by intent) */
   const relay = mailApiBase();
   if (relay) {
     const remote = await sendJsonApi(`${relay}/api/inquiries`, fields);
@@ -88,57 +85,42 @@ async function deliverInquiry(fields) {
       return {
         ok: true,
         reference: remote.reference || reference,
-        to: SALES_EMAIL,
-        redirectedFrom: addressed === SERVICE_EMAIL ? SERVICE_EMAIL : undefined,
+        to: remote.to || destination,
       };
     }
   }
 
-  /* 3) Direct mailbox API (Web3Forms → sales@) when configured */
-  const direct = await sendWeb3Forms(fields, reference, addressed);
-  if (direct.ok) {
-    sendHubSpot(fields, reference).catch(() => {});
-    return {
-      ok: true,
-      reference,
-      to: SALES_EMAIL,
-      redirectedFrom: addressed === SERVICE_EMAIL ? SERVICE_EMAIL : undefined,
-    };
+  /* 3) Web3Forms → sales@ only (access key is bound to the sales mailbox) */
+  if (destination === SALES_EMAIL) {
+    const direct = await sendWeb3Forms(fields, reference, destination);
+    if (direct.ok) {
+      sendHubSpot(fields, reference).catch(() => {});
+      return { ok: true, reference, to: destination };
+    }
   }
 
-  /* 4) GitHub Action SMTP → sales@ (Private Email) when dispatch token configured */
-  const dispatched = await sendGitHubDispatch(fields, reference, addressed);
+  /* 4) GitHub Action SMTP → destination mailbox when dispatch token configured */
+  const dispatched = await sendGitHubDispatch(fields, reference, destination);
   if (dispatched.ok) {
     sendHubSpot(fields, reference).catch(() => {});
-    return {
-      ok: true,
-      reference,
-      to: SALES_EMAIL,
-      redirectedFrom: addressed === SERVICE_EMAIL ? SERVICE_EMAIL : undefined,
-    };
+    return { ok: true, reference, to: destination };
   }
 
-  /* 5) FormSubmit → sales@ (no API key; first browser submit confirms the mailbox) */
-  const formSubmit = await sendFormSubmit(fields, reference, addressed);
+  /* 5) FormSubmit → destination mailbox */
+  const formSubmit = await sendFormSubmit(fields, reference, destination);
   if (formSubmit.ok) {
     sendHubSpot(fields, reference).catch(() => {});
-    return {
-      ok: true,
-      reference,
-      to: SALES_EMAIL,
-      redirectedFrom: addressed === SERVICE_EMAIL ? SERVICE_EMAIL : undefined,
-    };
+    return { ok: true, reference, to: destination };
   }
 
-  /* 6) HubSpot CRM only — does not deliver into sales@ inbox */
+  /* 6) HubSpot CRM only — does not deliver into the showroom mailbox */
   sendHubSpot(fields, reference).catch(() => {});
   return {
     ok: false,
     error:
       formSubmit.error ||
       dispatched.error ||
-      direct.error ||
-      "The sales mailbox did not accept the message. Call 941 283 2516.",
+      "The mailbox did not accept the message. Call 941 283 2516.",
   };
 }
 
@@ -163,9 +145,9 @@ async function sendJsonApi(url, fields) {
 }
 
 
-async function sendFormSubmit(fields, reference, addressed) {
+async function sendFormSubmit(fields, reference, destination) {
   try {
-    const response = await fetch("https://formsubmit.co/ajax/" + encodeURIComponent(SALES_EMAIL), {
+    const response = await fetch("https://formsubmit.co/ajax/" + encodeURIComponent(destination), {
       method: "POST",
       headers: { "Content-Type": "application/json", Accept: "application/json" },
       body: JSON.stringify({
@@ -177,8 +159,7 @@ async function sendFormSubmit(fields, reference, addressed) {
         _captcha: "false",
         _honey: fields.company || "",
         intent: fields.intent || "contact",
-        addressed_to: addressed,
-        delivered_to: SALES_EMAIL,
+        delivered_to: destination,
         coach: fields.coach || "",
         year: fields.year || "",
         make: fields.make || "",
@@ -203,7 +184,7 @@ async function sendFormSubmit(fields, reference, addressed) {
   }
 }
 
-async function sendGitHubDispatch(fields, reference, addressed) {
+async function sendGitHubDispatch(fields, reference, destination) {
   const token = window.__INQUIRY_TOKEN__;
   const repo = window.__INQUIRY_REPO__ || "pdot609/mcs-inquiry-mail";
   if (!token) return { ok: false, error: "Mailbox dispatch is not configured." };
@@ -227,8 +208,7 @@ async function sendGitHubDispatch(fields, reference, addressed) {
     company: fields.company || "",
     page: location.href,
     reference,
-    addressed_to: addressed,
-    delivered_to: SALES_EMAIL,
+    delivered_to: destination,
   };
 
   try {
@@ -256,7 +236,7 @@ async function sendGitHubDispatch(fields, reference, addressed) {
   }
 }
 
-async function sendWeb3Forms(fields, reference, addressed) {
+async function sendWeb3Forms(fields, reference, destination) {
 
   const key = window.__WEB3FORMS_KEY__ || "200e0f0b-da5c-46f8-bdab-5ca29f8a16b0";
   if (!key) return { ok: false, error: "Mailbox relay is not configured." };
@@ -273,8 +253,7 @@ async function sendWeb3Forms(fields, reference, addressed) {
       name: `${fields.firstName || ""} ${fields.lastName || ""}`.trim(),
       interest: lookingFor(fields),
       intent: fields.intent || "contact",
-      addressed_to: addressed,
-      delivered_to: SALES_EMAIL,
+      delivered_to: destination,
       coach: fields.coach || "",
       year: fields.year || "",
       make: fields.make || "",
@@ -349,12 +328,11 @@ function lookingFor(fields) {
 }
 
 function buildMessage(fields, reference) {
-  const addressed = SERVICE_INTENTS.has(fields.intent) ? SERVICE_EMAIL : SALES_EMAIL;
+  const destination = SERVICE_INTENTS.has(fields.intent) ? SERVICE_EMAIL : SALES_EMAIL;
   const rows = [
     ["Reference", reference],
     ["Request", fields.intent || "contact"],
-    ["Addressed to", addressed],
-    ["Delivered to", SALES_EMAIL],
+    ["Delivered to", destination],
     ["Preferred date", fields.preferredDate],
     ["Coach", fields.coach],
     ["Year", fields.year],

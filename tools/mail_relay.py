@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SECRET = ROOT / "private" / "mail.env"
 SALES = "sales@themotorcoach.store"
 SERVICE = "service@themotorcoach.store"
-SERVICE_INTENTS = {"ceramic", "service-appointment"}
+SERVICE_INTENTS = {"ceramic", "service-appointment", "paint-appointment"}
 ALLOWED = {
     "https://themotorcoach.store",
     "https://www.themotorcoach.store",
@@ -92,12 +92,11 @@ class Handler(BaseHTTPRequestHandler):
             self.respond(400, {"error": "Enter a phone number with at least 7 digits."})
             return
         ref = "MCS-" + format(int(time.time() * 1000), "X")
-        addressed = SERVICE if fields["intent"] in SERVICE_INTENTS else SALES
+        destination = SERVICE if fields["intent"] in SERVICE_INTENTS else SALES
         rows = [
             ("Reference", ref),
             ("Request", fields["intent"] or "contact"),
-            ("Addressed to", addressed),
-            ("Delivered to", SALES),
+            ("Delivered to", destination),
             ("Name", f"{fields['firstName']} {fields['lastName']}"),
             ("Email", fields["email"]),
             ("Phone", fields["phone"]),
@@ -114,10 +113,8 @@ class Handler(BaseHTTPRequestHandler):
         msg = EmailMessage()
         msg["Subject"] = f"Showroom request {ref}"
         msg["From"] = formataddr(("The Motorcoach Store", SALES))
-        msg["To"] = SALES
+        msg["To"] = destination
         msg["Reply-To"] = formataddr((f"{fields['firstName']} {fields['lastName']}", fields["email"]))
-        if addressed != SALES:
-            msg["X-Original-To"] = addressed
         msg.set_content("\n".join(f"{k}: {v}" for k, v in rows if v))
         try:
             ctx = ssl.create_default_context()
@@ -127,13 +124,10 @@ class Handler(BaseHTTPRequestHandler):
                 smtp.send_message(msg)
         except Exception as exc:
             print("smtp_fail", type(exc).__name__, exc, flush=True)
-            self.respond(502, {"error": "The sales mailbox did not accept the message. Call 941 283 2516."})
+            self.respond(502, {"error": "The mailbox did not accept the message. Call 941 283 2516."})
             return
-        print(f"sent {ref} to {SALES} (addressed {addressed})", flush=True)
-        payload = {"ok": True, "reference": ref, "to": SALES}
-        if addressed != SALES:
-            payload["redirectedFrom"] = addressed
-        self.respond(200, payload)
+        print(f"sent {ref} to {destination}", flush=True)
+        self.respond(200, {"ok": True, "reference": ref, "to": destination})
 
 if __name__ == "__main__":
     host, port = "127.0.0.1", 8765
