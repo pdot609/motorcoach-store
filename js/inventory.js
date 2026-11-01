@@ -19,6 +19,28 @@ function money(value) {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(value);
 }
 
+function mediaUrl(url, width = 720) {
+  if (!url) return url;
+  try {
+    const parsed = new URL(url, location.origin);
+    if (!/hubspot|hs-fs|themotorcoachstore\.com/i.test(parsed.href)) return url;
+    parsed.searchParams.set("width", String(width));
+    return parsed.href;
+  } catch {
+    return url;
+  }
+}
+
+function cardImage(coach, width = 720) {
+  const img = document.createElement("img");
+  img.src = mediaUrl(coach.image, width);
+  img.alt = coach.title;
+  img.loading = "lazy";
+  img.decoding = "async";
+  img.dataset.fallback = "media";
+  return img;
+}
+
 function miles(value) {
   if (value == null) return null;
   return `${new Intl.NumberFormat("en-US").format(value)} mi`;
@@ -165,10 +187,7 @@ function card(coach) {
   media.className = "media";
   media.href = sitePath(`/coaches/${coach.slug}`);
   media.setAttribute("aria-label", coach.title);
-  const img = document.createElement("img");
-  img.src = coach.image;
-  img.alt = coach.title;
-  img.dataset.fallback = "media";
+  const img = cardImage(coach, 720);
   const badges = document.createElement("div");
   badges.className = "badge-row";
   if (coach.status === "sold") badges.append(badge("Sold", "sold"));
@@ -326,10 +345,7 @@ function showroomCard(coach) {
   media.className = "media";
   media.href = sitePath(`/coaches/${coach.slug}`);
   media.setAttribute("aria-label", coach.title);
-  const img = document.createElement("img");
-  img.src = coach.image;
-  img.alt = coach.title;
-  img.dataset.fallback = "media";
+  const img = cardImage(coach, 900);
   media.append(img);
 
   const body = document.createElement("div");

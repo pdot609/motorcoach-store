@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Serve the showroom site and deliver form requests to the sales mailbox."""
 
+import gzip
 import json
+import mimetypes
 import re
 import smtplib
 import ssl
@@ -10,6 +12,7 @@ import time
 from email.message import EmailMessage
 from email.utils import formataddr
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
+from io import BytesIO
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -233,6 +236,9 @@ def deliver(config, fields, ref):
         smtp.send_message(message)
 
 
+COMPRESSIBLE = {".html", ".css", ".js", ".json", ".svg", ".txt", ".xml", ".map"}
+
+
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(ROOT), **kwargs)
@@ -241,11 +247,55 @@ class Handler(SimpleHTTPRequestHandler):
         parts = [part for part in urlparse(self.path).path.split("/") if part]
         return any(part.startswith(".") for part in parts) or (parts[:1] == ["private"]) or parts == ["server.py"]
 
+    def cache_control_for(self, path: str) -> str:
+        if path.startswith("/api/"):
+            return "no-store"
+        lower = path.lower()
+        if lower.endswith((".css", ".js", ".woff2", ".woff", ".ttf", ".png", ".jpg", ".jpeg", ".webp", ".svg", ".ico")):
+            return "public, max-age=86400, stale-while-revalidate=604800"
+        if lower.endswith(".json"):
+            return "public, max-age=120, stale-while-revalidate=600"
+        if lower.endswith((".html", "/")) or lower == "" or "." not in Path(lower).name:
+            return "public, max-age=60, stale-while-revalidate=300"
+        return "public, max-age=300"
+
     def end_headers(self):
         self.send_header("X-Content-Type-Options", "nosniff")
         self.send_header("Referrer-Policy", "strict-origin-when-cross-origin")
-        self.send_header("Cache-Control", "no-store")
+        path = urlparse(self.path).path
+        self.send_header("Cache-Control", self.cache_control_for(path))
         super().end_headers()
+
+    def send_head(self):
+        """Serve compressible text assets with gzip when the client accepts it."""
+        path = self.translate_path(self.path)
+        file_path = Path(path)
+        if not file_path.is_file():
+            return super().send_head()
+        suffix = file_path.suffix.lower()
+        accept = self.headers.get("Accept-Encoding", "")
+        if suffix not in COMPRESSIBLE or "gzip" not in accept:
+            return super().send_head()
+        try:
+            raw = file_path.read_bytes()
+        except OSError:
+            self.send_error(404, "File not found")
+            return None
+        if len(raw) < 512:
+            return super().send_head()
+        payload = gzip.compress(raw, compresslevel=6)
+        content_type = mimetypes.types_map.get(suffix, "application/octet-stream")
+        if suffix == ".json":
+            content_type = "application/json; charset=utf-8"
+        elif suffix in {".html", ".css", ".js", ".svg", ".txt", ".xml"}:
+            content_type = f"{content_type}; charset=utf-8" if "charset=" not in content_type else content_type
+        self.send_response(200)
+        self.send_header("Content-Type", content_type)
+        self.send_header("Content-Encoding", "gzip")
+        self.send_header("Vary", "Accept-Encoding")
+        self.send_header("Content-Length", str(len(payload)))
+        self.end_headers()
+        return BytesIO(payload)
 
     def redirect_target(self):
         parsed = urlparse(self.path)

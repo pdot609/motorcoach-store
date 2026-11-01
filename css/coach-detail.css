@@ -1,0 +1,259 @@
+
+/* Local coach detail shell — matches original showroom-single layout */
+.coach-page { background: #0e0e0e; color: #fff; }
+.coach-page .showroom-single-content { margin-top: 0; }
+.coach-page .showroom-single-content .inner { width: min(100% - 0px, 1500px); margin: 0 auto; }
+.coach-page .common-info-section .inner {
+  width: min(100% - 60px, 916px);
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+.coach-page .common-info-section .row { max-width: 916px; margin-left: auto; margin-right: auto; }
+.coach-page .title-row { justify-content: center; margin-bottom: 3.5rem; }
+.coach-page .title-row h1 {
+  margin: 0 0 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--sans, "Riviera Nights", system-ui, sans-serif);
+  font-weight: 400;
+  font-size: clamp(28px, 4vw, 34px);
+  letter-spacing: 0.02em;
+}
+.coach-page .specs-bar-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 3.5%;
+  justify-content: center;
+  max-width: 916px;
+  margin: 0 auto 49.5px;
+}
+.coach-page .mc-spec {
+  flex: 1 1 calc(50% - 3.5%);
+  min-width: 140px;
+  max-width: calc(50% - 1.5%);
+  text-align: left;
+  border-bottom: 1px solid #484848;
+  padding-bottom: 7.2px;
+}
+@media (min-width: 900px) {
+  .coach-page .mc-spec { flex: 1 1 calc(33.333% - 3.5%); max-width: calc(33.333% - 2%); }
+}
+.coach-page .mc-spec .spec-label {
+  display: block;
+  color: #9a9a9a;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.coach-page .mc-spec .spec-val {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.coach-page .action-bar-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 916px;
+  margin: 0 auto 54px;
+}
+.coach-page .action-col {
+  flex: 0 0 50%;
+  width: 50%;
+  max-width: 50%;
+  border: 1px solid #484848;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+@media (min-width: 900px) {
+  .coach-page .action-col { flex: 0 0 25%; width: 25%; max-width: 25%; }
+}
+.coach-page .action-col-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 120px;
+  padding: 22px 12px;
+  color: #fff;
+  text-decoration: none;
+  transition: color .2s ease, background .2s ease;
+}
+.coach-page .action-col-btn:hover { color: var(--gold); }
+.coach-page .action-col-img { width: 48px; height: 42px; display: flex; align-items: center; justify-content: center; }
+.coach-page .action-col-img svg { width: 48px; height: auto; max-height: 42px; display: block; }
+.coach-page .action-col-img svg path { transition: fill .2s ease; }
+.coach-page .action-col-btn:hover svg path { fill: var(--gold) !important; }
+.coach-page .action-col-text {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.coach-page .foot-info-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 916px;
+  margin: 0 auto 48px;
+}
+.coach-page .mc-card-price-value {
+  font-family: var(--serif, Bosca, Georgia, serif);
+  font-size: 26px;
+  color: var(--gold);
+  letter-spacing: 0.02em;
+}
+.coach-page .after-price-info {
+  color: #cfcfcf;
+  font-size: 15px;
+  text-align: left;
+}
+.coach-page .after-price-info a { color: var(--gold); text-decoration: underline; }
+.coach-page .main-image-row .media { position: relative; }
+.coach-page .single-main-image { width: 100% !important; max-width: 100% !important; height: auto !important; object-fit: cover; display: block; }
+.coach-page[data-condition="certified pre-owned"] .media:before,
+.showroom-single-content[data-condition="certified pre-owned"] .media:before {
+  content: '';
+  background: url('https://47169059.fs1.hubspotusercontent-na1.net/hubfs/47169059/MTCS_logo_new_final_gold-1.png') no-repeat center;
+  background-size: contain;
+  width: min(500px, 40%);
+  aspect-ratio: 1062 / 241;
+  display: block;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  pointer-events: none;
+  z-index: 2;
+}
+@media (max-width: 767px) {
+  .coach-page[data-condition="certified pre-owned"] .media:before,
+  .showroom-single-content[data-condition="certified pre-owned"] .media:before {
+    width: min(260px, 45%);
+    right: 10px;
+    bottom: 10px;
+  }
+}
+.coach-page .gallery-section { background: #2b2b2b; padding: 0; }
+.coach-page .gallery {
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 1500px);
+  margin: 0 auto;
+}
+.coach-page .gallery > a {
+  display: block;
+  margin: 0 0 0;
+  line-height: 0;
+  content-visibility: auto;
+  contain-intrinsic-size: 1500px 844px;
+}
+.coach-page .gallery figure { margin: 0; }
+.coach-page .gallery img { width: 100%; height: auto; display: block; content-visibility: auto; }
+.coach-page .single-pager-section { padding: 48px 30px; }
+.coach-page .pager-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.coach-page .single-pager a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+  text-decoration: none;
+  max-width: 45%;
+}
+.coach-page .single-pager a:hover { color: var(--gold); }
+.coach-page .pager-label {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9a9a9a;
+}
+.coach-page .pager-title { display: block; font-size: 16px; }
+.coach-page .pager-next { flex-direction: row-reverse; text-align: right; margin-left: auto; }
+.coach-page .ready-band {
+  padding: 72px 24px 40px;
+  text-align: center;
+  background: #0e0e0e;
+}
+.coach-page .ready-band h2 {
+  margin: 0 0 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 400;
+}
+.coach-page .ready-band .lede {
+  max-width: 640px;
+  margin: 0 auto 28px;
+  color: #cfcfcf;
+}
+.coach-page .ready-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+.coach-page .form-wrap {
+  width: min(916px, calc(100% - 48px));
+  margin: 0 auto 80px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.coach-page .form-wrap .form { grid-template-columns: 1fr 1fr; }
+.coach-lightbox {
+  position: fixed; inset: 0; z-index: 10000;
+  background: rgba(0,0,0,.92);
+  display: none; align-items: center; justify-content: center;
+  padding: 24px;
+}
+.coach-lightbox.is-open { display: flex; }
+.coach-lightbox .lb-frame {
+  position: relative; width: min(1100px, 100%);
+}
+.coach-lightbox .lb-frame.video-frame { aspect-ratio: 16/9; }
+.coach-lightbox iframe, .coach-lightbox img {
+  width: 100%; height: auto; max-height: 85vh; object-fit: contain; display: block; background: #000;
+}
+.coach-lightbox .lb-frame.video-frame iframe { height: 100%; position: absolute; inset: 0; }
+.coach-lightbox .lb-close,
+.coach-lightbox .lb-prev,
+.coach-lightbox .lb-next {
+  position: absolute; border: 1px solid #4e4e4e; background: #0e0e0e; color: #fff;
+  width: 42px; height: 42px; cursor: pointer; z-index: 2;
+}
+.coach-lightbox .lb-close { top: -52px; right: 0; }
+.coach-lightbox .lb-prev { left: -56px; top: 50%; transform: translateY(-50%); }
+.coach-lightbox .lb-next { right: -56px; top: 50%; transform: translateY(-50%); }
+@media (max-width: 900px) {
+  .coach-lightbox .lb-prev { left: 8px; }
+  .coach-lightbox .lb-next { right: 8px; }
+  .coach-lightbox .lb-close { top: 8px; right: 8px; }
+}
+
+
+/* Adapted from original HubSpot showroom-single styles */
+.showroom-single-content .main-image-row .single-main-image{
+  object-fit: cover;
+  width:100%!important;
+  max-width:100%!important;
+  height: auto !important;
+}
+
+.coach-page .links-col { display:flex; flex-wrap:wrap; gap:12px; justify-content:flex-end; }
+.coach-page .foot-info-row .after-price-info { margin: 8px 0 0; max-width: 420px; }
+.coach-page .common-info-section + .gallery-section { margin-top: 0; }
