@@ -227,26 +227,27 @@
 
   function apply() {
     const matched = sortCards(cards.filter(matches));
-    const limit = canLoadMore ? pageSize * state.page : pageSize;
+    const limit = canLoadMore ? pageSize * state.page : matched.length;
     cards.forEach((card) => {
       card.hidden = true;
       card.style.display = "none";
     });
     matched.forEach((card, index) => {
-      const show = index < limit || limit <= 0;
+      const show = !canLoadMore || index < limit;
       card.hidden = !show;
       card.style.display = show ? "" : "none";
       if (show && grid) grid.append(card);
     });
+    const shown = canLoadMore ? Math.min(matched.length, limit) : matched.length;
     if (countEl) {
       countEl.textContent = matched.length
-        ? `Showing ${Math.min(matched.length, limit || matched.length)} of ${matched.length} coaches`
+        ? `Showing ${shown} of ${matched.length} coaches`
         : "Showing 0 coaches";
     }
     if (emptyEl) emptyEl.hidden = matched.length > 0;
     const loader = root.querySelector(".mc-showroom__loader");
     if (loader) loader.hidden = true;
-    ensureLoadMore(matched.length, Math.min(matched.length, limit || matched.length));
+    ensureLoadMore(matched.length, shown);
   }
 
   function clearAll() {
