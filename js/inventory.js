@@ -25,6 +25,8 @@ function mediaUrl(url, width = 720) {
     const parsed = new URL(url, location.origin);
     if (!/hubspot|hs-fs|themotorcoachstore\.com/i.test(parsed.href)) return url;
     parsed.searchParams.set("width", String(width));
+    const file = parsed.pathname.split("/").pop() || "image.jpg";
+    if (!parsed.searchParams.get("name")) parsed.searchParams.set("name", decodeURIComponent(file));
     return parsed.href;
   } catch {
     return url;
@@ -314,7 +316,7 @@ function showroomList(mount, results, onClear) {
   const page = Math.max(1, Number(mount.dataset.page || 1));
   const visible = results.slice(0, page * 5);
   const list = document.createElement("div");
-  list.className = "showroom-list";
+  list.className = "mc-showroom__grid showroom-list";
   visible.forEach((coach) => list.append(showroomCard(coach)));
   column.append(list);
   if (visible.length < results.length) {
@@ -339,72 +341,79 @@ function showroomList(mount, results, onClear) {
 }
 
 function showroomCard(coach) {
+  const href = sitePath(`/coaches/${coach.slug}`);
   const article = document.createElement("article");
-  article.className = "showroom-card";
-  const media = document.createElement("a");
-  media.className = "media";
-  media.href = sitePath(`/coaches/${coach.slug}`);
-  media.setAttribute("aria-label", coach.title);
-  const img = cardImage(coach, 900);
-  media.append(img);
+  article.className = "mc-card";
+  article.dataset.stock = coach.stock || "";
+  article.dataset.price = coach.price != null ? String(coach.price) : "";
+  article.dataset.miles = coach.miles != null ? String(coach.miles) : "";
+  article.dataset.make = coach.make || "";
+  article.dataset.model = coach.model || "";
+  article.dataset.condition = coach.condition || "";
+  article.dataset.status = coach.status || "";
+  article.dataset.year = coach.year != null ? String(coach.year) : "";
+  article.dataset.engine = coach.engine || "";
+
+  const inner = document.createElement("div");
+  inner.className = "mc-card-inner";
+  const media = document.createElement("div");
+  media.className = "mc-card-media";
+  const mediaLink = document.createElement("a");
+  mediaLink.className = "mc-card-media_link";
+  mediaLink.href = href;
+  mediaLink.setAttribute("aria-label", coach.title);
+  mediaLink.append(cardImage(coach, 900));
+  if (coach.status === "sold") {
+    const sold = document.createElement("div");
+    sold.className = "mc-card-sold-badge";
+    sold.innerHTML = '<span class="mc-card-sold-label">Sold</span>';
+    media.append(sold);
+  }
+  media.append(mediaLink);
 
   const body = document.createElement("div");
-  body.className = "showroom-body";
-  const heading = document.createElement("h2");
-  const title = document.createElement("a");
-  title.href = sitePath(`/coaches/${coach.slug}`);
-  title.textContent = coach.title;
-  heading.append(title);
+  body.className = "mc-card-body";
   const specs = document.createElement("div");
-  specs.className = "showroom-specs";
+  specs.className = "mc-card-specs";
   [
-    ["Year", String(coach.year)],
+    ["Year", String(coach.year || "")],
     ["Make", makeLabel(coach.make)],
     ["Model", makeLabel(coach.model || "")],
     ["Floorplan", coach.floorplan],
     ["Slides", coach.slides],
     ["Bath(s)", coach.baths],
-    ["Bunk Beds", coach.bunks ? String(coach.bunks).toUpperCase() : ""],
     ["Engine", coach.engine],
     ["Mileage", coach.miles == null ? (coach.condition === "new" ? "New" : "") : miles(coach.miles)],
-    ["Stock #", coach.stock],
   ].forEach(([label, value]) => {
     if (!value) return;
-    const row = document.createElement("p");
+    const row = document.createElement("div");
+    row.className = "mc-spec";
     const name = document.createElement("span");
     name.textContent = label;
-    const strong = document.createElement("strong");
+    const strong = document.createElement("b");
     strong.textContent = value;
     row.append(name, strong);
     specs.append(row);
   });
-  const prices = document.createElement("p");
-  prices.className = "showroom-price";
-  const sale = money(coach.price);
-  const msrp = money(coach.msrp);
-  if (msrp && coach.price > 0 && coach.msrp > coach.price) {
-    const label = document.createElement("span");
-    label.textContent = "MSRP";
-    const was = document.createElement("s");
-    was.textContent = msrp;
-    prices.append(label, was);
-  }
-  const now = document.createElement("strong");
-  now.textContent = sale ?? (coach.status === "sold" ? "Sold" : "Call for price");
-  prices.append(now);
-  body.append(heading, specs, prices);
-  if (coach.monthly) {
-    const monthly = document.createElement("p");
-    monthly.className = "showroom-monthly";
-    monthly.textContent = `Monthly Payment: ${money(coach.monthly)}`;
-    body.append(monthly);
-  }
+
+  const priceWrap = document.createElement("div");
+  priceWrap.className = "mc-card-price";
+  const priceValue = document.createElement("span");
+  priceValue.className = "mc-card-price-value";
+  priceValue.textContent = money(coach.price) ?? (coach.status === "sold" ? "Sold" : "Call for price");
+  priceWrap.append(priceValue);
+
+  const btnWrap = document.createElement("div");
+  btnWrap.className = "mc-card-btn";
   const more = document.createElement("a");
-  more.className = "btn";
-  more.href = sitePath(`/coaches/${coach.slug}`);
+  more.className = "mc-btn mc-btn-sm mc-btn-black";
+  more.href = href;
   more.textContent = "Learn More";
-  body.append(more);
-  article.append(media, body);
+  btnWrap.append(more);
+
+  body.append(specs, priceWrap, btnWrap);
+  inner.append(media, body);
+  article.append(inner);
   return article;
 }
 

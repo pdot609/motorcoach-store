@@ -1,113 +1,489 @@
 [
   {
-    "slug": "2027-prevost-loki-h345-quad-slide-bath-anda-half-volvo-500hp-lc029-2968",
-    "stock": "2968",
-    "title": "2027 Prevost Loki H3 45",
-    "year": 2027,
+    "slug": "2021-prevost-marathon-h3-45-quad-slide-bath-and-a-half-volvo-500hp-3039",
+    "stock": "3039",
+    "title": "2021 Prevost Marathon H3-45",
+    "year": 2021,
     "make": "prevost",
-    "model": "loki",
-    "condition": "new",
+    "model": "marathon",
+    "condition": "pre-owned",
     "status": "available",
-    "price": 2596533,
-    "msrp": null,
-    "monthly": null,
-    "miles": "New",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 1599999,
+    "miles": 30540,
     "engine": "Volvo 500hp",
     "floorplan": "H3 45",
     "slides": "Quad Slide",
     "baths": "Bath and a Half",
     "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2968/2968%20HERO%20IMAGE%202.jpg",
-    "channels": [
-      "new"
-    ],
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3039/3039%20HERO%20IMAGE.jpg",
     "virtual": true,
+    "created": 1793373180000,
     "featured": false,
-    "brand": "prevost-loki",
-    "virtualTour": "https://my.matterport.com/show/?m=VnGxnYJjh1t",
+    "virtualTour": "https://my.matterport.com/show/?m=JxBu83HBv67",
     "video": "#",
     "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2968/Documents/LC029%20LOKI%20Printable%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2968/Documents/2968%20Floorplan.pdf?hsLang=en",
+      "buildSheet": "#",
+      "floorPlan": "#",
       "checkInSheet": "#"
     },
     "prev": {
-      "slug": "2022-tiffin-allegro-bus-45fp-triple-slide-bath-anda-half-cummins-450hp-2951",
-      "title": "2022 Tiffin Allegro Bus 45FP"
+      "slug": "2026-featherlite-stacker-trailer-4414-white-5332-2692",
+      "title": "2026 Featherlite 26' Stacker Trailer 4414"
     }
   },
   {
-    "slug": "2027-prevost-loki-h3-45-double-slide-bath-and-a-half-volvo-d13-500hp-2912",
-    "stock": "2912",
-    "title": "2027 Prevost Loki H3 45",
-    "year": 2027,
+    "slug": "2009-prevost-featherlite-h345-double-slide-mid-bath-detroit-515hp-allison-2767",
+    "stock": "2767",
+    "title": "2009 Prevost Featherlite H3 45",
+    "year": 2009,
     "make": "prevost",
-    "model": "loki",
-    "condition": "new",
+    "model": "featherlite",
+    "condition": "pre-owned",
     "status": "available",
-    "price": 2315272,
-    "msrp": null,
-    "monthly": null,
-    "miles": "New",
-    "engine": "Volvo 500hp",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 399999,
+    "miles": 98711,
+    "engine": "Detroit 515hp",
     "floorplan": "H3 45",
     "slides": "Double Slide",
     "baths": "Bath and a Half",
     "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2912/2912%20HERO%20IMAGE.jpg",
-    "channels": [
-      "new"
-    ],
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2767/2767%20HERO%20IMAGE.jpg",
     "virtual": true,
+    "created": 1793371260000,
     "featured": false,
-    "brand": "prevost-loki",
-    "virtualTour": "https://my.matterport.com/show/?m=AT51Q9Zn2z1",
+    "virtualTour": "https://my.matterport.com/show/?m=cHMuNF93YTw",
     "video": "#",
     "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2912/Documents/2912%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2912/Documents/2912%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2912/Documents/2912%20Check-in%20Sheet.pdf?hsLang=en"
+      "buildSheet": "#",
+      "floorPlan": "#",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2767/Documents/2767%20Check-in%20Sheet.pdf?hsLang=en"
     },
     "prev": {
-      "slug": "2014-prevost-millennium-h3-45-quad-slide-mid-bath-volvo-500hp-2883",
-      "title": "2014 Prevost Millennium H3 45"
+      "slug": "2021-prevost-marathon-h3-45-quad-slide-bath-and-a-half-volvo-500hp-3039",
+      "title": "2021 Prevost Marathon H3-45"
     }
   },
   {
-    "slug": "2027-ogv-luxury-coach-v-cruise-10obw-rear-bath-mercedes-208hp-black-creme-2974",
-    "stock": "2974",
-    "title": "2027 OGV Luxury Coach V-Cruise 10OBW",
-    "year": 2027,
-    "make": "ogv",
-    "model": "v-cruise",
+    "slug": "2026-featherlite-stacker-trailer-4953-white-24ft-2995",
+    "stock": "2995",
+    "title": "2026 Featherlite 24' Stacker Trailer 4953",
+    "year": 2026,
+    "make": "featherlite",
+    "model": "stacker trailer",
     "condition": "new",
     "status": "available",
-    "price": 199795,
-    "msrp": 266424,
-    "monthly": 1616,
-    "miles": "New",
-    "engine": "Mercedes 208hp",
-    "floorplan": "10OBW",
-    "slides": "No Slides",
-    "baths": "Rear Bath",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2974/2974%20HERO%20IMAGE.jpg",
     "channels": [
       "new"
     ],
-    "virtual": true,
+    "price": 188750,
+    "miles": "\u2014",
+    "engine": "-",
+    "floorplan": "24' L x 11' H x 8'6\" W",
+    "slides": "",
+    "baths": "None",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2995/2995%20HERO%20IMAGE%201.jpg",
+    "virtual": false,
+    "created": 1793362080000,
     "featured": false,
-    "brand": "ogv",
-    "virtualTour": "https://my.matterport.com/show/?m=VJtCtwcLwRR",
-    "video": "https://youtube.com/shorts/ih4A2QR_824",
+    "video": "#",
     "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2974/Documents/2974%20Build%20Sheet%201.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2974/Documents/2974%20Floorplan.pdf?hsLang=en",
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2995/Documents/2995%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "#",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2995/Documents/2995%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2009-prevost-featherlite-h345-double-slide-mid-bath-detroit-515hp-allison-2767",
+      "title": "2009 Prevost Featherlite H3 45"
+    }
+  },
+  {
+    "slug": "2027-prevost-loki-h3-45-triple-slide-bath-and-a-half-volvo-500hp-lc030-2671",
+    "stock": "2671",
+    "title": "2027 Prevost Loki H3 45",
+    "year": 2027,
+    "make": "prevost",
+    "model": "loki coach lc030",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 2476177,
+    "miles": "New",
+    "engine": "Volvo 500hp",
+    "floorplan": "H3 45",
+    "slides": "Triple Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2671/2671%20HERO%20IMAGE%201.jpg",
+    "virtual": true,
+    "created": 1793279340000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=or9FEVQsjHb",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2671/Documents/2671%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2671/Documents/2671%20Floorplan.pdf?hsLang=en",
       "checkInSheet": "#"
     },
     "prev": {
-      "slug": "2019-newmar-london-aire-4551-triple-slide-bath-anda-half-cummins-605hp-2947",
-      "title": "2019 Newmar London Aire 4551"
+      "slug": "2026-featherlite-stacker-trailer-4953-white-24ft-2995",
+      "title": "2026 Featherlite 24' Stacker Trailer 4953"
+    }
+  },
+  {
+    "slug": "2026-entegra-cornerstone-45d-quad-slide-bath-and-a-half-cummins-605hp-3022",
+    "stock": "3022",
+    "title": "2026 Entegra Cornerstone 45D",
+    "year": 2026,
+    "make": "entegra",
+    "model": "cornerstone",
+    "condition": "certified",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 533333,
+    "miles": 12437,
+    "engine": "Cummins 605hp",
+    "floorplan": "45D",
+    "slides": "Quad Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3022/3022%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1793185200000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=Ab8q3Gt7WGA",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3022/Documents/3022%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/3022/Documents/3022%20FLOORPLAN.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3022/Documents/3022%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2027-prevost-loki-h3-45-triple-slide-bath-and-a-half-volvo-500hp-lc030-2671",
+      "title": "2027 Prevost Loki H3 45"
+    }
+  },
+  {
+    "slug": "2026-ogv-luxury-coach-awd-v-cruise-8oba-blue-grey-3019",
+    "stock": "3019",
+    "title": "2026 OGV Luxury Coach V-Cruise 8OBA",
+    "year": 2026,
+    "make": "ogv",
+    "model": "v-cruise",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 149999,
+    "miles": 4228,
+    "engine": "Mercedes 208hp",
+    "floorplan": "8OBA",
+    "slides": "None",
+    "baths": "Rear Bath w/ Galley",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3019/3019%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1793013900000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=w4k5c4fWL1Y",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3019/Documents/3019%20Build%20Sheet_1.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/3019/Documents/3019%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3019/Documents/3019%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2026-entegra-cornerstone-45d-quad-slide-bath-and-a-half-cummins-605hp-3022",
+      "title": "2026 Entegra Cornerstone 45D"
+    }
+  },
+  {
+    "slug": "2018-prevost-millennium-h3-45-quad-slide-bath-and-a-half-volvo-500hp-2985",
+    "stock": "2985",
+    "title": "2018 Prevost Millennium H3 45",
+    "year": 2018,
+    "make": "prevost",
+    "model": "millennium",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 1333333,
+    "miles": 73661,
+    "engine": "Volvo 500hp",
+    "floorplan": "H3 45",
+    "slides": "Quad Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2985/2985%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1792679760000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=Hwfehhi9Tmo",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2985/Documents/2985%20Build%20sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2985/Documents/2985%20Floor%20Plan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2985/Documents/2985%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2025-newmar-mountain-aire-3825-triple-slide-bath-and-a-half-cummins-525hp-3041",
+      "title": "2025 Newmar Mountain Aire 3825"
+    }
+  },
+  {
+    "slug": "2026-foretravel-realm-presidential-lv2-quad-slide-bath-and-a-half-cummins-605hp-3031",
+    "stock": "3031",
+    "title": "2026 Foretravel Realm Presidential LV2",
+    "year": 2026,
+    "make": "foretravel",
+    "model": "realm presidential",
+    "condition": "certified",
+    "status": "sold",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 822222,
+    "miles": 12839,
+    "engine": "Cummins 605hp",
+    "floorplan": "LV2",
+    "slides": "Quad Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/MARKETING/Sold%20from%20Incoming%20Inventory/Incoming%20Inventory%20FORETRAVEL.png",
+    "virtual": false,
+    "created": 1792416840000,
+    "featured": false,
+    "video": "#",
+    "documents": {
+      "buildSheet": "#",
+      "floorPlan": "#",
+      "checkInSheet": "#"
+    },
+    "prev": {
+      "slug": "prevost-loki-quad-slide-lc014-sold",
+      "title": "2026 Prevost Loki H3 45 LC014"
+    }
+  },
+  {
+    "slug": "2023-newmar-london-aire-4551-triple-slide-bath-and-a-half-cummins-605hp-3018",
+    "stock": "3018",
+    "title": "2023 Newmar London Aire 4551",
+    "year": 2023,
+    "make": "newmar",
+    "model": "london aire",
+    "condition": "certified",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 499999,
+    "miles": 24328,
+    "engine": "Cummins 605hp",
+    "floorplan": "4551",
+    "slides": "Triple Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3018/3018%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1792058040000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=t7WQqjLu4bp",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3018/Documents/3018%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/3018/Documents/3018%20FLOORPLAN.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3018/Documents/3018%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2018-newmar-king-aire-4531-triple-slide-bath-and-a-half-cummins-605hp-3024",
+      "title": "2018 Newmar King Aire 4531"
+    }
+  },
+  {
+    "slug": "2021-cargo-mate-eliminator-stacker-trailer-2998",
+    "stock": "2998",
+    "title": "2021 Cargo Mate Eliminator 22' Stacker Trailer",
+    "year": 2021,
+    "make": "cargo mate",
+    "model": "eliminator",
+    "condition": "pre-owned",
+    "status": "sold",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 33333,
+    "miles": "\u2014",
+    "engine": "",
+    "floorplan": "22' Stacker Trailer",
+    "slides": "-",
+    "baths": "None",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2998/Images/2021%20Cargo%20Stacker%20Trailer%20-105.jpg",
+    "virtual": false,
+    "created": 1791970860000,
+    "featured": false,
+    "video": "#",
+    "documents": {
+      "buildSheet": "#",
+      "floorPlan": "#",
+      "checkInSheet": "#"
+    },
+    "prev": {
+      "slug": "2026-foretravel-realm-presidential-lv2-quad-slide-bath-and-a-half-cummins-605hp-3031",
+      "title": "2026 Foretravel Realm Presidential LV2"
+    }
+  },
+  {
+    "slug": "2022-tiffin-allegro-red-37ba-triple-slide-bath-and-a-half-cummins-360hp-3009",
+    "stock": "3009",
+    "title": "2022 Tiffin Allegro Red 37BA",
+    "year": 2022,
+    "make": "tiffin",
+    "model": "allegro red",
+    "condition": "pre-owned",
+    "status": "sold",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 211111,
+    "miles": 17298,
+    "engine": "Cummins 360hp",
+    "floorplan": "37BA",
+    "slides": "Triple Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3009/3009%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1791551280000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=hWw9Dz13Z8x",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3009/Documents/3009%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/3009/Documents/3009%20FLOORPLAN.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3009/Documents/3009%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2021-cargo-mate-eliminator-stacker-trailer-2998",
+      "title": "2021 Cargo Mate Eliminator 22' Stacker Trailer"
+    }
+  },
+  {
+    "slug": "2008-prevost-millennium-h3-45-double-slide-mid-bath-detroit-515hp-3004",
+    "stock": "3004",
+    "title": "2008 Prevost Millennium H3 45",
+    "year": 2008,
+    "make": "prevost",
+    "model": "millennium",
+    "condition": "pre-owned",
+    "status": "sold",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 399999,
+    "miles": 135404,
+    "engine": "Detroit 515hp",
+    "floorplan": "H3 45",
+    "slides": "Double Slide",
+    "baths": "Mid-Bath",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3004/3004%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1791302880000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=HZX7oYuDPmz",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3004/Documents/3004%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "#",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3004/Documents/3004%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2022-tiffin-allegro-red-37ba-triple-slide-bath-and-a-half-cummins-360hp-3009",
+      "title": "2022 Tiffin Allegro Red 37BA"
+    }
+  },
+  {
+    "slug": "2020-newmar-dutch-star-4369-triple-slide-bath-and-a-half-cummins-450hp-2997",
+    "stock": "2997",
+    "title": "2020 Newmar Dutch Star 4369",
+    "year": 2020,
+    "make": "newmar",
+    "model": "dutch star",
+    "condition": "pre-owned",
+    "status": "sold",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 299999,
+    "miles": 4525,
+    "engine": "Cummins 450hp",
+    "floorplan": "4369",
+    "slides": "Triple Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2997/2997%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1791289560000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=Hj6PXh5aoeq",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2997/Documents/2997%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2997/Documents/2997%20FLOORPLAN.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2997/Documents/2997%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2008-prevost-millennium-h3-45-double-slide-mid-bath-detroit-515hp-3004",
+      "title": "2008 Prevost Millennium H3 45"
+    }
+  },
+  {
+    "slug": "2020-newmar-mountain-aire-4551-triple-slide-bath-anda-half-cummins-500hp-2854",
+    "stock": "2854",
+    "title": "2020 Newmar Mountain Aire 4551",
+    "year": 2020,
+    "make": "newmar",
+    "model": "mountain aire",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 299999,
+    "miles": 24851,
+    "engine": "Cummins 500hp",
+    "floorplan": "4551",
+    "slides": "Triple Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2854/2854%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1790943060000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=F1CKvE3JEcp",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2854/Documents/2854%20Build%20sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2854/Documents/2854%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/2854%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2015-newell-2020p-quad-slide-bath-and-a-half-cummins-600hp-3021",
+      "title": "2015 Newell 2020P"
     }
   },
   {
@@ -119,9 +495,10 @@
     "model": "adventure",
     "condition": "new",
     "status": "available",
+    "channels": [
+      "new"
+    ],
     "price": 699999,
-    "msrp": 968568,
-    "monthly": null,
     "miles": "New",
     "engine": "Detroit 600hp",
     "floorplan": "A4501",
@@ -129,12 +506,9 @@
     "baths": "Bath and a Half",
     "bunks": "None",
     "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2674/2674%20HERO%20IMAGE.jpg",
-    "channels": [
-      "new"
-    ],
     "virtual": true,
-    "featured": true,
-    "brand": "adventure",
+    "created": 1790938320000,
+    "featured": false,
     "virtualTour": "https://my.matterport.com/show/?m=Ts6Y5r3oyLf",
     "video": "https://www.youtube.com/watch?v=0meo6zVDg30&t=363s",
     "documents": {
@@ -156,9 +530,10 @@
     "model": "adventure",
     "condition": "new",
     "status": "available",
+    "channels": [
+      "new"
+    ],
     "price": 699999,
-    "msrp": 975244,
-    "monthly": null,
     "miles": "New",
     "engine": "Detroit 600hp",
     "floorplan": "A4502",
@@ -166,12 +541,9 @@
     "baths": "Bath and a Half",
     "bunks": "None",
     "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2832/2832%20HERO%20IMAGE.jpg",
-    "channels": [
-      "new"
-    ],
     "virtual": true,
+    "created": 1790938200000,
     "featured": false,
-    "brand": "adventure",
     "virtualTour": "https://my.matterport.com/show/?m=WKRrcMC5EXp",
     "video": "#",
     "documents": {
@@ -193,9 +565,10 @@
     "model": "adventure",
     "condition": "new",
     "status": "available",
+    "channels": [
+      "new"
+    ],
     "price": 699999,
-    "msrp": 975244,
-    "monthly": null,
     "miles": "New",
     "engine": "Detroit 600hp",
     "floorplan": "A4502",
@@ -203,12 +576,9 @@
     "baths": "Bath and a Half",
     "bunks": "None",
     "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/2838%20HERO%20IMAGE.jpg",
-    "channels": [
-      "new"
-    ],
     "virtual": true,
+    "created": 1790938080000,
     "featured": false,
-    "brand": "adventure",
     "virtualTour": "https://my.matterport.com/show/?m=zAokxX26xm9",
     "video": "#",
     "documents": {
@@ -230,9 +600,10 @@
     "model": "adventure",
     "condition": "new",
     "status": "available",
+    "channels": [
+      "new"
+    ],
     "price": 699999,
-    "msrp": 975244,
-    "monthly": null,
     "miles": "New",
     "engine": "Detroit 600hp",
     "floorplan": "A4502",
@@ -240,12 +611,9 @@
     "baths": "Bath and a Half",
     "bunks": "None",
     "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2856/2856%20HERO%20IMAGE.jpg",
-    "channels": [
-      "new"
-    ],
     "virtual": true,
+    "created": 1790937960000,
     "featured": false,
-    "brand": "adventure",
     "virtualTour": "https://my.matterport.com/show/?m=3PSzU4U1y3M",
     "video": "#",
     "documents": {
@@ -259,747 +627,6 @@
     }
   },
   {
-    "slug": "2026-ogv-luxury-coach-v-tour-5rl4a-mercedes-208hp-awd-2801",
-    "stock": "2801",
-    "title": "2026 OGV Luxury Coach V-Tour 5RL4A",
-    "year": 2026,
-    "make": "ogv",
-    "model": "v-tour",
-    "condition": "new",
-    "status": "available",
-    "price": 167522,
-    "msrp": 231212,
-    "monthly": 1457,
-    "miles": "New",
-    "engine": "Mercedes 208hp",
-    "floorplan": "5RL4A",
-    "slides": "No Sildes",
-    "baths": "Wet Bath w/Galley",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2801/2801%20HERO%20IMAGE.jpg",
-    "channels": [
-      "new"
-    ],
-    "virtual": true,
-    "featured": false,
-    "brand": "ogv",
-    "virtualTour": "https://my.matterport.com/show/?m=dyL9xaRRZCP",
-    "video": "https://youtube.com/shorts/mAIzYJE1jIs",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2801/Documents/2801%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2801/Documents/2801%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2801/Documents/2801%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2022-tiffin-zephyr-45pz-quad-slide-cummins-605hp-2845",
-      "title": "2022 Tiffin Zephyr 45 PZ"
-    }
-  },
-  {
-    "slug": "2026-ogv-luxury-coach-vsport-9rb7-nobath-mercedes-208hp-white-stonegrey-2750",
-    "stock": "2750",
-    "title": "2026 OGV Luxury Coach V-Sport 9RB7",
-    "year": 2026,
-    "make": "ogv",
-    "model": "v-sport",
-    "condition": "new",
-    "status": "available",
-    "price": 156872,
-    "msrp": 209162,
-    "monthly": 1269,
-    "miles": "New",
-    "engine": "Mercedes 208hp",
-    "floorplan": "9RB7",
-    "slides": "No Slides",
-    "baths": "None",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2750/2750%20HERO%20IMAGE.jpg",
-    "channels": [
-      "new"
-    ],
-    "virtual": true,
-    "featured": false,
-    "brand": "ogv",
-    "virtualTour": "https://my.matterport.com/show/?m=RbduE5SpKBU",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2750/Documents/2750%20Build%20Sheet_1.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2750/Documents/2750%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2750/Documents/2750%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2026-featherlite-stacker-trailer-4414-white-24ft-2755",
-      "title": "2026 Featherlite 24' Stacker Trailer 4414"
-    }
-  },
-  {
-    "slug": "2026-ogv-luxury-coach-awd-v-cruise-8oba-blue-grey-3019",
-    "stock": "3019",
-    "title": "2026 OGV Luxury Coach V-Cruise 8OBA",
-    "year": 2026,
-    "make": "ogv",
-    "model": "v-cruise",
-    "condition": "new",
-    "status": "available",
-    "price": 149999,
-    "msrp": null,
-    "monthly": null,
-    "miles": 4228,
-    "engine": "Mercedes 208hp",
-    "floorplan": "8OBA",
-    "slides": "None",
-    "baths": "Rear Bath w/ Galley",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3019/3019%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned",
-      "new"
-    ],
-    "brand": "ogv",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=w4k5c4fWL1Y",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3019/Documents/3019%20Build%20Sheet_1.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/3019/Documents/3019%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3019/Documents/3019%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2026-entegra-cornerstone-45d-quad-slide-bath-and-a-half-cummins-605hp-3022",
-      "title": "2026 Entegra Cornerstone 45D"
-    }
-  },
-  {
-    "slug": "2026-featherlite-stacker-trailer-4414-white-26ft-2880",
-    "stock": "2880",
-    "title": "2026 Featherlite 26' Stacker Trailer 4414",
-    "year": 2026,
-    "make": "featherlite",
-    "model": "stacker",
-    "condition": "new",
-    "status": "available",
-    "price": 112491,
-    "msrp": 124990,
-    "monthly": null,
-    "miles": "\u2014",
-    "engine": "-",
-    "floorplan": "26' L x 11' H x 8'6\" W",
-    "slides": "-",
-    "baths": "None",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/26%20WHITE%20Featherlite%20Trailer.jpg",
-    "channels": [
-      "new"
-    ],
-    "virtual": false,
-    "featured": false,
-    "brand": "featherlite",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2880/Documents/2880%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "#",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2880/Documents/2880%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2014-prevost-liberty-h345-double-slides-mid-bath-rear-shower-volvo-500hp-2955",
-      "title": "2014 Prevost Liberty H3 45"
-    }
-  },
-  {
-    "slug": "2026-featherlite-stacker-trailer-4414-black-5335-2924",
-    "stock": "2924",
-    "title": "2026 Featherlite 26' Stacker Trailer 4414",
-    "year": 2026,
-    "make": "featherlite",
-    "model": "stacker",
-    "condition": "new",
-    "status": "available",
-    "price": 111276,
-    "msrp": 123640,
-    "monthly": null,
-    "miles": "\u2014",
-    "engine": "-",
-    "floorplan": "26' L x 11' H x 8'6\" W",
-    "slides": "",
-    "baths": "None",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/26%20BLACK%20Featherlite%20Trailer.jpg",
-    "channels": [
-      "new"
-    ],
-    "virtual": false,
-    "featured": false,
-    "brand": "featherlite",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2924/2924%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "#",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2924/2924%20Check-in%20Sheet%20-%20NEW%20Trailer.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2026-featherlite-stacker-trailer-4414-white-5333-2925",
-      "title": "2026 Featherlite 24' Stacker Trailer 4414"
-    }
-  },
-  {
-    "slug": "2026-featherlite-stacker-trailer-4414-white-5333-2925",
-    "stock": "2925",
-    "title": "2026 Featherlite 24' Stacker Trailer 4414",
-    "year": 2026,
-    "make": "featherlite",
-    "model": "stacker",
-    "condition": "new",
-    "status": "available",
-    "price": 102664,
-    "msrp": 114071,
-    "monthly": null,
-    "miles": "\u2014",
-    "engine": "-",
-    "floorplan": "24' L x 11' H x 8'6\" W",
-    "slides": "",
-    "baths": "None",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/24%20WHITE%20Featherlite%20Trailer.jpg",
-    "channels": [
-      "new"
-    ],
-    "virtual": false,
-    "featured": false,
-    "brand": "featherlite",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2925/2925%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "#",
-      "checkInSheet": "#"
-    },
-    "prev": {
-      "slug": "2016-prevost-millennium-h3-45-quad-slide-bath-anda-half-volvo-500hp-2897",
-      "title": "2016 Prevost Millennium H3 45"
-    }
-  },
-  {
-    "slug": "2026-featherlite-stacker-trailer-4414-black-24ft-2879",
-    "stock": "2879",
-    "title": "2026 Featherlite 24' Stacker Trailer 4414",
-    "year": 2026,
-    "make": "featherlite",
-    "model": "stacker",
-    "condition": "new",
-    "status": "available",
-    "price": 100800,
-    "msrp": 116668,
-    "monthly": null,
-    "miles": "\u2014",
-    "engine": "-",
-    "floorplan": "24' L x 11' H x 8'6\" W",
-    "slides": "-",
-    "baths": "None",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/24%20BLACK%20Featherlite%20Trailer.jpg",
-    "channels": [
-      "new"
-    ],
-    "virtual": false,
-    "featured": false,
-    "brand": "featherlite",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2879/Documents/2879%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "#",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2879/Documents/2879%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2019-entegra-anthem-44f-quad-slide-bath-and-a-half-cummins-450hp-2991",
-      "title": "2019 Entegra Anthem 44F"
-    }
-  },
-  {
-    "slug": "2024-newell-p50quad-slide-bath-and-a-half-3",
-    "stock": "2659",
-    "title": "2024 Newell P50",
-    "year": 2024,
-    "make": "newell",
-    "model": "p50",
-    "condition": "certified",
-    "status": "available",
-    "price": 1777777,
-    "msrp": null,
-    "monthly": null,
-    "miles": 18864,
-    "engine": "Cummins 605hp",
-    "floorplan": "Front Entry",
-    "slides": "Quad Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2659/2659%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "newell",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=o1aRTebpJQh",
-    "video": "https://youtu.be/i5o1fW_VRF0?si=V8yEYHxALLOhlxDE",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2659/Document/2659-Build-Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2659/Document/2659-FloorPlan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2659/Document/2659%20Check-In%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2019-newell-p50-quad-slide-cummins-605hp-2654",
-      "title": "2019 Newell P50"
-    },
-    "next": {
-      "slug": "2019-newell-p50-quad-slide-cummins-605hp-2654",
-      "title": "2019 Newell P50"
-    }
-  },
-  {
-    "slug": "2024-foretravel-realm-presidential-lv2-quad-slide-bath-and-a-half-cummins-605hp-2871",
-    "stock": "2871",
-    "title": "2024 Foretravel Realm Presidential LV2",
-    "year": 2024,
-    "make": "foretravel",
-    "model": "realm presidential",
-    "condition": "certified",
-    "status": "available",
-    "price": 755555,
-    "msrp": null,
-    "monthly": null,
-    "miles": 1787,
-    "engine": "Cummins 605hp",
-    "floorplan": "LV2",
-    "slides": "Quad Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2871/2871%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "foretravel",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=2TJ1piLMrPc",
-    "video": "https://www.youtube.com/shorts/FCGeaSmLVag",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2871/Documents/2871%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2871/Documents/2871%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2871/Documents/2871%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2026-featherlite-stacker-trailer-4414-white-5335-2864",
-      "title": "2026 Featherlite 26' Stacker Trailer 4414"
-    }
-  },
-  {
-    "slug": "2024-newmar-dutch-star-4369-triple-slide-bath-and-a-half-cummins-450hp-2986",
-    "stock": "2986",
-    "title": "2024 Newmar Dutch Star 4369",
-    "year": 2024,
-    "make": "newmar",
-    "model": "dutch star",
-    "condition": "certified",
-    "status": "available",
-    "price": 455555,
-    "msrp": null,
-    "monthly": null,
-    "miles": 17506,
-    "engine": "Cummins 450hp",
-    "floorplan": "4369",
-    "slides": "Triple Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/2986/2986%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "newmar",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=buJf6UJgXKM",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/2986/Documents/2986%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/2986/Documents/2986%20FLOORPLAN.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/2986/Documents/2986%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2018-newmar-essex-4531-triple-slide-bath-and-a-half-cummins-605hp-2990",
-      "title": "2018 Newmar Essex 4531"
-    }
-  },
-  {
-    "slug": "2023-foretravel-realm-presidential-series-lvms-quad-slide-bath-anda-half-cummins-605hp-3003",
-    "stock": "3003",
-    "title": "2023 Foretravel Realm Presidential LVMS",
-    "year": 2023,
-    "make": "foretravel",
-    "model": "realm presidential",
-    "condition": "certified",
-    "status": "available",
-    "price": 699999,
-    "msrp": null,
-    "monthly": null,
-    "miles": 18239,
-    "engine": "Cummins 605hp",
-    "floorplan": "LVMS",
-    "slides": "Quad Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2846/2846%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "foretravel",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=VLyd1XJeodb",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2846/Documents/2846%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2846/Documents/2846%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "#"
-    },
-    "prev": {
-      "slug": "2015-tiffin-allegro-bus-45lp-quad-slide-bath-anda-half-cummins-450hp-2953",
-      "title": "2015 Tiffin Allegro Bus 45 LP"
-    }
-  },
-  {
-    "slug": "2023-newmar-london-aire-4551-triple-slide-bath-and-a-half-cummins-605hp-3018",
-    "stock": "3018",
-    "title": "2023 Newmar London Aire 4551",
-    "year": 2023,
-    "make": "newmar",
-    "model": "london aire",
-    "condition": "certified",
-    "status": "available",
-    "price": 499999,
-    "msrp": null,
-    "monthly": null,
-    "miles": 24328,
-    "engine": "Cummins 605hp",
-    "floorplan": "4551",
-    "slides": "Triple Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3018/3018%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "newmar",
-    "virtual": true,
-    "featured": true,
-    "virtualTour": "https://my.matterport.com/show/?m=t7WQqjLu4bp",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3018/Documents/3018%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/3018/Documents/3018%20FLOORPLAN.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3018/Documents/3018%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2018-newmar-king-aire-4531-triple-slide-bath-and-a-half-cummins-605hp-3024",
-      "title": "2018 Newmar King Aire 4531"
-    }
-  },
-  {
-    "slug": "2022-tiffin-zephyr-45pz-quad-slide-cummins-605hp-2845",
-    "stock": "2845",
-    "title": "2022 Tiffin Zephyr 45 PZ",
-    "year": 2022,
-    "make": "tiffin",
-    "model": "zephyr",
-    "condition": "certified",
-    "status": "available",
-    "price": 399999,
-    "msrp": null,
-    "monthly": null,
-    "miles": 17522,
-    "engine": "Cummins 605hp",
-    "floorplan": "45 PZ",
-    "slides": "Quad Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2845/2845%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "tiffin",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=2cv9utp8ZbT",
-    "video": "https://www.youtube.com/shorts/vQPj1arx5Bk",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2845/Documents/2845%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2845/Documents/2845%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2845/Documents/2845%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2019-foretravel-ih-45-quad-slide-bath-anda-half-cummins-605hp-2847",
-      "title": "2019 Foretravel iH 45"
-    }
-  },
-  {
-    "slug": "2022-tiffin-allegro-bus-45fp-triple-slide-bath-anda-half-cummins-450hp-2951",
-    "stock": "2951",
-    "title": "2022 Tiffin Allegro Bus 45FP",
-    "year": 2022,
-    "make": "tiffin",
-    "model": "allegro bus",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 344444,
-    "msrp": null,
-    "monthly": null,
-    "miles": 12724,
-    "engine": "Cummins 450hp",
-    "floorplan": "45 FP",
-    "slides": "Triple Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2951/2951%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "tiffin",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=WDbKDa84KQe",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2951/Documents/2951%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2951/Documents/2951%20FLOORPLAN.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2951/Documents/2951%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2015-prevost-liberty-h345-triple-slide-bath-anda-half-volvo-500hp-2959",
-      "title": "2015 Prevost Liberty H3 45"
-    }
-  },
-  {
-    "slug": "2021-newell-p50-quad-slide-2-full-baths-bunk-beds-cummins-605hp-2946",
-    "stock": "2946",
-    "title": "2021 Newell P50",
-    "year": 2021,
-    "make": "newell",
-    "model": "p50",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 1555555,
-    "msrp": null,
-    "monthly": null,
-    "miles": 35562,
-    "engine": "Cummins 605hp",
-    "floorplan": "Front Entry",
-    "slides": "Quad Slide",
-    "baths": "Two Full Bath",
-    "bunks": "Bunk Beds",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2946/2946%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "newell",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=s3MTYpGcuut",
-    "video": "https://www.youtube.com/shorts/jop_F9tW5q4",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2946/Documents/2946%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2946/Documents/2946%20Floor%20Plan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2946/Documents/2946%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2027-prevost-loki-h345-quad-slide-bath-anda-half-volvo-500hp-lc029-2968",
-      "title": "2027 Prevost Loki H3 45"
-    }
-  },
-  {
-    "slug": "2021-newmar-dutch-star-4369-triple-slide-bath-and-a-half-cummins-450hp-2969",
-    "stock": "2969",
-    "title": "2021 Newmar Dutch Star 4369",
-    "year": 2021,
-    "make": "newmar",
-    "model": "dutch star",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 322222,
-    "msrp": null,
-    "monthly": null,
-    "miles": 17657,
-    "engine": "Cummins 450hp",
-    "floorplan": "4369",
-    "slides": "Triple Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2969/2969%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "newmar",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=zJUNZZjFoqr",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2969/Documents/2969%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2969/Documents/2969%20FLOORPLAN.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2969/Documents/2969%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2023-foretravel-realm-presidential-series-lvms-quad-slide-bath-anda-half-cummins-605hp-3003",
-      "title": "2023 Foretravel Realm Presidential LVMS"
-    }
-  },
-  {
-    "slug": "2020-newell-p50-quad-slide-bath-anda-half-cummins-605hp-2996",
-    "stock": "2996",
-    "title": "2020 Newell P50",
-    "year": 2020,
-    "make": "newell",
-    "model": "p50",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 1444444,
-    "msrp": null,
-    "monthly": null,
-    "miles": 34881,
-    "engine": "Cummins 605hp",
-    "floorplan": "Front Entry",
-    "slides": "Quad Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2906/2906%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "newell",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=sj7VpVmTmEo",
-    "video": "https://www.youtube.com/shorts/dcRm8dGKEKY",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2906/Documents/2906%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2906/Documents/2906%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2906/Documents/2996%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2019-prevost-marathon-x3-45-double-slide-mid-bath-colco-500hp-2920",
-      "title": "2019 Prevost Marathon X3 45"
-    }
-  },
-  {
-    "slug": "2020-prevost-millennium-xlii-single-slide-mid-bath-volvo-500hp-2896",
-    "stock": "2896",
-    "title": "2020 Prevost Millennium X3 45",
-    "year": 2020,
-    "make": "prevost",
-    "model": "millennium",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 888888,
-    "msrp": null,
-    "monthly": null,
-    "miles": 27518,
-    "engine": "Volvo 500hp",
-    "floorplan": "X3 45",
-    "slides": "Single Slide",
-    "baths": "Mid-Bath",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2896/2896%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "prevost",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=oJb6J8VFLAn",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2896/Documents/2896%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2896/Documents/2896%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2896/Documents/2896%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2014-prevost-millennium-h3-45-triple-slide-mid-bath-volvo-500hp-2898",
-      "title": "2014 Prevost Millennium H3 45"
-    }
-  },
-  {
-    "slug": "2020-newmar-mountain-aire-4551-triple-slide-bath-anda-half-cummins-500hp-2854",
-    "stock": "2854",
-    "title": "2020 Newmar Mountain Aire 4551",
-    "year": 2020,
-    "make": "newmar",
-    "model": "mountain aire",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 299999,
-    "msrp": null,
-    "monthly": null,
-    "miles": 24851,
-    "engine": "Cummins 500hp",
-    "floorplan": "4551",
-    "slides": "Triple Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2854/2854%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "newmar",
-    "virtual": true,
-    "featured": true,
-    "virtualTour": "https://my.matterport.com/show/?m=F1CKvE3JEcp",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2854/Documents/2854%20Build%20sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2854/Documents/2854%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/2854%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2015-newell-2020p-quad-slide-bath-and-a-half-cummins-600hp-3021",
-      "title": "2015 Newell 2020P"
-    }
-  },
-  {
-    "slug": "2019-prevost-marathon-x3-45-double-slide-mid-bath-colco-500hp-2920",
-    "stock": "2920",
-    "title": "2019 Prevost Marathon X3 45",
-    "year": 2019,
-    "make": "prevost",
-    "model": "marathon",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 1333333,
-    "msrp": null,
-    "monthly": null,
-    "miles": 40762,
-    "engine": "Volvo 500hp",
-    "floorplan": "X3 45",
-    "slides": "Double Slide",
-    "baths": "Mid-Bath",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2920/2920%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "prevost",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=2sQFe5BYk5x",
-    "video": "https://www.youtube.com/watch?v=rxO2tPyE3jg",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2920/Documents/2920%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2920/Documents/2920%20Floor%20Plan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2920/Documents/2920%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2026-featherlite-stacker-trailer-4414-black-5335-2924",
-      "title": "2026 Featherlite 26' Stacker Trailer 4414"
-    }
-  },
-  {
     "slug": "2019-newell-p50-quad-slide-cummins-605hp-2654",
     "stock": "2654",
     "title": "2019 Newell P50",
@@ -1008,9 +635,10 @@
     "model": "p50",
     "condition": "pre-owned",
     "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
     "price": 888888,
-    "msrp": null,
-    "monthly": null,
     "miles": 74699,
     "engine": "Cummins 605hp",
     "floorplan": "Front Entry",
@@ -1018,11 +646,8 @@
     "baths": "Bath and a Half",
     "bunks": "None",
     "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2654/Images/2654%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "newell",
     "virtual": true,
+    "created": 1790936880000,
     "featured": false,
     "virtualTour": "https://my.matterport.com/show/?m=Z1M5UiAVEbP",
     "video": "https://www.youtube.com/shorts/iKLU2w1LMPU",
@@ -1037,1114 +662,6 @@
     }
   },
   {
-    "slug": "2019-foretravel-ih-45-quad-slide-bath-anda-half-cummins-605hp-2847",
-    "stock": "2847",
-    "title": "2019 Foretravel iH 45",
-    "year": 2019,
-    "make": "foretravel",
-    "model": "ih 45",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 399999,
-    "msrp": null,
-    "monthly": null,
-    "miles": 32861,
-    "engine": "Cummins 605hp",
-    "floorplan": "\u2014",
-    "slides": "Quad Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2847/2847%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "foretravel",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=kEZ6t2L71Us",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2847/Documents/2847%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2847/Documents/2847%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2847/Documents/2847%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2024-foretravel-realm-presidential-lv2-quad-slide-bath-and-a-half-cummins-605hp-2871",
-      "title": "2024 Foretravel Realm Presidential LV2"
-    }
-  },
-  {
-    "slug": "2019-newmar-london-aire-4551-triple-slide-bath-anda-half-cummins-605hp-2947",
-    "stock": "2947",
-    "title": "2019 Newmar London Aire 4551",
-    "year": 2019,
-    "make": "newmar",
-    "model": "london aire",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 333333,
-    "msrp": null,
-    "monthly": null,
-    "miles": 33483,
-    "engine": "Cummins 605hp",
-    "floorplan": "4551",
-    "slides": "Triple Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2947/2947%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "newmar",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=RBHUa5uba1q",
-    "video": "https://www.youtube.com/shorts/Geek7Se6Gfo",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2947/Documents/2947%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2947/Documents/2947%20FLOORPLAN.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2947/Documents/2947%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2021-newmar-dutch-star-4369-triple-slide-bath-and-a-half-cummins-450hp-2969",
-      "title": "2021 Newmar Dutch Star 4369"
-    }
-  },
-  {
-    "slug": "2018-prevost-millennium-h3-45-quad-slide-bath-and-a-half-volvo-500hp-2985",
-    "stock": "2985",
-    "title": "2018 Prevost Millennium H3 45",
-    "year": 2018,
-    "make": "prevost",
-    "model": "millennium",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 1333333,
-    "msrp": null,
-    "monthly": null,
-    "miles": 73661,
-    "engine": "Volvo 500hp",
-    "floorplan": "H3 45",
-    "slides": "Quad Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2985/2985%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "prevost",
-    "virtual": true,
-    "featured": true,
-    "virtualTour": "https://my.matterport.com/show/?m=Hwfehhi9Tmo",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2985/Documents/2985%20Build%20sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2985/Documents/2985%20Floor%20Plan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2985/Documents/2985%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2025-newmar-mountain-aire-3825-triple-slide-bath-and-a-half-cummins-525hp-3041",
-      "title": "2025 Newmar Mountain Aire 3825"
-    }
-  },
-  {
-    "slug": "2018-newmar-essex-4531-triple-slide-bath-and-a-half-cummins-605hp-2990",
-    "stock": "2990",
-    "title": "2018 Newmar Essex 4531",
-    "year": 2018,
-    "make": "newmar",
-    "model": "essex",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 344444,
-    "msrp": null,
-    "monthly": null,
-    "miles": 47892,
-    "engine": "Cummins 605hp",
-    "floorplan": "4531",
-    "slides": "Triple Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2990/2990%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "newmar",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=vsnQbgR2Yt6",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2990/Documents/2990%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2990/Documents/2990%20FLOORPLAN.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2990/Documents/2990%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2024-newell-p50quad-slide-bath-and-a-half-3",
-      "title": "2024 Newell P50"
-    }
-  },
-  {
-    "slug": "2017-prevost-marathon-h3-45-double-slide-bath-anda-half-volvo-500hp-2938",
-    "stock": "2938",
-    "title": "2017 Prevost Marathon H3 45",
-    "year": 2017,
-    "make": "prevost",
-    "model": "marathon",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 999999,
-    "msrp": null,
-    "monthly": null,
-    "miles": 124225,
-    "engine": "Volvo 500hp",
-    "floorplan": "H3 45",
-    "slides": "Double Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2938/2938%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "prevost",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=5xin4r8144Y",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2938/Documents/2938%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2938/Documents/2938%20Floor%20Plan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2938/Documents/2938%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2016-prevost-millennium-h3-45-quad-slide-bath-anda-half-volvo-500hp-2893",
-      "title": "2016 Prevost Millennium H3 45"
-    }
-  },
-  {
-    "slug": "2016-prevost-millennium-h3-45-quad-slide-bath-anda-half-volvo-500hp-2893",
-    "stock": "2893",
-    "title": "2016 Prevost Millennium H3 45",
-    "year": 2016,
-    "make": "prevost",
-    "model": "millennium",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 1111111,
-    "msrp": null,
-    "monthly": null,
-    "miles": 102607,
-    "engine": "Volvo 500hp",
-    "floorplan": "H3 45",
-    "slides": "Quad Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2893/2893%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "prevost",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=Pz5QSgPXMvY",
-    "video": "https://www.youtube.com/shorts/Un7YzRW6iXo",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2893/Documents/2893%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2893/Documents/2893%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2893/Documents/2893%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2021-newell-p50-quad-slide-2-full-baths-bunk-beds-cummins-605hp-2946",
-      "title": "2021 Newell P50"
-    }
-  },
-  {
-    "slug": "2016-prevost-millennium-h3-45-quad-slide-bath-anda-half-volvo-500hp-2897",
-    "stock": "2897",
-    "title": "2016 Prevost Millennium H3 45",
-    "year": 2016,
-    "make": "prevost",
-    "model": "millennium",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 1111111,
-    "msrp": null,
-    "monthly": null,
-    "miles": 109424,
-    "engine": "Volvo 500hp",
-    "floorplan": "H3 45",
-    "slides": "Quad Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2897/2897%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "prevost",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=zhK9Dx2pzsP",
-    "video": "https://www.youtube.com/shorts/wm2M_7tCcoo",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2897/Documents/2897%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2897/Documents/2897%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2897/Documents/2897%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2017-prevost-marathon-h3-45-double-slide-bath-anda-half-volvo-500hp-2938",
-      "title": "2017 Prevost Marathon H3 45"
-    }
-  },
-  {
-    "slug": "2015-prevost-liberty-h345-triple-slide-bath-anda-half-volvo-500hp-2959",
-    "stock": "2959",
-    "title": "2015 Prevost Liberty H3 45",
-    "year": 2015,
-    "make": "prevost",
-    "model": "liberty",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 1111111,
-    "msrp": null,
-    "monthly": null,
-    "miles": 103448,
-    "engine": "Volvo 500hp",
-    "floorplan": "H3 45",
-    "slides": "Triple Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2959/2959%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "prevost",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=qmowdWjjTk4",
-    "video": "https://www.youtube.com/shorts/P6x3VwAp9aY",
-    "documents": {
-      "buildSheet": "#",
-      "floorPlan": "#",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2959/Documents/2959%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2027-ogv-luxury-coach-v-cruise-10obw-rear-bath-mercedes-208hp-black-creme-2974",
-      "title": "2027 OGV Luxury Coach V-Cruise 10OBW"
-    }
-  },
-  {
-    "slug": "2015-prevost-millennium-h3-45-triple-slide-mid-bath-volvo-500hp-2907",
-    "stock": "2907",
-    "title": "2015 Prevost Millennium H3 45",
-    "year": 2015,
-    "make": "prevost",
-    "model": "millennium",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 999999,
-    "msrp": null,
-    "monthly": null,
-    "miles": 115011,
-    "engine": "Volvo 500hp",
-    "floorplan": "H3 45",
-    "slides": "Triple Slide",
-    "baths": "Mid-Bath",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2907/2907%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "prevost",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=KnhdNu9Nmbr",
-    "video": "https://www.youtube.com/shorts/wnMettwuODQ",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2907/Documents/2907%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2907/Documents/2907%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2907/Documents/2907%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2013-prevost-millennium-h3-45-triple-slide-bath-anda-half-volvo-500hp-2899",
-      "title": "2013 Prevost Millennium H3 45"
-    }
-  },
-  {
-    "slug": "2015-tiffin-allegro-bus-45lp-quad-slide-bath-anda-half-cummins-450hp-2953",
-    "stock": "2953",
-    "title": "2015 Tiffin Allegro Bus 45 LP",
-    "year": 2015,
-    "make": "tiffin",
-    "model": "allegro bus",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 144444,
-    "msrp": null,
-    "monthly": null,
-    "miles": 95552,
-    "engine": "Cummins 450hp",
-    "floorplan": "45 LP",
-    "slides": "Quad Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2953/2953%20HERO%20IMAGE%202.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "tiffin",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=DzR1wXH2S6z",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2953/Documents/2953%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2953/Documents/2953%20FLOORPLAN.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2953/Documents/2953%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2026-featherlite-stacker-trailer-4414-white-26ft-2880",
-      "title": "2026 Featherlite 26' Stacker Trailer 4414"
-    }
-  },
-  {
-    "slug": "2014-prevost-liberty-h345-double-slides-mid-bath-rear-shower-volvo-500hp-2955",
-    "stock": "2955",
-    "title": "2014 Prevost Liberty H3 45",
-    "year": 2014,
-    "make": "prevost",
-    "model": "liberty",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 999999,
-    "msrp": null,
-    "monthly": null,
-    "miles": 111480,
-    "engine": "Volvo 500hp",
-    "floorplan": "H3 45",
-    "slides": "Double Slide",
-    "baths": "Mid-Bath",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2955/2955%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "prevost",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=AqVXFK4bkKn",
-    "video": "#",
-    "documents": {
-      "buildSheet": "#",
-      "floorPlan": "#",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2955/Documents/2955%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2024-newmar-dutch-star-4369-triple-slide-bath-and-a-half-cummins-450hp-2986",
-      "title": "2024 Newmar Dutch Star 4369"
-    }
-  },
-  {
-    "slug": "2014-prevost-millennium-h3-45-quad-slide-mid-bath-volvo-500hp-2883",
-    "stock": "2883",
-    "title": "2014 Prevost Millennium H3 45",
-    "year": 2014,
-    "make": "prevost",
-    "model": "millennium",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 999999,
-    "msrp": null,
-    "monthly": null,
-    "miles": 109415,
-    "engine": "Volvo 500hp",
-    "floorplan": "H3 45",
-    "slides": "Quad Slide",
-    "baths": "Mid-Bath",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2883/2883%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "prevost",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=B8mC1Vw2J2Z",
-    "video": "https://www.youtube.com/shorts/DcKGGbUt_ns",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2883/Documents/2883%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2883/Documents/2883%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2883/Documents/2883%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2020-prevost-millennium-xlii-single-slide-mid-bath-volvo-500hp-2896",
-      "title": "2020 Prevost Millennium X3 45"
-    }
-  },
-  {
-    "slug": "2014-prevost-millennium-h3-45-triple-slide-mid-bath-volvo-500hp-2898",
-    "stock": "2898",
-    "title": "2014 Prevost Millennium H3 45",
-    "year": 2014,
-    "make": "prevost",
-    "model": "millennium",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 955555,
-    "msrp": null,
-    "monthly": null,
-    "miles": 60740,
-    "engine": "Volvo 500hp",
-    "floorplan": "H3 45",
-    "slides": "Triple Slide",
-    "baths": "Mid-Bath",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2898/2898%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "prevost",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=NEGCZ6cLhPy",
-    "video": "https://www.youtube.com/shorts/9fRXcCehDcg",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2898/Documents/2898%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2898/Documents/2898%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2898/Documents/2898%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2015-prevost-millennium-h3-45-triple-slide-mid-bath-volvo-500hp-2907",
-      "title": "2015 Prevost Millennium H3 45"
-    }
-  },
-  {
-    "slug": "2013-prevost-millennium-h3-45-triple-slide-bath-anda-half-volvo-500hp-2899",
-    "stock": "2899",
-    "title": "2013 Prevost Millennium H3 45",
-    "year": 2013,
-    "make": "prevost",
-    "model": "millennium",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 888888,
-    "msrp": null,
-    "monthly": null,
-    "miles": 105017,
-    "engine": "Volvo 500hp",
-    "floorplan": "H3 45",
-    "slides": "Triple Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2899/2899%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "prevost",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=zwkBVnzzvvH",
-    "video": "https://www.youtube.com/shorts/CWcZyuTMJfU",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2899/Documents/2899%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2899/Documents/2899%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2899/Documents/2899%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2020-newell-p50-quad-slide-bath-anda-half-cummins-605hp-2996",
-      "title": "2020 Newell P50"
-    }
-  },
-  {
-    "slug": "2010-prevost-liberty-h3-45-double-slide-mid-bath-detroit-515hp-2811",
-    "stock": "2811",
-    "title": "2010 Prevost Liberty H3 45",
-    "year": 2010,
-    "make": "prevost",
-    "model": "liberty",
-    "condition": "pre-owned",
-    "status": "available",
-    "price": 599999,
-    "msrp": null,
-    "monthly": null,
-    "miles": 112152,
-    "engine": "Detroit 515hp",
-    "floorplan": "H3 45",
-    "slides": "Double Slide",
-    "baths": "Mid-Bath",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2811/2811%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "prevost",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=h1zuwvdGwDQ",
-    "video": "#",
-    "documents": {
-      "buildSheet": "#",
-      "floorPlan": "#",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2811/Documents/2811%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2026-ogv-luxury-coach-v-tour-5rl4a-mercedes-208hp-awd-2801",
-      "title": "2026 OGV Luxury Coach V-Tour 5RL4A"
-    }
-  },
-  {
-    "slug": "2027-ogv-luxury-coach-v-cruise-10ob-rear-bath-with-galley-mercedes-208hp-stone-gray-black-2975",
-    "stock": "2975",
-    "title": "2027 OGV Luxury Coach V-Cruise 10OB",
-    "year": 2027,
-    "make": "ogv",
-    "model": "v-cruise",
-    "condition": "new",
-    "status": "sold",
-    "price": 188108,
-    "msrp": 250908,
-    "monthly": 1522,
-    "miles": "New",
-    "engine": "Mercedes 208hp",
-    "floorplan": "10OB",
-    "slides": "No Slides",
-    "baths": "Rear Bath w/ Galley",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2975/2975%20HERO%20IMAGE.jpg",
-    "channels": [
-      "new"
-    ],
-    "brand": "ogv",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=eetrHoi6MPG",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2975/Documents/2975%20Build%20Sheet%201.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2975/Documents/2975%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "#"
-    },
-    "prev": {
-      "slug": "2026-featherlite-stacker-trailer-4414-black-24ft-2879",
-      "title": "2026 Featherlite 24' Stacker Trailer 4414"
-    }
-  },
-  {
-    "slug": "2026-ogv-luxury-coach-v-rv-7rla-awd-mercedes-208hp-2802",
-    "stock": "2802",
-    "title": "2026 OGV Luxury Coach V-RV 7RLA",
-    "year": 2026,
-    "make": "ogv",
-    "model": "v-rv",
-    "condition": "new",
-    "status": "sold",
-    "price": 212103,
-    "msrp": 282805,
-    "monthly": 1716,
-    "miles": "New",
-    "engine": "Mercedes 208hp",
-    "floorplan": "7RLA",
-    "slides": "No Slides",
-    "baths": "Wet Bath w/Galley",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2802/2802%20HERO%20IMAGE.jpg",
-    "channels": [
-      "new"
-    ],
-    "brand": "ogv",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=1YvjPaSYtDS",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2802/Documents/2802%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2802/Documents/2802%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "#"
-    },
-    "prev": {
-      "slug": "2025-newmar-london-aire-4551-triple-slide-bathandahalf-cummins-605hp-2809",
-      "title": "2025 Newmar London Aire 4551"
-    }
-  },
-  {
-    "slug": "2026-ogv-luxury-coach-vcruise-10obwa-rear-bath-mercedes-208hp-stonegrey-black-2749",
-    "stock": "2749",
-    "title": "2026 OGV Luxury Coach",
-    "year": 2026,
-    "make": "ogv",
-    "model": "v-cruise awd",
-    "condition": "new",
-    "status": "sold",
-    "price": 198318,
-    "msrp": 264424,
-    "monthly": 1604,
-    "miles": "New",
-    "engine": "Mercedes 208hp",
-    "floorplan": "10OBWA",
-    "slides": "No Slides",
-    "baths": "Rear Bath",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2749/2749%20HERO%20IMAGE.jpg",
-    "channels": [
-      "new"
-    ],
-    "brand": "ogv",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=inBMw47fbNM",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2749/Documents/2749%20Build%20Sheet_1.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2749/Documents/2749%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "#"
-    },
-    "prev": {
-      "slug": "2026-featherlite-stacker-trailer-4414-white-5389-2725",
-      "title": "2026 Featherlite 24' Stacker Trailer 4414"
-    }
-  },
-  {
-    "slug": "2026-v-tour-7rla-awd-wet-bath-with-galley-mercedes-208hp-2779",
-    "stock": "2779",
-    "title": "2026 V-Tour 7RLA",
-    "year": 2026,
-    "make": "ogv",
-    "model": "v-tour",
-    "condition": "new",
-    "status": "sold",
-    "price": 190352,
-    "msrp": 253804,
-    "monthly": 1540,
-    "miles": "New",
-    "engine": "Mercedes 208hp",
-    "floorplan": "7RLA",
-    "slides": "No Slides",
-    "baths": "Wet Bath w/Galley",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2779/2779%20HERO%20IMAGE.jpg",
-    "channels": [
-      "new"
-    ],
-    "brand": "ogv",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=nGBm9HnPS84",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2779/Documents/2779%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2779/Documents/2779%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "#"
-    },
-    "prev": {
-      "slug": "2026-ogv-luxury-coach-v-rv-5rl-wet-bath-with-galley-mercedes-208hp-2793",
-      "title": "2026 OGV Luxury Coach V-RV 5RL"
-    }
-  },
-  {
-    "slug": "2026-ogv-luxury-coach-7rl-wet-bath-with-galley-mercedes-208hp-2752",
-    "stock": "2752",
-    "title": "2026 OGV Luxury Coach",
-    "year": 2026,
-    "make": "ogv",
-    "model": "v-tour",
-    "condition": "new",
-    "status": "sold",
-    "price": 174444,
-    "msrp": 232592,
-    "monthly": 1411,
-    "miles": "New",
-    "engine": "Mercedes 208hp",
-    "floorplan": "7RL",
-    "slides": "No Slides",
-    "baths": "Wet Bath w/Galley",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2752/2752%20HERO%20IMAGE.jpg",
-    "channels": [
-      "new"
-    ],
-    "brand": "ogv",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=SZBKPzZQDWC",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2752/Documents/2752%20Build%20Sheet_1.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2752/Documents/2752%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2752/Documents/2752%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2026-v-tour-7rla-awd-wet-bath-with-galley-mercedes-208hp-2779",
-      "title": "2026 V-Tour 7RLA"
-    }
-  },
-  {
-    "slug": "2026-ogv-luxury-coach-vsport-9rb7-black-2738",
-    "stock": "2738",
-    "title": "2026 OGV Luxury Coach V-Sport 9RB7",
-    "year": 2026,
-    "make": "ogv",
-    "model": "v-sport",
-    "condition": "new",
-    "status": "sold",
-    "price": 160702,
-    "msrp": 214270,
-    "monthly": 1300,
-    "miles": "New",
-    "engine": "Mercedes 208hp",
-    "floorplan": "9RB7",
-    "slides": "No Slides",
-    "baths": "None",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2738/2738%20HERO%20IMAGE.jpg",
-    "channels": [
-      "new"
-    ],
-    "brand": "ogv",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=4L7m3dF2dsL",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2738/Documents/2738%20Build%20Sheet_1.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2738/Documents/2738%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2738/Documents/2738%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2026-ogv-luxury-coach-vcruise-10obwa-rear-bath-mercedes-208hp-stonegrey-black-2749",
-      "title": "2026 OGV Luxury Coach"
-    }
-  },
-  {
-    "slug": "2026-featherlite-stacker-trailer-4414-white-5389-2725",
-    "stock": "2725",
-    "title": "2026 Featherlite 24' Stacker Trailer 4414",
-    "year": 2026,
-    "make": "featherlite",
-    "model": "stacker trailer",
-    "condition": "new",
-    "status": "sold",
-    "price": 97614,
-    "msrp": 108460,
-    "monthly": null,
-    "miles": "\u2014",
-    "engine": "-",
-    "floorplan": "24' L x 11' H x 8'6\" W",
-    "slides": "-",
-    "baths": "None",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/2026%20Featherlite%20Trailer%204414%20White%2024%20Exterior-05.1.jpg",
-    "channels": [
-      "new"
-    ],
-    "brand": "featherlite",
-    "virtual": false,
-    "featured": false,
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/2725%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "#",
-      "checkInSheet": "#"
-    },
-    "prev": {
-      "slug": "2026-ogv-luxury-coach-7rl-wet-bath-with-galley-mercedes-208hp-2752",
-      "title": "2026 OGV Luxury Coach"
-    }
-  },
-  {
-    "slug": "prevost-loki-lc023-prevost-h3-45-double-slide-bath-anda-half-bunk-beds-volvo-500hp-2841",
-    "stock": "2841",
-    "title": "2026 Prevost Loki H3 45 LC023",
-    "year": 2026,
-    "make": "prevost",
-    "model": "loki coach lc023",
-    "condition": "new",
-    "status": "sold",
-    "price": 0,
-    "msrp": null,
-    "monthly": null,
-    "miles": "New",
-    "engine": "Volvo 500hp",
-    "floorplan": "H3 45",
-    "slides": "Double Slide",
-    "baths": "Bath and a Half",
-    "bunks": "Double Bunk",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2841/Images/2841%20Hero%20Image.jpg",
-    "channels": [
-      "new"
-    ],
-    "brand": "prevost-loki",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=K4bCcK7tqSZ",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2841/Documents/LC023%20LOKI%20Printable%20Build%20Sheet%20(Revised%2004.16.26).pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/LC023%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "#"
-    },
-    "prev": {
-      "slug": "2026-ogv-luxury-coach-vsport-9rb7-black-2738",
-      "title": "2026 OGV Luxury Coach V-Sport 9RB7"
-    }
-  },
-  {
-    "slug": "2025-ogv-luxury-coachv-rv-awd-2-passenger-wet-bath-w-galley",
-    "stock": "2580",
-    "title": "2025 OGV Luxury Coach V-RV 2TBA AWD",
-    "year": 2025,
-    "make": "ogv",
-    "model": "v-rv awd",
-    "condition": "new",
-    "status": "sold",
-    "price": 142570,
-    "msrp": 253997,
-    "monthly": 1153,
-    "miles": "New",
-    "engine": "Mercedes 208hp",
-    "floorplan": "2TBA",
-    "slides": "No Slides",
-    "baths": "Wet Bath w/Galley",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2580/2580%20HERO%20IMAGE.jpg",
-    "channels": [
-      "new"
-    ],
-    "brand": "ogv",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=AU7XQUjpePr",
-    "video": "https://youtu.be/qykTKZG6Obg",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2580/Document/2580%20Build%20Sheet_1.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2580/Document/2580-Floorplan.pdf?hsLang=en",
-      "checkInSheet": "#"
-    },
-    "prev": {
-      "slug": "2023-prevost-millennium-x345-double-slide-mid-bath-volvo-500hp-2835",
-      "title": "2023 Prevost Millennium X3 45"
-    }
-  },
-  {
-    "slug": "2025-ogv-luxury-coachv-rv-2-passengerwet-bath-w-galley",
-    "stock": "2479",
-    "title": "2025 OGV Luxury Coach V-RV 2TB",
-    "year": 2025,
-    "make": "ogv",
-    "model": "v-rv",
-    "condition": "new",
-    "status": "sold",
-    "price": 141466,
-    "msrp": 241004,
-    "monthly": 1144,
-    "miles": "New",
-    "engine": "Mercedes 208hp",
-    "floorplan": "2TB",
-    "slides": "No Slides",
-    "baths": "Wet Bath w/Galley",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2479/2479%20HERO%20IMAGE.jpg",
-    "channels": [
-      "new"
-    ],
-    "brand": "ogv",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=A6zbwDayQNa",
-    "video": "https://youtu.be/qykTKZG6Obg",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2479/Document/2479%20Build%20Sheet_1.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2479/Document/2479%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2479/Document/2479%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2025-ogv-luxury-coachv-rv-awd-2-passenger-wet-bath-w-galley",
-      "title": "2025 OGV Luxury Coach V-RV 2TBA AWD"
-    }
-  },
-  {
-    "slug": "2023-prevost-millennium-x345-double-slide-mid-bath-volvo-500hp-2835",
-    "stock": "2835",
-    "title": "2023 Prevost Millennium X3 45",
-    "year": 2023,
-    "make": "prevost",
-    "model": "millennium",
-    "condition": "certified",
-    "status": "sold",
-    "price": 1777777,
-    "msrp": null,
-    "monthly": null,
-    "miles": 15457,
-    "engine": "Volvo 500hp",
-    "floorplan": "X3 45",
-    "slides": "Double Slide",
-    "baths": "Mid-Bath",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2835/Images/2835%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "prevost",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=ivQaBEYfXS8",
-    "video": "https://www.youtube.com/shorts/SQv_lIu7HuQ",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2835/Documents/2835%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2835/Documents/2835%20Floor%20Plan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2835/Documents/2835%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2025-renegade-xl-x43-db-quad-slide-bath-and-a-half-detroit-600hp-2825",
-      "title": "2025 Renegade XL X43 DB"
-    }
-  },
-  {
-    "slug": "2022-newell-p50-quad-slide-2-full-baths-bunk-beds-cummins-605hp-2932",
-    "stock": "2932",
-    "title": "2022 Newell P50",
-    "year": 2022,
-    "make": "newell",
-    "model": "p50",
-    "condition": "pre-owned",
-    "status": "sold",
-    "price": 1655555,
-    "msrp": null,
-    "monthly": null,
-    "miles": 21214,
-    "engine": "Cummins 605hp",
-    "floorplan": "Front Entry",
-    "slides": "Quad Slide",
-    "baths": "Two Full Bath",
-    "bunks": "Double Bunk",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2932/2932%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "newell",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=buzYJxaPkTL",
-    "video": "https://www.youtube.com/shorts/ic7_i54lIqs",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2932/Documents/2932%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2932/Documents/2932%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2932/Documents/2932%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2023-tiffin-allegro-bus-45-opp-quad-slide-bath-anda-half-cummins-450hp-2919",
-      "title": "2023 Tiffin Allegro Bus 45 OPP"
-    }
-  },
-  {
-    "slug": "2022-tiffin-allegro-red-37ba-triple-slide-bath-and-a-half-cummins-360hp-3009",
-    "stock": "3009",
-    "title": "2022 Tiffin Allegro Red 37BA",
-    "year": 2022,
-    "make": "tiffin",
-    "model": "allegro red",
-    "condition": "pre-owned",
-    "status": "sold",
-    "price": 211111,
-    "msrp": null,
-    "monthly": null,
-    "miles": 17298,
-    "engine": "Cummins 360hp",
-    "floorplan": "37BA",
-    "slides": "Triple Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3009/3009%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "tiffin",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=hWw9Dz13Z8x",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3009/Documents/3009%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/3009/Documents/3009%20FLOORPLAN.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3009/Documents/3009%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2021-cargo-mate-eliminator-stacker-trailer-2998",
-      "title": "2021 Cargo Mate Eliminator 22' Stacker Trailer"
-    }
-  },
-  {
-    "slug": "2021-cargo-mate-eliminator-stacker-trailer-2998",
-    "stock": "2998",
-    "title": "2021 Cargo Mate Eliminator 22' Stacker Trailer",
-    "year": 2021,
-    "make": "cargo mate",
-    "model": "eliminator",
-    "condition": "pre-owned",
-    "status": "sold",
-    "price": 33333,
-    "msrp": null,
-    "monthly": null,
-    "miles": "\u2014",
-    "engine": "N/A",
-    "floorplan": "22' Stacker Trailer",
-    "slides": "-",
-    "baths": "None",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2998/Images/2021%20Cargo%20Stacker%20Trailer%20-105.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "cargo-mate",
-    "virtual": false,
-    "featured": false,
-    "video": "#",
-    "documents": {
-      "buildSheet": "#",
-      "floorPlan": "#",
-      "checkInSheet": "#"
-    },
-    "prev": {
-      "slug": "2026-foretravel-realm-presidential-lv2-quad-slide-bath-and-a-half-cummins-605hp-3031",
-      "title": "2026 Foretravel Realm Presidential LV2"
-    }
-  },
-  {
-    "slug": "2020-foretravel-realm-fs605-lvms-quad-slide-bath-and-a-half-cummins-605hp-2979",
-    "stock": "2979",
-    "title": "2020 Foretravel Realm FS605 LVMS",
-    "year": 2020,
-    "make": "foretravel",
-    "model": "realm fs605",
-    "condition": "pre-owned",
-    "status": "sold",
-    "price": 499999,
-    "msrp": null,
-    "monthly": null,
-    "miles": 14812,
-    "engine": "Cummins 605hp",
-    "floorplan": "LVMS",
-    "slides": "Quad Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2979/2909%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "foretravel",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=LXBtcUtFbfV",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2979/Documents/2979%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2979/Documents/2979%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2979/Documents/2979%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2023-tiffin-allegro-bus-45-opp-quad-slide-bath-and-a-half-cummins-605hp-2970",
-      "title": "2023 Tiffin Allegro Bus 45 OPP"
-    }
-  },
-  {
     "slug": "2020-newmar-king-aire-4533-triple-slide-bath-and-a-half-cummins-605hp-3002",
     "stock": "3002",
     "title": "2020 Newmar King Aire 4533",
@@ -2153,9 +670,10 @@
     "model": "king aire",
     "condition": "pre-owned",
     "status": "sold",
+    "channels": [
+      "pre-owned"
+    ],
     "price": 477777,
-    "msrp": null,
-    "monthly": null,
     "miles": 42223,
     "engine": "Cummins 605hp",
     "floorplan": "4533",
@@ -2163,11 +681,8 @@
     "baths": "Bath and a Half",
     "bunks": "None",
     "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3002/3002%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "newmar",
     "virtual": true,
+    "created": 1790853540000,
     "featured": false,
     "virtualTour": "https://my.matterport.com/show/?m=1QmbeY1sqEb",
     "video": "#",
@@ -2182,80 +697,6 @@
     }
   },
   {
-    "slug": "2020-newmar-dutch-star-4369-triple-slide-bath-and-a-half-cummins-450hp-2997",
-    "stock": "2997",
-    "title": "2020 Newmar Dutch Star 4369",
-    "year": 2020,
-    "make": "newmar",
-    "model": "dutch star",
-    "condition": "pre-owned",
-    "status": "sold",
-    "price": 299999,
-    "msrp": null,
-    "monthly": null,
-    "miles": 4525,
-    "engine": "Cummins 450hp",
-    "floorplan": "4369",
-    "slides": "Triple Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2997/2997%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "newmar",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=Hj6PXh5aoeq",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2997/Documents/2997%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2997/Documents/2997%20FLOORPLAN.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2997/Documents/2997%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2008-prevost-millennium-h3-45-double-slide-mid-bath-detroit-515hp-3004",
-      "title": "2008 Prevost Millennium H3 45"
-    }
-  },
-  {
-    "slug": "2019-tiffin-allegro-bus-37ap-quad-slide-mid-bath-cummins-450hp-2881",
-    "stock": "2881",
-    "title": "2019 Tiffin Allegro Bus 37AP",
-    "year": 2019,
-    "make": "tiffin",
-    "model": "allegro bus",
-    "condition": "pre-owned",
-    "status": "sold",
-    "price": 233333,
-    "msrp": null,
-    "monthly": null,
-    "miles": 45553,
-    "engine": "Cummins 450hp",
-    "floorplan": "37AP",
-    "slides": "Quad Slide",
-    "baths": "Mid-Bath",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2881/2881%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "tiffin",
-    "virtual": true,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=hkj64TidrGz",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2881/Documents/2881%20Build%20Sheet.pdf?hsLang=en",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2881/Documents/2881%20Floorplan.pdf?hsLang=en",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2881/Documents/2881%20Check-in%20Sheet.pdf?hsLang=en"
-    },
-    "prev": {
-      "slug": "2022-entegra-cornerstone-45b-quad-slide-bath-anda-half-cummins-605hp-2908",
-      "title": "2022 Entegra Cornerstone 45B"
-    }
-  },
-  {
     "slug": "2015-newell-2020p-quad-slide-bath-and-a-half-cummins-600hp-2993",
     "stock": "2993",
     "title": "2015 Newell 2020P",
@@ -2264,9 +705,10 @@
     "model": "2020p",
     "condition": "pre-owned",
     "status": "sold",
+    "channels": [
+      "pre-owned"
+    ],
     "price": 755555,
-    "msrp": null,
-    "monthly": null,
     "miles": 81508,
     "engine": "Cummins 600hp",
     "floorplan": "Front Entry",
@@ -2274,11 +716,8 @@
     "baths": "Bath and a Half",
     "bunks": "None",
     "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/2993/2993%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "newell",
     "virtual": true,
+    "created": 1790784060000,
     "featured": false,
     "virtualTour": "https://my.matterport.com/show/?m=4GRtf9rYVPH",
     "video": "#",
@@ -2293,40 +732,1500 @@
     }
   },
   {
-    "slug": "2008-prevost-millennium-h3-45-double-slide-mid-bath-detroit-515hp-3004",
-    "stock": "3004",
-    "title": "2008 Prevost Millennium H3 45",
-    "year": 2008,
+    "slug": "2024-newell-p50quad-slide-bath-and-a-half-3",
+    "stock": "2659",
+    "title": "2024 Newell P50",
+    "year": 2024,
+    "make": "newell",
+    "model": "p50",
+    "condition": "certified",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 1777777,
+    "miles": 18864,
+    "engine": "Cummins 605hp",
+    "floorplan": "Front Entry",
+    "slides": "Quad Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2659/2659%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1790777880000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=o1aRTebpJQh",
+    "video": "https://youtu.be/i5o1fW_VRF0?si=V8yEYHxALLOhlxDE",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2659/Document/2659-Build-Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2659/Document/2659-FloorPlan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2659/Document/2659%20Check-In%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2019-newell-p50-quad-slide-cummins-605hp-2654",
+      "title": "2019 Newell P50"
+    }
+  },
+  {
+    "slug": "2018-newmar-essex-4531-triple-slide-bath-and-a-half-cummins-605hp-2990",
+    "stock": "2990",
+    "title": "2018 Newmar Essex 4531",
+    "year": 2018,
+    "make": "newmar",
+    "model": "essex",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 344444,
+    "miles": 47892,
+    "engine": "Cummins 605hp",
+    "floorplan": "4531",
+    "slides": "Triple Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2990/2990%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1790700840000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=vsnQbgR2Yt6",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2990/Documents/2990%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2990/Documents/2990%20FLOORPLAN.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2990/Documents/2990%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2024-newell-p50quad-slide-bath-and-a-half-3",
+      "title": "2024 Newell P50"
+    }
+  },
+  {
+    "slug": "2024-newmar-dutch-star-4369-triple-slide-bath-and-a-half-cummins-450hp-2986",
+    "stock": "2986",
+    "title": "2024 Newmar Dutch Star 4369",
+    "year": 2024,
+    "make": "newmar",
+    "model": "dutch star",
+    "condition": "certified",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 455555,
+    "miles": 17506,
+    "engine": "Cummins 450hp",
+    "floorplan": "4369",
+    "slides": "Triple Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/2986/2986%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1790597280000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=buJf6UJgXKM",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/2986/Documents/2986%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/2986/Documents/2986%20FLOORPLAN.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/2986/Documents/2986%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2018-newmar-essex-4531-triple-slide-bath-and-a-half-cummins-605hp-2990",
+      "title": "2018 Newmar Essex 4531"
+    }
+  },
+  {
+    "slug": "2014-prevost-liberty-h345-double-slides-mid-bath-rear-shower-volvo-500hp-2955",
+    "stock": "2955",
+    "title": "2014 Prevost Liberty H3 45",
+    "year": 2014,
+    "make": "prevost",
+    "model": "liberty",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 999999,
+    "miles": 111480,
+    "engine": "Volvo 500hp",
+    "floorplan": "H3 45",
+    "slides": "Double Slide",
+    "baths": "Mid-Bath",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2955/2955%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1790357460000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=AqVXFK4bkKn",
+    "video": "#",
+    "documents": {
+      "buildSheet": "#",
+      "floorPlan": "#",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2955/Documents/2955%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2024-newmar-dutch-star-4369-triple-slide-bath-and-a-half-cummins-450hp-2986",
+      "title": "2024 Newmar Dutch Star 4369"
+    }
+  },
+  {
+    "slug": "2026-featherlite-stacker-trailer-4414-white-26ft-2880",
+    "stock": "2880",
+    "title": "2026 Featherlite 26' Stacker Trailer 4414",
+    "year": 2026,
+    "make": "featherlite",
+    "model": "stacker trailer",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 112491,
+    "miles": "\u2014",
+    "engine": "-",
+    "floorplan": "26' L x 11' H x 8'6\" W",
+    "slides": "-",
+    "baths": "None",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/26%20WHITE%20Featherlite%20Trailer.jpg",
+    "virtual": false,
+    "created": 1790354220000,
+    "featured": false,
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2880/Documents/2880%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "#",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2880/Documents/2880%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2014-prevost-liberty-h345-double-slides-mid-bath-rear-shower-volvo-500hp-2955",
+      "title": "2014 Prevost Liberty H3 45"
+    }
+  },
+  {
+    "slug": "2015-tiffin-allegro-bus-45lp-quad-slide-bath-anda-half-cummins-450hp-2953",
+    "stock": "2953",
+    "title": "2015 Tiffin Allegro Bus 45 LP",
+    "year": 2015,
+    "make": "tiffin",
+    "model": "allegro bus",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 144444,
+    "miles": 95552,
+    "engine": "Cummins 450hp",
+    "floorplan": "45 LP",
+    "slides": "Quad Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2953/2953%20HERO%20IMAGE%202.jpg",
+    "virtual": true,
+    "created": 1790167740000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=DzR1wXH2S6z",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2953/Documents/2953%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2953/Documents/2953%20FLOORPLAN.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2953/Documents/2953%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2026-featherlite-stacker-trailer-4414-white-26ft-2880",
+      "title": "2026 Featherlite 26' Stacker Trailer 4414"
+    }
+  },
+  {
+    "slug": "2023-foretravel-realm-presidential-series-lvms-quad-slide-bath-anda-half-cummins-605hp-3003",
+    "stock": "3003",
+    "title": "2023 Foretravel Realm Presidential LVMS",
+    "year": 2023,
+    "make": "foretravel",
+    "model": "realm presidential",
+    "condition": "certified",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 699999,
+    "miles": 18239,
+    "engine": "Cummins 605hp",
+    "floorplan": "LVMS",
+    "slides": "Quad Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2846/2846%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1789986120000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=VLyd1XJeodb",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2846/Documents/2846%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2846/Documents/2846%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "#"
+    },
+    "prev": {
+      "slug": "2015-tiffin-allegro-bus-45lp-quad-slide-bath-anda-half-cummins-450hp-2953",
+      "title": "2015 Tiffin Allegro Bus 45 LP"
+    }
+  },
+  {
+    "slug": "2021-newmar-dutch-star-4369-triple-slide-bath-and-a-half-cummins-450hp-2969",
+    "stock": "2969",
+    "title": "2021 Newmar Dutch Star 4369",
+    "year": 2021,
+    "make": "newmar",
+    "model": "dutch star",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 322222,
+    "miles": 17657,
+    "engine": "Cummins 450hp",
+    "floorplan": "4369",
+    "slides": "Triple Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2969/2969%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1789573440000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=zJUNZZjFoqr",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2969/Documents/2969%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2969/Documents/2969%20FLOORPLAN.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2969/Documents/2969%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2023-foretravel-realm-presidential-series-lvms-quad-slide-bath-anda-half-cummins-605hp-3003",
+      "title": "2023 Foretravel Realm Presidential LVMS"
+    }
+  },
+  {
+    "slug": "2019-newmar-london-aire-4551-triple-slide-bath-anda-half-cummins-605hp-2947",
+    "stock": "2947",
+    "title": "2019 Newmar London Aire 4551",
+    "year": 2019,
+    "make": "newmar",
+    "model": "london aire ",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 333333,
+    "miles": 33483,
+    "engine": "Cummins 605hp",
+    "floorplan": "4551",
+    "slides": "Triple Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2947/2947%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1789562820000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=RBHUa5uba1q",
+    "video": "https://www.youtube.com/shorts/Geek7Se6Gfo",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2947/Documents/2947%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2947/Documents/2947%20FLOORPLAN.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2947/Documents/2947%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2021-newmar-dutch-star-4369-triple-slide-bath-and-a-half-cummins-450hp-2969",
+      "title": "2021 Newmar Dutch Star 4369"
+    }
+  },
+  {
+    "slug": "2027-ogv-luxury-coach-v-cruise-10obw-rear-bath-mercedes-208hp-black-creme-2974",
+    "stock": "2974",
+    "title": "2027 OGV Luxury Coach V-Cruise 10OBW",
+    "year": 2027,
+    "make": "ogv",
+    "model": "v-cruise",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 199795,
+    "miles": "New",
+    "engine": "Mercedes 208hp",
+    "floorplan": "10OBW",
+    "slides": "No Slides",
+    "baths": "Rear Bath",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2974/2974%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1789037160000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=VJtCtwcLwRR",
+    "video": "https://youtube.com/shorts/ih4A2QR_824",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2974/Documents/2974%20Build%20Sheet%201.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2974/Documents/2974%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "#"
+    },
+    "prev": {
+      "slug": "2019-newmar-london-aire-4551-triple-slide-bath-anda-half-cummins-605hp-2947",
+      "title": "2019 Newmar London Aire 4551"
+    }
+  },
+  {
+    "slug": "2015-prevost-liberty-h345-triple-slide-bath-anda-half-volvo-500hp-2959",
+    "stock": "2959",
+    "title": "2015 Prevost Liberty H3 45",
+    "year": 2015,
+    "make": "prevost",
+    "model": "liberty",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 1111111,
+    "miles": 103448,
+    "engine": "Volvo 500hp",
+    "floorplan": "H3 45",
+    "slides": "Triple Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2959/2959%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1788281880000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=qmowdWjjTk4",
+    "video": "https://www.youtube.com/shorts/P6x3VwAp9aY",
+    "documents": {
+      "buildSheet": "#",
+      "floorPlan": "#",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2959/Documents/2959%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2027-ogv-luxury-coach-v-cruise-10obw-rear-bath-mercedes-208hp-black-creme-2974",
+      "title": "2027 OGV Luxury Coach V-Cruise 10OBW"
+    }
+  },
+  {
+    "slug": "2022-tiffin-allegro-bus-45fp-triple-slide-bath-anda-half-cummins-450hp-2951",
+    "stock": "2951",
+    "title": "2022 Tiffin Allegro Bus 45FP",
+    "year": 2022,
+    "make": "tiffin",
+    "model": "allegro bus",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 344444,
+    "miles": 12724,
+    "engine": "Cummins 450hp",
+    "floorplan": "45 FP",
+    "slides": "Triple Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2951/2951%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1788261420000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=WDbKDa84KQe",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2951/Documents/2951%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2951/Documents/2951%20FLOORPLAN.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2951/Documents/2951%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2015-prevost-liberty-h345-triple-slide-bath-anda-half-volvo-500hp-2959",
+      "title": "2015 Prevost Liberty H3 45"
+    }
+  },
+  {
+    "slug": "2020-foretravel-realm-fs605-lvms-quad-slide-bath-and-a-half-cummins-605hp-2979",
+    "stock": "2979",
+    "title": "2020 Foretravel Realm FS605 LVMS",
+    "year": 2020,
+    "make": "foretravel",
+    "model": "realm fs605",
+    "condition": "pre-owned",
+    "status": "sold",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 499999,
+    "miles": 14812,
+    "engine": "Cummins 605hp",
+    "floorplan": "LVMS",
+    "slides": "Quad Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2979/2909%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1787762700000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=LXBtcUtFbfV",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2979/Documents/2979%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2979/Documents/2979%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2979/Documents/2979%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2023-tiffin-allegro-bus-45-opp-quad-slide-bath-and-a-half-cummins-605hp-2970",
+      "title": "2023 Tiffin Allegro Bus 45 OPP"
+    }
+  },
+  {
+    "slug": "2027-prevost-loki-h345-quad-slide-bath-anda-half-volvo-500hp-lc029-2968",
+    "stock": "2968",
+    "title": "2027 Prevost Loki H3 45",
+    "year": 2027,
+    "make": "prevost",
+    "model": "loki coach lc029",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 2596533,
+    "miles": "New",
+    "engine": "Volvo 500hp",
+    "floorplan": "H3 45",
+    "slides": "Quad Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2968/2968%20HERO%20IMAGE%202.jpg",
+    "virtual": true,
+    "created": 1787320320000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=VnGxnYJjh1t",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2968/Documents/LC029%20LOKI%20Printable%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2968/Documents/2968%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "#"
+    },
+    "prev": {
+      "slug": "2022-tiffin-allegro-bus-45fp-triple-slide-bath-anda-half-cummins-450hp-2951",
+      "title": "2022 Tiffin Allegro Bus 45FP"
+    }
+  },
+  {
+    "slug": "2021-newell-p50-quad-slide-2-full-baths-bunk-beds-cummins-605hp-2946",
+    "stock": "2946",
+    "title": "2021 Newell P50",
+    "year": 2021,
+    "make": "newell",
+    "model": "p50",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 1555555,
+    "miles": 35562,
+    "engine": "Cummins 605hp",
+    "floorplan": "Front Entry",
+    "slides": "Quad Slide",
+    "baths": "Two Full Bath",
+    "bunks": "Bunk Beds",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2946/2946%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1786364040000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=s3MTYpGcuut",
+    "video": "https://www.youtube.com/shorts/jop_F9tW5q4",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2946/Documents/2946%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2946/Documents/2946%20Floor%20Plan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2946/Documents/2946%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2027-prevost-loki-h345-quad-slide-bath-anda-half-volvo-500hp-lc029-2968",
+      "title": "2027 Prevost Loki H3 45"
+    }
+  },
+  {
+    "slug": "2016-prevost-millennium-h3-45-quad-slide-bath-anda-half-volvo-500hp-2893",
+    "stock": "2893",
+    "title": "2016 Prevost Millennium H3 45",
+    "year": 2016,
     "make": "prevost",
     "model": "millennium",
     "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 1111111,
+    "miles": 102607,
+    "engine": "Volvo 500hp",
+    "floorplan": "H3 45",
+    "slides": "Quad Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2893/2893%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1785239880000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=Pz5QSgPXMvY",
+    "video": "https://www.youtube.com/shorts/Un7YzRW6iXo",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2893/Documents/2893%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2893/Documents/2893%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2893/Documents/2893%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2021-newell-p50-quad-slide-2-full-baths-bunk-beds-cummins-605hp-2946",
+      "title": "2021 Newell P50"
+    }
+  },
+  {
+    "slug": "2017-prevost-marathon-h3-45-double-slide-bath-anda-half-volvo-500hp-2938",
+    "stock": "2938",
+    "title": "2017 Prevost Marathon H3 45",
+    "year": 2017,
+    "make": "prevost",
+    "model": "marathon",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 999999,
+    "miles": 124225,
+    "engine": "Volvo 500hp",
+    "floorplan": "H3 45",
+    "slides": "Double Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2938/2938%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1784307360000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=5xin4r8144Y",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2938/Documents/2938%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2938/Documents/2938%20Floor%20Plan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2938/Documents/2938%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2016-prevost-millennium-h3-45-quad-slide-bath-anda-half-volvo-500hp-2893",
+      "title": "2016 Prevost Millennium H3 45"
+    }
+  },
+  {
+    "slug": "2022-newell-p50-quad-slide-2-full-baths-bunk-beds-cummins-605hp-2932",
+    "stock": "2932",
+    "title": "2022 Newell P50",
+    "year": 2022,
+    "make": "newell",
+    "model": "p50",
+    "condition": "pre-owned",
     "status": "sold",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 1655555,
+    "miles": 21214,
+    "engine": "Cummins 605hp",
+    "floorplan": "Front Entry",
+    "slides": "Quad Slide",
+    "baths": "Two Full Bath",
+    "bunks": "Double Bunk",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2932/2932%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1783700820000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=buzYJxaPkTL",
+    "video": "https://www.youtube.com/shorts/ic7_i54lIqs",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2932/Documents/2932%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2932/Documents/2932%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2932/Documents/2932%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2023-tiffin-allegro-bus-45-opp-quad-slide-bath-anda-half-cummins-450hp-2919",
+      "title": "2023 Tiffin Allegro Bus 45 OPP"
+    }
+  },
+  {
+    "slug": "2016-prevost-millennium-h3-45-quad-slide-bath-anda-half-volvo-500hp-2897",
+    "stock": "2897",
+    "title": "2016 Prevost Millennium H3 45",
+    "year": 2016,
+    "make": "prevost",
+    "model": "millennium",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 1111111,
+    "miles": 109424,
+    "engine": "Volvo 500hp",
+    "floorplan": "H3 45",
+    "slides": "Quad Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2897/2897%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1783514100000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=zhK9Dx2pzsP",
+    "video": "https://www.youtube.com/shorts/wm2M_7tCcoo",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2897/Documents/2897%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2897/Documents/2897%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2897/Documents/2897%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2017-prevost-marathon-h3-45-double-slide-bath-anda-half-volvo-500hp-2938",
+      "title": "2017 Prevost Marathon H3 45"
+    }
+  },
+  {
+    "slug": "2026-featherlite-stacker-trailer-4414-white-5333-2925",
+    "stock": "2925",
+    "title": "2026 Featherlite 24' Stacker Trailer 4414",
+    "year": 2026,
+    "make": "featherlite",
+    "model": "stacker trailer",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 102664,
+    "miles": "\u2014",
+    "engine": "-",
+    "floorplan": "24' L x 11' H x 8'6\" W",
+    "slides": "",
+    "baths": "None",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/24%20WHITE%20Featherlite%20Trailer.jpg",
+    "virtual": false,
+    "created": 1783095000000,
+    "featured": false,
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2925/2925%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "#",
+      "checkInSheet": "#"
+    },
+    "prev": {
+      "slug": "2016-prevost-millennium-h3-45-quad-slide-bath-anda-half-volvo-500hp-2897",
+      "title": "2016 Prevost Millennium H3 45"
+    }
+  },
+  {
+    "slug": "2026-featherlite-stacker-trailer-4414-black-5335-2924",
+    "stock": "2924",
+    "title": "2026 Featherlite 26' Stacker Trailer 4414",
+    "year": 2026,
+    "make": "featherlite",
+    "model": "stacker trailer",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 111276,
+    "miles": "\u2014",
+    "engine": "-",
+    "floorplan": "26' L x 11' H x 8'6\" W",
+    "slides": "",
+    "baths": "None",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/26%20BLACK%20Featherlite%20Trailer.jpg",
+    "virtual": false,
+    "created": 1783093260000,
+    "featured": false,
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2924/2924%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "#",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2924/2924%20Check-in%20Sheet%20-%20NEW%20Trailer.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2026-featherlite-stacker-trailer-4414-white-5333-2925",
+      "title": "2026 Featherlite 24' Stacker Trailer 4414"
+    }
+  },
+  {
+    "slug": "2019-prevost-marathon-x3-45-double-slide-mid-bath-colco-500hp-2920",
+    "stock": "2920",
+    "title": "2019 Prevost Marathon X3 45",
+    "year": 2019,
+    "make": "prevost",
+    "model": "marathon",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 1333333,
+    "miles": 40762,
+    "engine": "Volvo 500hp",
+    "floorplan": "X3 45",
+    "slides": "Double Slide",
+    "baths": "Mid-Bath",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2920/2920%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1782993360000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=2sQFe5BYk5x",
+    "video": "https://www.youtube.com/watch?v=rxO2tPyE3jg",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2920/Documents/2920%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2920/Documents/2920%20Floor%20Plan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2920/Documents/2920%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2026-featherlite-stacker-trailer-4414-black-5335-2924",
+      "title": "2026 Featherlite 26' Stacker Trailer 4414"
+    }
+  },
+  {
+    "slug": "2020-newell-p50-quad-slide-bath-anda-half-cummins-605hp-2996",
+    "stock": "2996",
+    "title": "2020 Newell P50",
+    "year": 2020,
+    "make": "newell",
+    "model": "p50",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 1444444,
+    "miles": 34881,
+    "engine": "Cummins 605hp",
+    "floorplan": "Front Entry",
+    "slides": "Quad Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2906/2906%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1782827340000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=sj7VpVmTmEo",
+    "video": "https://www.youtube.com/shorts/dcRm8dGKEKY",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2906/Documents/2906%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2906/Documents/2906%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2906/Documents/2996%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2019-prevost-marathon-x3-45-double-slide-mid-bath-colco-500hp-2920",
+      "title": "2019 Prevost Marathon X3 45"
+    }
+  },
+  {
+    "slug": "2019-tiffin-allegro-bus-37ap-quad-slide-mid-bath-cummins-450hp-2881",
+    "stock": "2881",
+    "title": "2019 Tiffin Allegro Bus 37AP",
+    "year": 2019,
+    "make": "tiffin",
+    "model": "allegro bus",
+    "condition": "pre-owned",
+    "status": "sold",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 233333,
+    "miles": 45553,
+    "engine": "Cummins 450hp",
+    "floorplan": "37AP",
+    "slides": "Quad Slide",
+    "baths": "Mid-Bath",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2881/2881%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1782821940000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=hkj64TidrGz",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2881/Documents/2881%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2881/Documents/2881%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2881/Documents/2881%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2022-entegra-cornerstone-45b-quad-slide-bath-anda-half-cummins-605hp-2908",
+      "title": "2022 Entegra Cornerstone 45B"
+    }
+  },
+  {
+    "slug": "2013-prevost-millennium-h3-45-triple-slide-bath-anda-half-volvo-500hp-2899",
+    "stock": "2899",
+    "title": "2013 Prevost Millennium H3 45",
+    "year": 2013,
+    "make": "prevost",
+    "model": "millennium",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 888888,
+    "miles": 105017,
+    "engine": "Volvo 500hp",
+    "floorplan": "H3 45",
+    "slides": "Triple Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2899/2899%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1782387840000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=zwkBVnzzvvH",
+    "video": "https://www.youtube.com/shorts/CWcZyuTMJfU",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2899/Documents/2899%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2899/Documents/2899%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2899/Documents/2899%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2020-newell-p50-quad-slide-bath-anda-half-cummins-605hp-2996",
+      "title": "2020 Newell P50"
+    }
+  },
+  {
+    "slug": "2015-prevost-millennium-h3-45-triple-slide-mid-bath-volvo-500hp-2907",
+    "stock": "2907",
+    "title": "2015 Prevost Millennium H3 45",
+    "year": 2015,
+    "make": "prevost",
+    "model": "millennium",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 999999,
+    "miles": 115011,
+    "engine": "Volvo 500hp",
+    "floorplan": "H3 45",
+    "slides": "Triple Slide",
+    "baths": "Mid-Bath",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2907/2907%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1782133560000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=KnhdNu9Nmbr",
+    "video": "https://www.youtube.com/shorts/wnMettwuODQ",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2907/Documents/2907%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2907/Documents/2907%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2907/Documents/2907%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2013-prevost-millennium-h3-45-triple-slide-bath-anda-half-volvo-500hp-2899",
+      "title": "2013 Prevost Millennium H3 45"
+    }
+  },
+  {
+    "slug": "2014-prevost-millennium-h3-45-triple-slide-mid-bath-volvo-500hp-2898",
+    "stock": "2898",
+    "title": "2014 Prevost Millennium H3 45",
+    "year": 2014,
+    "make": "prevost",
+    "model": "millennium",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 955555,
+    "miles": 60740,
+    "engine": "Volvo 500hp",
+    "floorplan": "H3 45",
+    "slides": "Triple Slide",
+    "baths": "Mid-Bath",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2898/2898%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1781795400000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=NEGCZ6cLhPy",
+    "video": "https://www.youtube.com/shorts/9fRXcCehDcg",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2898/Documents/2898%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2898/Documents/2898%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2898/Documents/2898%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2015-prevost-millennium-h3-45-triple-slide-mid-bath-volvo-500hp-2907",
+      "title": "2015 Prevost Millennium H3 45"
+    }
+  },
+  {
+    "slug": "2020-prevost-millennium-xlii-single-slide-mid-bath-volvo-500hp-2896",
+    "stock": "2896",
+    "title": "2020 Prevost Millennium X3 45",
+    "year": 2020,
+    "make": "prevost",
+    "model": "millennium",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 888888,
+    "miles": 27518,
+    "engine": "Volvo 500hp",
+    "floorplan": "X3 45",
+    "slides": "Single Slide",
+    "baths": "Mid-Bath",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2896/2896%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1781620980000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=oJb6J8VFLAn",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2896/Documents/2896%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2896/Documents/2896%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2896/Documents/2896%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2014-prevost-millennium-h3-45-triple-slide-mid-bath-volvo-500hp-2898",
+      "title": "2014 Prevost Millennium H3 45"
+    }
+  },
+  {
+    "slug": "2014-prevost-millennium-h3-45-quad-slide-mid-bath-volvo-500hp-2883",
+    "stock": "2883",
+    "title": "2014 Prevost Millennium H3 45",
+    "year": 2014,
+    "make": "prevost",
+    "model": "millennium",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 999999,
+    "miles": 109415,
+    "engine": "Volvo 500hp",
+    "floorplan": "H3 45",
+    "slides": "Quad Slide",
+    "baths": "Mid-Bath",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2883/2883%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1781610180000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=B8mC1Vw2J2Z",
+    "video": "https://www.youtube.com/shorts/DcKGGbUt_ns",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2883/Documents/2883%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2883/Documents/2883%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2883/Documents/2883%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2020-prevost-millennium-xlii-single-slide-mid-bath-volvo-500hp-2896",
+      "title": "2020 Prevost Millennium X3 45"
+    }
+  },
+  {
+    "slug": "2027-prevost-loki-h3-45-double-slide-bath-and-a-half-volvo-d13-500hp-2912",
+    "stock": "2912",
+    "title": "2027 Prevost Loki H3 45",
+    "year": 2027,
+    "make": "prevost",
+    "model": "loki coach lc026",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 2315272,
+    "miles": "New",
+    "engine": "Volvo 500hp",
+    "floorplan": "H3 45",
+    "slides": "Double Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2912/2912%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1781100480000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=AT51Q9Zn2z1",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2912/Documents/2912%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2912/Documents/2912%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2912/Documents/2912%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2014-prevost-millennium-h3-45-quad-slide-mid-bath-volvo-500hp-2883",
+      "title": "2014 Prevost Millennium H3 45"
+    }
+  },
+  {
+    "slug": "2026-featherlite-stacker-trailer-4414-white-5333-2860",
+    "stock": "2860",
+    "title": "2026 Featherlite 24' Stacker Trailer 4414",
+    "year": 2026,
+    "make": "featherlite",
+    "model": "stacker trailer",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 103311,
+    "miles": "\u2014",
+    "engine": "-",
+    "floorplan": "24' L x 11' H x 8'6\" W",
+    "slides": "",
+    "baths": "None",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/2026%20Featherlite%20Trailer%204414%20White%2024%20Exterior-05.1.jpg",
+    "virtual": false,
+    "created": 1779467700000,
+    "featured": false,
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2860/Documents/2860%20Build%20Sheet%20Retail.pdf?hsLang=en",
+      "floorPlan": "#",
+      "checkInSheet": "#"
+    },
+    "prev": {
+      "slug": "2027-prevost-loki-h3-45-double-slide-bath-and-a-half-volvo-d13-500hp-2912",
+      "title": "2027 Prevost Loki H3 45"
+    }
+  },
+  {
+    "slug": "2026-featherlite-stacker-trailer-4414-white-5335-2864",
+    "stock": "2864",
+    "title": "2026 Featherlite 26' Stacker Trailer 4414",
+    "year": 2026,
+    "make": "featherlite",
+    "model": "stacker trailer",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 110574,
+    "miles": "\u2014",
+    "engine": "-",
+    "floorplan": "26' L x 11' H x 8'6\" W",
+    "slides": "",
+    "baths": "None",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/26Ft%20White%20Stacker/2026%20Featherlite%20Trailer%20White%20Exterior-05.jpg",
+    "virtual": false,
+    "created": 1779467220000,
+    "featured": false,
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2864/Documents/2864%20RETAIL%20BuildSheet.pdf?hsLang=en",
+      "floorPlan": "#",
+      "checkInSheet": "#"
+    },
+    "prev": {
+      "slug": "2026-featherlite-stacker-trailer-4414-white-5333-2860",
+      "title": "2026 Featherlite 24' Stacker Trailer 4414"
+    }
+  },
+  {
+    "slug": "2024-foretravel-realm-presidential-lv2-quad-slide-bath-and-a-half-cummins-605hp-2871",
+    "stock": "2871",
+    "title": "2024 Foretravel Realm Presidential LV2",
+    "year": 2024,
+    "make": "foretravel",
+    "model": "realm presidential",
+    "condition": "certified",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 755555,
+    "miles": 1787,
+    "engine": "Cummins 605hp",
+    "floorplan": "LV2",
+    "slides": "Quad Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2871/2871%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1779361980000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=2TJ1piLMrPc",
+    "video": "https://www.youtube.com/shorts/FCGeaSmLVag",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2871/Documents/2871%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2871/Documents/2871%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2871/Documents/2871%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2026-featherlite-stacker-trailer-4414-white-5335-2864",
+      "title": "2026 Featherlite 26' Stacker Trailer 4414"
+    }
+  },
+  {
+    "slug": "2019-foretravel-ih-45-quad-slide-bath-anda-half-cummins-605hp-2847",
+    "stock": "2847",
+    "title": "2019 Foretravel iH 45",
+    "year": 2019,
+    "make": "foretravel",
+    "model": "ih 45",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
     "price": 399999,
-    "msrp": null,
-    "monthly": null,
-    "miles": 135404,
+    "miles": 32861,
+    "engine": "Cummins 605hp",
+    "floorplan": "\u2014",
+    "slides": "Quad Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2847/2847%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1778581980000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=kEZ6t2L71Us",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2847/Documents/2847%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2847/Documents/2847%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2847/Documents/2847%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2024-foretravel-realm-presidential-lv2-quad-slide-bath-and-a-half-cummins-605hp-2871",
+      "title": "2024 Foretravel Realm Presidential LV2"
+    }
+  },
+  {
+    "slug": "2022-tiffin-zephyr-45pz-quad-slide-cummins-605hp-2845",
+    "stock": "2845",
+    "title": "2022 Tiffin Zephyr 45 PZ",
+    "year": 2022,
+    "make": "tiffin",
+    "model": "zephyr",
+    "condition": "certified",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 399999,
+    "miles": 17522,
+    "engine": "Cummins 605hp",
+    "floorplan": "45 PZ",
+    "slides": "Quad Slide",
+    "baths": "Bath and a Half",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2845/2845%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1777909860000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=2cv9utp8ZbT",
+    "video": "https://www.youtube.com/shorts/vQPj1arx5Bk",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2845/Documents/2845%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2845/Documents/2845%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2845/Documents/2845%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2019-foretravel-ih-45-quad-slide-bath-anda-half-cummins-605hp-2847",
+      "title": "2019 Foretravel iH 45"
+    }
+  },
+  {
+    "slug": "2026-ogv-luxury-coach-v-tour-5rl4a-mercedes-208hp-awd-2801",
+    "stock": "2801",
+    "title": "2026 OGV Luxury Coach V-Tour 5RL4A",
+    "year": 2026,
+    "make": "ogv",
+    "model": "v-tour",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 167522,
+    "miles": "New",
+    "engine": "Mercedes 208hp",
+    "floorplan": "5RL4A",
+    "slides": "No Sildes",
+    "baths": "Wet Bath w/Galley",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2801/2801%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1774517460000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=dyL9xaRRZCP",
+    "video": "https://youtube.com/shorts/mAIzYJE1jIs",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2801/Documents/2801%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2801/Documents/2801%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2801/Documents/2801%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2022-tiffin-zephyr-45pz-quad-slide-cummins-605hp-2845",
+      "title": "2022 Tiffin Zephyr 45 PZ"
+    }
+  },
+  {
+    "slug": "2010-prevost-liberty-h3-45-double-slide-mid-bath-detroit-515hp-2811",
+    "stock": "2811",
+    "title": "2010 Prevost Liberty H3 45",
+    "year": 2010,
+    "make": "prevost",
+    "model": "liberty",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned"
+    ],
+    "price": 599999,
+    "miles": 112152,
     "engine": "Detroit 515hp",
     "floorplan": "H3 45",
     "slides": "Double Slide",
     "baths": "Mid-Bath",
     "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3004/3004%20HERO%20IMAGE.jpg",
-    "channels": [
-      "pre-owned"
-    ],
-    "brand": "prevost",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2811/2811%20HERO%20IMAGE.jpg",
     "virtual": true,
+    "created": 1773764100000,
     "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=HZX7oYuDPmz",
+    "virtualTour": "https://my.matterport.com/show/?m=h1zuwvdGwDQ",
     "video": "#",
     "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3004/Documents/3004%20Build%20Sheet.pdf?hsLang=en",
+      "buildSheet": "#",
       "floorPlan": "#",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3004/Documents/3004%20Check-in%20Sheet.pdf?hsLang=en"
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2811/Documents/2811%20Check-in%20Sheet.pdf?hsLang=en"
     },
     "prev": {
-      "slug": "2022-tiffin-allegro-red-37ba-triple-slide-bath-and-a-half-cummins-360hp-3009",
-      "title": "2022 Tiffin Allegro Red 37BA"
+      "slug": "2026-ogv-luxury-coach-v-tour-5rl4a-mercedes-208hp-awd-2801",
+      "title": "2026 OGV Luxury Coach V-Tour 5RL4A"
+    }
+  },
+  {
+    "slug": "2026-featherlite-stacker-trailer-4414-black-5335-2689",
+    "stock": "2689",
+    "title": "2026 Featherlite 26' Stacker Trailer 4414",
+    "year": 2026,
+    "make": "featherlite",
+    "model": "stacker trailer",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 101769,
+    "miles": "\u2014",
+    "engine": "-",
+    "floorplan": "26' L x 11' H x 8'6\" W",
+    "slides": "",
+    "baths": "None",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2689/images/2026%20Featherlite%20Trailer%20White%20Exterior-05.jpg",
+    "virtual": false,
+    "created": 1773056280000,
+    "featured": false,
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/2689/documents/2689%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "#",
+      "checkInSheet": "#"
+    },
+    "prev": {
+      "slug": "2010-prevost-liberty-h3-45-double-slide-mid-bath-detroit-515hp-2811",
+      "title": "2010 Prevost Liberty H3 45"
+    }
+  },
+  {
+    "slug": "2026-featherlite-stacker-trailer-4414-white-24ft-2755",
+    "stock": "2755",
+    "title": "2026 Featherlite 24' Stacker Trailer 4414",
+    "year": 2026,
+    "make": "featherlite",
+    "model": "stacker trailer",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 93328,
+    "miles": "\u2014",
+    "engine": "-",
+    "floorplan": "24' L x 11' H x 8'6\" W",
+    "slides": "",
+    "baths": "None",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2755/Images/2755_Exterior-05.jpg",
+    "virtual": false,
+    "created": 1772462280000,
+    "featured": false,
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2755/Documents/2755%20Build-MSRP%20Sheet.pdf?hsLang=en",
+      "floorPlan": "#",
+      "checkInSheet": "#"
+    },
+    "prev": {
+      "slug": "2026-featherlite-stacker-trailer-4414-black-5335-2689",
+      "title": "2026 Featherlite 26' Stacker Trailer 4414"
+    }
+  },
+  {
+    "slug": "2026-ogv-luxury-coach-vsport-9rb7-nobath-mercedes-208hp-white-stonegrey-2750",
+    "stock": "2750",
+    "title": "2026 OGV Luxury Coach V-Sport 9RB7",
+    "year": 2026,
+    "make": "ogv",
+    "model": "v-sport",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 156872,
+    "miles": "New",
+    "engine": "Mercedes 208hp",
+    "floorplan": "9RB7",
+    "slides": "No Slides",
+    "baths": "None",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2750/2750%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1769522880000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=RbduE5SpKBU",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2750/Documents/2750%20Build%20Sheet_1.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2750/Documents/2750%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2750/Documents/2750%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2026-featherlite-stacker-trailer-4414-white-24ft-2755",
+      "title": "2026 Featherlite 24' Stacker Trailer 4414"
+    }
+  },
+  {
+    "slug": "2026-ogv-luxury-coach-vdrive-10ob-nobath-black-cream-2741",
+    "stock": "2741",
+    "title": "2026 OGV Luxury Coach V-Drive 10OB",
+    "year": 2026,
+    "make": "ogv",
+    "model": "v-drive",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 180710,
+    "miles": "New",
+    "engine": "Mercedes 208hp",
+    "floorplan": "10OB",
+    "slides": "No Slides",
+    "baths": "None",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2741/2741%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1766073600000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=cMQEGuSpdhi",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2741/Documents/2741%20Build%20Sheet_1.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2741/Documents/2741%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2741/Documents/2741%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2026-ogv-luxury-coach-vsport-9rb7-nobath-mercedes-208hp-white-stonegrey-2750",
+      "title": "2026 OGV Luxury Coach V-Sport 9RB7"
+    }
+  },
+  {
+    "slug": "2026-ogv-luxury-coach-vcruise-8ob-rear-bath-galley-black-cream-2739",
+    "stock": "2739",
+    "title": "2026 OGV Luxury Coach V-Cruise 8OB",
+    "year": 2026,
+    "make": "ogv",
+    "model": "v-cruise",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 174095,
+    "miles": "New",
+    "engine": "Mercedes 208hp",
+    "floorplan": "8OB",
+    "slides": "No Slides",
+    "baths": "Rear Bath w/ Galley",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2739/2739%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1765988460000,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=wAiYRgccQ3u",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2739/Documents/2739%20Build%20Sheet_1.pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/2739/Documents/2739%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2739/Documents/2739%20Check-in%20Sheet.pdf?hsLang=en"
+    },
+    "prev": {
+      "slug": "2026-ogv-luxury-coach-vdrive-10ob-nobath-black-cream-2741",
+      "title": "2026 OGV Luxury Coach V-Drive 10OB"
+    }
+  },
+  {
+    "slug": "2026-featherlite-stacker-trailer-4414-white-5332-2692",
+    "stock": "2692",
+    "title": "2026 Featherlite 26' Stacker Trailer 4414",
+    "year": 2026,
+    "make": "featherlite",
+    "model": "stacker trailer",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 102401,
+    "miles": "\u2014",
+    "engine": "-",
+    "floorplan": "26' L x 11' H x 8'6\" W",
+    "slides": "",
+    "baths": "None",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2692/images/2026%20Featherlite%20Stacker%20Trailer%20Exterior-05.jpg",
+    "virtual": false,
+    "created": 1764752400000,
+    "featured": false,
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/2692/documents/2692%20Build%20Sheet.pdf?hsLang=en",
+      "floorPlan": "#",
+      "checkInSheet": "#"
+    },
+    "prev": {
+      "slug": "2026-ogv-luxury-coach-vcruise-8ob-rear-bath-galley-black-cream-2739",
+      "title": "2026 OGV Luxury Coach V-Cruise 8OB"
     }
   }
 ]

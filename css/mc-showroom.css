@@ -1,0 +1,37 @@
+/* Motorcoach showroom listing styles */
+.mc-card-sold-label{align-items:center;color:#d71920;display:flex;font-size:16px;font-weight:800;justify-content:center;letter-spacing:.5px;line-height:1;text-align:center;width:100%}.mc-card .mc-card-media .mc-card-sold-badge{-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);background:rgba(14,14,14,.9);border-radius:4px;color:var(--color-gold);font-family:Riviera Nights,sans-serif;font-size:clamp(15px,18/1200 * 100vw,18px);font-weight:500;left:1.11rem;letter-spacing:.1em;line-height:1;max-width:38%;min-width:150px;padding:.9rem .75rem .7rem;pointer-events:none;position:absolute;text-align:center;text-transform:uppercase;top:1.11rem;width:auto;z-index:2}.mc-card .mc-card-media{display:flex;flex-direction:column}.mc-card .mc-card-media .mc-card-media_link{flex:1 1 auto;min-height:0}.mc-card .mc-card-media .mc-card-sold-bar{background:linear-gradient(90deg,#b79b5d,#dfc16f);color:var(--color-bg-main);display:block;flex:0 0 auto;font-family:Riviera Nights,sans-serif;font-size:clamp(15px,18/1200 * 100vw,18px);font-weight:500;letter-spacing:.1em;line-height:1;padding:.7rem .75rem;pointer-events:none;text-align:center;text-transform:uppercase;width:100%}
+
+.mc-listing-page .showroom-hero-section{position:relative;min-height:42vw;max-height:560px;display:flex;align-items:flex-end;overflow:hidden;background:#0e0e0e}
+.mc-listing-page .showroom-hero-section .section-bg{position:absolute;inset:0}
+.mc-listing-page .showroom-hero-section video{width:100%;height:100%;object-fit:cover}
+.mc-listing-page .showroom-hero-section .overlay{position:absolute;inset:0;background:rgba(0,0,0,.45)}
+.mc-listing-page .showroom-hero-section .inner{position:relative;z-index:2;width:min(1500px,calc(100% - 48px));margin:0 auto;padding:48px 0}
+.mc-listing-page .showroom-hero-section h1{color:#fff;text-transform:uppercase;letter-spacing:.06em;font-weight:400;font-size:clamp(34px,6vw,64px);margin:0}
+.mc-listing-page .logo-slider-section{background:#0e0e0e;padding:28px 0}
+.mc-listing-page .logo-slider,.mc-listing-page .logo-slider .swiper-wrapper{display:flex;gap:36px;align-items:center;justify-content:center;flex-wrap:wrap}
+.mc-listing-page .mc-listing-section{background:#0e0e0e;padding:24px 0 80px}
+.mc-listing-page .mc-listing-section > .inner{width:min(1500px,calc(100% - 48px));margin:0 auto}
+.mc-showroom__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:28px}
+.mc-card{background:#161616;color:#fff;overflow:hidden}
+.mc-card-inner{display:flex;flex-direction:column;height:100%}
+.mc-card-media{position:relative}
+.mc-card-media img{width:100%;height:auto;display:block;aspect-ratio:16/10;object-fit:cover}
+.mc-card-body{padding:18px 18px 22px;display:flex;flex-direction:column;gap:14px;flex:1}
+.mc-card-specs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 16px}
+.mc-card-specs .mc-spec span{display:block;color:#9a9a9a;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.mc-card-specs .mc-spec b{font-weight:400;font-size:15px;color:#fff}
+.mc-card-price-value{color:var(--gold,#b79b5d);font-size:24px}
+.mc-card-btn{margin-top:auto}
+.mc-showroom__bar{margin:0 0 24px}
+.mc-filters,.filters-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.mc-filter{position:relative}
+.mc-select__toggle,.mc-btn,.mc-btn-sm{border:1px solid #484848;background:#0e0e0e;color:#fff;padding:10px 14px;cursor:pointer;text-decoration:none;display:inline-block}
+.mc-btn-black{background:#0e0e0e}
+.mc-filter-inner{position:absolute;z-index:20;top:calc(100% + 6px);left:0;min-width:220px;background:#141414;border:1px solid #484848;padding:10px;max-height:280px;overflow:auto}
+.mc-option{display:block;width:100%;text-align:left;background:transparent;border:0;color:#fff;padding:8px 10px;cursor:pointer}
+.mc-option.is-selected,.mc-option:hover{color:var(--gold,#b79b5d)}
+.mc-showroom__count{color:#cfcfcf;margin:0 0 18px}
+.mc-showroom__empty{color:#cfcfcf;padding:24px 0}
+.mc-range__values{color:#cfcfcf;font-size:13px;margin-bottom:8px}
+.mc-filter--range input[type=range]{width:100%;display:block;margin:6px 0}
+.mc-card-media_link{display:block}
