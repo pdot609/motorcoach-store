@@ -13,6 +13,15 @@ document.addEventListener(
   (event) => {
     const link = event.target.closest("a[href]");
     if (!link) return;
+    /* Lightbox / modal triggers handle their own hash targets. */
+    if (
+      link.hasAttribute("data-open-virtual") ||
+      link.hasAttribute("data-open-video") ||
+      link.classList.contains("js-lb-media") ||
+      link.classList.contains("js-lb-gallery")
+    ) {
+      return;
+    }
     const raw = link.getAttribute("href") || "";
     let id = "";
     if (raw.startsWith("#") && raw !== "#" && !raw.startsWith("#/")) {
@@ -38,6 +47,15 @@ document.addEventListener(
     if (!id) return;
     const target = document.getElementById(id);
     if (!target) return;
+    /* Don't steal clicks meant for hidden lightbox / modal panels. */
+    if (
+      target.classList.contains("coach-lightbox") ||
+      target.hasAttribute("hidden") ||
+      target.id === "virtual-tour" ||
+      target.id.startsWith("lb-virtual")
+    ) {
+      return;
+    }
     event.preventDefault();
     event.stopPropagation();
     target.scrollIntoView({ behavior: "smooth", block: "start" });

@@ -45,10 +45,28 @@
   }
 
   document.querySelectorAll("[data-open-virtual]").forEach((btn) => {
-    btn.addEventListener("click", (event) => {
-      event.preventDefault();
-      open(virtual);
-    });
+    btn.addEventListener(
+      "click",
+      (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        open(virtual);
+      },
+      true,
+    );
+  });
+
+  document.querySelectorAll("[data-open-video]").forEach((btn) => {
+    btn.addEventListener(
+      "click",
+      (event) => {
+        const video = document.getElementById("coach-video");
+        event.preventDefault();
+        event.stopPropagation();
+        open(video);
+      },
+      true,
+    );
   });
 
   items.forEach((link, i) => {
@@ -63,13 +81,15 @@
     btn.addEventListener("click", () => {
       close(virtual);
       close(galleryLb);
+      close(document.getElementById("coach-video"));
     });
   });
-  [virtual, galleryLb].forEach((el) => {
+  [virtual, galleryLb, document.getElementById("coach-video")].forEach((el) => {
     el?.addEventListener("click", (event) => {
       if (event.target === el) {
         close(virtual);
         close(galleryLb);
+        close(el);
       }
     });
   });
@@ -85,6 +105,12 @@
     if (event.key === "Escape") {
       close(virtual);
       close(galleryLb);
+      close(document.getElementById("coach-video"));
     }
   });
+
+  /* Deep-link support: /coach/?#virtual-tour opens the Matterport tour. */
+  if (location.hash === "#virtual-tour" && virtual) {
+    open(virtual);
+  }
 })();
