@@ -35,3 +35,8 @@
 .mc-range__values{color:#cfcfcf;font-size:13px;margin-bottom:8px}
 .mc-filter--range input[type=range]{width:100%;display:block;margin:6px 0}
 .mc-card-media_link{display:block}
+
+.mc-listing-page .showroom-hero-section{overflow:hidden}
+.mc-listing-page .mc-listing-section{overflow:visible;position:relative;z-index:1}
+.mc-listing-page article.mc-card{padding:0;border-right:0;display:block}
+.mc-showroom__grid.row{display:grid}

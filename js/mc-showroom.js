@@ -7,6 +7,7 @@
   const countEl = root.querySelector(".mc-showroom__count");
   const emptyEl = root.querySelector(".mc-showroom__empty");
   const pageSize = Number(root.dataset.pageSize || 12) || 12;
+  const canLoadMore = root.dataset.loadmore === "1";
 
   const facetsScript = root.querySelector('script[type="application/json"]');
   let facets = {};
@@ -16,16 +17,32 @@
     facets = {};
   }
 
+  const params = new URLSearchParams(location.search);
   const state = {
     year: new Set(),
     make: new Set(),
     model: new Set(),
+    condition: normalizeCondition(params.get("condition") || ""),
     miles: null,
     price: null,
-    q: "",
-    sortField: root.dataset.sortField === "created" ? "created" : "created",
+    q: (params.get("q") || "").trim().toLowerCase(),
+    sortField: root.dataset.sortField === "created" ? "created" : root.dataset.sortField || "created",
     sortDir: root.dataset.sortDir || "desc",
+    page: 1,
   };
+
+  function normalizeCondition(value) {
+    const v = String(value || "").trim().toLowerCase();
+    if (!v) return "";
+    if (v === "certified" || v === "cpo" || v.includes("certified")) return "certified";
+    if (v.includes("pre")) return "pre-owned";
+    if (v === "new") return "new";
+    return v;
+  }
+
+  function cardCondition(card) {
+    return normalizeCondition(card.dataset.condition || "");
+  }
 
   function num(value) {
     const n = Number(value);
@@ -60,6 +77,9 @@
         btn.setAttribute("role", "option");
         btn.dataset.value = value;
         btn.textContent = label;
+        if (state[facetName] instanceof Set && state[facetName].has(value)) {
+          btn.classList.add("is-selected");
+        }
         menu.append(btn);
       });
   }
@@ -67,19 +87,23 @@
   function setupRanges() {
     ["miles", "price"].forEach((facetName) => {
       const filter = root.querySelector(`.mc-filter[data-facet="${facetName}"]`);
-      if (!filter) return;
       const conf = facets[facetName] || {};
       let min = num(conf.min);
       let max = num(conf.max);
+      const values = cards.map((card) => num(card.dataset[facetName])).filter((v) => v != null);
       if (min == null || max == null) {
-        const values = cards.map((card) => num(card.dataset[facetName])).filter((v) => v != null);
         min = values.length ? Math.min(...values) : 0;
         max = values.length ? Math.max(...values) : 0;
       }
+      if (min == null || max == null || min === max) {
+        state[facetName] = null;
+        return;
+      }
       state[facetName] = { min, max, lo: min, hi: max };
+      if (!filter) return;
       const inner = filter.querySelector(".mc-filter-inner");
       if (!inner) return;
-      inner.querySelectorAll("input").forEach((input) => input.remove());
+      inner.querySelectorAll("input, .mc-range__values").forEach((el) => el.remove());
       const lo = document.createElement("input");
       lo.type = "range";
       lo.min = String(min);
@@ -124,16 +148,24 @@
   }
 
   function matches(card) {
+    if (state.condition) {
+      const cond = cardCondition(card);
+      if (state.condition === "certified") {
+        if (cond !== "certified") return false;
+      } else if (cond !== state.condition) {
+        return false;
+      }
+    }
     if (state.year.size && !state.year.has(cardValue(card, "year"))) return false;
     if (state.make.size && !state.make.has(cardValue(card, "make"))) return false;
     if (state.model.size && !state.model.has(cardValue(card, "model"))) return false;
     if (state.miles) {
       const miles = num(card.dataset.miles);
-      if (miles == null || miles < state.miles.lo || miles > state.miles.hi) return false;
+      if (miles != null && (miles < state.miles.lo || miles > state.miles.hi)) return false;
     }
     if (state.price) {
       const price = num(card.dataset.price);
-      if (price == null || price < state.price.lo || price > state.price.hi) return false;
+      if (price != null && (price < state.price.lo || price > state.price.hi)) return false;
     }
     if (state.q) {
       const hay = [
@@ -141,6 +173,7 @@
         cardValue(card, "model"),
         card.dataset.stock || "",
         card.dataset.engine || "",
+        card.dataset.condition || "",
         card.textContent || "",
       ]
         .join(" ")
@@ -161,9 +194,9 @@
         bv = cardValue(b, "make");
         return av.localeCompare(bv) * dir;
       }
-      if (field === "created" || field === "create_date") {
-        av = num(a.dataset.created) || 0;
-        bv = num(b.dataset.created) || 0;
+      if (field === "created" || field === "create_date" || field === "sale_date") {
+        av = num(a.dataset.created) || num(a.dataset.saleDate) || 0;
+        bv = num(b.dataset.created) || num(b.dataset.saleDate) || 0;
       } else {
         av = num(a.dataset[field]) || 0;
         bv = num(b.dataset[field]) || 0;
@@ -172,34 +205,60 @@
     });
   }
 
+  function ensureLoadMore(matchedCount, visibleCount) {
+    let btn = root.querySelector("[data-load-more]");
+    if (!canLoadMore || visibleCount >= matchedCount) {
+      btn?.remove();
+      return;
+    }
+    if (!btn) {
+      btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "mc-btn";
+      btn.dataset.loadMore = "1";
+      btn.textContent = "Load more";
+      btn.addEventListener("click", () => {
+        state.page += 1;
+        apply();
+      });
+      grid?.parentElement?.append(btn);
+    }
+  }
+
   function apply() {
     const matched = sortCards(cards.filter(matches));
+    const limit = canLoadMore ? pageSize * state.page : pageSize;
     cards.forEach((card) => {
       card.hidden = true;
       card.style.display = "none";
     });
     matched.forEach((card, index) => {
-      const show = index < pageSize || pageSize <= 0;
+      const show = index < limit || limit <= 0;
       card.hidden = !show;
       card.style.display = show ? "" : "none";
-      if (show && grid && card.parentElement !== grid) grid.append(card);
-      else if (show) grid.append(card);
+      if (show && grid) grid.append(card);
     });
     if (countEl) {
       countEl.textContent = matched.length
-        ? `Showing ${Math.min(matched.length, pageSize || matched.length)} of ${matched.length} coaches`
+        ? `Showing ${Math.min(matched.length, limit || matched.length)} of ${matched.length} coaches`
         : "Showing 0 coaches";
     }
     if (emptyEl) emptyEl.hidden = matched.length > 0;
     const loader = root.querySelector(".mc-showroom__loader");
     if (loader) loader.hidden = true;
+    ensureLoadMore(matched.length, Math.min(matched.length, limit || matched.length));
   }
 
   function clearAll() {
     state.year.clear();
     state.make.clear();
     state.model.clear();
+    state.condition = "";
     state.q = "";
+    state.page = 1;
+    const url = new URL(location.href);
+    url.search = "";
+    history.replaceState({}, "", url);
     root.querySelectorAll(".mc-option.is-selected").forEach((el) => el.classList.remove("is-selected"));
     const search = root.querySelector('input[type="search"], input[data-search], .mc-search input');
     if (search) search.value = "";
@@ -209,6 +268,9 @@
 
   ["year", "make", "model"].forEach(populateSelect);
   setupRanges();
+
+  const search = root.querySelector('input[type="search"], input[data-search], .mc-search input');
+  if (search && state.q) search.value = state.q;
 
   root.addEventListener("click", (event) => {
     const toggle = event.target.closest(".mc-select__toggle, .mc-filter__label");
@@ -234,6 +296,7 @@
         filter?.querySelectorAll(".mc-option").forEach((el) => el.classList.remove("is-selected"));
         option.classList.add("is-selected");
         closeMenus();
+        state.page = 1;
         apply();
         return;
       }
@@ -246,6 +309,7 @@
           state[facet].add(value);
           option.classList.add("is-selected");
         }
+        state.page = 1;
         apply();
       }
       return;
@@ -256,9 +320,9 @@
     }
   });
 
-  const search = root.querySelector('input[type="search"], input[data-search], .mc-search input');
   search?.addEventListener("input", () => {
     state.q = search.value.trim().toLowerCase();
+    state.page = 1;
     apply();
   });
 
@@ -266,7 +330,6 @@
     if (!root.contains(event.target)) closeMenus();
   });
 
-  // Lazy-load hero video if present
   document.querySelectorAll("video.lazy-bg-video[data-src]").forEach((video) => {
     video.src = video.dataset.src;
     video.load();
