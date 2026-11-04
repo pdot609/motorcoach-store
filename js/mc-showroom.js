@@ -205,42 +205,50 @@
     });
   }
 
-  function loadMoreButton() {
-    return (
-      root.querySelector("[data-load-more]") ||
-      root.querySelector(".mc-showroom__loadmore") ||
-      root.querySelector("button.mc-btn.mc-showroom__loadmore")
+  function loadMoreButtons() {
+    const found = Array.from(
+      root.querySelectorAll("[data-load-more], .mc-showroom__loadmore, button.mc-showroom__loadmore")
     );
+    return found.filter((btn, index, all) => all.indexOf(btn) === index);
+  }
+
+  function bindLoadMore(btn) {
+    if (!btn || btn.dataset.bound === "1") return;
+    btn.dataset.bound = "1";
+    btn.dataset.loadMore = "1";
+    btn.addEventListener("click", (event) => {
+      event.preventDefault();
+      state.page += 1;
+      apply();
+    });
   }
 
   function ensureLoadMore(matchedCount, visibleCount) {
-    let btn = loadMoreButton();
+    let buttons = loadMoreButtons();
     if (!canLoadMore || visibleCount >= matchedCount) {
-      if (btn) {
+      buttons.forEach((btn) => {
         btn.hidden = true;
         btn.style.display = "none";
-      }
+      });
       return;
     }
-    if (!btn) {
-      btn = document.createElement("button");
+    if (!buttons.length) {
+      const btn = document.createElement("button");
       btn.type = "button";
       btn.className = "mc-btn mc-showroom__loadmore";
       btn.dataset.loadMore = "1";
       btn.textContent = "Load more";
       grid?.parentElement?.append(btn);
+      buttons = [btn];
     }
-    btn.hidden = false;
-    btn.style.display = "";
-    btn.dataset.loadMore = "1";
-    if (!btn.dataset.bound) {
-      btn.dataset.bound = "1";
-      btn.addEventListener("click", (event) => {
-        event.preventDefault();
-        state.page += 1;
-        apply();
-      });
-    }
+    // Keep one visible control; hide extras so users always hit a bound button.
+    buttons.forEach((btn, index) => {
+      bindLoadMore(btn);
+      const show = index === 0;
+      btn.hidden = !show;
+      btn.style.display = show ? "" : "none";
+      btn.textContent = "Load more";
+    });
   }
 
   function apply() {
