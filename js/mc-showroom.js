@@ -205,23 +205,41 @@
     });
   }
 
+  function loadMoreButton() {
+    return (
+      root.querySelector("[data-load-more]") ||
+      root.querySelector(".mc-showroom__loadmore") ||
+      root.querySelector("button.mc-btn.mc-showroom__loadmore")
+    );
+  }
+
   function ensureLoadMore(matchedCount, visibleCount) {
-    let btn = root.querySelector("[data-load-more]");
+    let btn = loadMoreButton();
     if (!canLoadMore || visibleCount >= matchedCount) {
-      btn?.remove();
+      if (btn) {
+        btn.hidden = true;
+        btn.style.display = "none";
+      }
       return;
     }
     if (!btn) {
       btn = document.createElement("button");
       btn.type = "button";
-      btn.className = "mc-btn";
+      btn.className = "mc-btn mc-showroom__loadmore";
       btn.dataset.loadMore = "1";
       btn.textContent = "Load more";
-      btn.addEventListener("click", () => {
+      grid?.parentElement?.append(btn);
+    }
+    btn.hidden = false;
+    btn.style.display = "";
+    btn.dataset.loadMore = "1";
+    if (!btn.dataset.bound) {
+      btn.dataset.bound = "1";
+      btn.addEventListener("click", (event) => {
+        event.preventDefault();
         state.page += 1;
         apply();
       });
-      grid?.parentElement?.append(btn);
     }
   }
 
