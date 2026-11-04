@@ -88,13 +88,15 @@
     ["miles", "price"].forEach((facetName) => {
       const filter = root.querySelector(`.mc-filter[data-facet="${facetName}"]`);
       const conf = facets[facetName] || {};
-      let min = num(conf.min);
-      let max = num(conf.max);
       const values = cards.map((card) => num(card.dataset[facetName])).filter((v) => v != null);
-      if (min == null || max == null) {
-        min = values.length ? Math.min(...values) : 0;
-        max = values.length ? Math.max(...values) : 0;
-      }
+      // Always derive from live cards so stale facet JSON cannot hide inventory
+      // after price updates. Expand with facet bounds when present.
+      let min = values.length ? Math.min(...values) : num(conf.min);
+      let max = values.length ? Math.max(...values) : num(conf.max);
+      const confMin = num(conf.min);
+      const confMax = num(conf.max);
+      if (confMin != null) min = min == null ? confMin : Math.min(min, confMin);
+      if (confMax != null) max = max == null ? confMax : Math.max(max, confMax);
       if (min == null || max == null || min === max) {
         state[facetName] = null;
         return;
