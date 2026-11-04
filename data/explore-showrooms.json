@@ -80,15 +80,6 @@
       "enterLabel": "Enter OGV Luxury Coach Showroom",
       "cards": [
         {
-          "href": "/coaches/2026-ogv-luxury-coach-awd-v-cruise-8oba-blue-grey-3019",
-          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3019/3019%20HERO%20IMAGE.jpg",
-          "alt": "2026 OGV Luxury Coach V-Cruise 8OBA",
-          "title": "2026 OGV Luxury Coach V-Cruise 8OBA",
-          "msrp": null,
-          "price": "$149,999",
-          "monthly": null
-        },
-        {
           "href": "/coaches/2027-ogv-luxury-coach-v-cruise-10obw-rear-bath-mercedes-208hp-black-creme-2974",
           "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2974/2974%20HERO%20IMAGE.jpg",
           "alt": "2027 OGV Luxury Coach V-Cruise 10OBW",
@@ -192,15 +183,6 @@
       "enterLabel": "Enter Featherlite Stacker Trailers Showroom",
       "cards": [
         {
-          "href": "/coaches/2009-prevost-featherlite-h345-double-slide-mid-bath-detroit-515hp-allison-2767",
-          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2767/2767%20HERO%20IMAGE.jpg",
-          "alt": "2009 Prevost Featherlite H3 45",
-          "title": "2009 Prevost Featherlite H3 45",
-          "msrp": null,
-          "price": "$399,999",
-          "monthly": null
-        },
-        {
           "href": "/coaches/2026-featherlite-stacker-trailer-4953-white-24ft-2995",
           "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2995/2995%20HERO%20IMAGE%201.jpg",
           "alt": "2026 Featherlite 24' Stacker Trailer 4953",
@@ -261,6 +243,15 @@
           "title": "2026 Featherlite 26' Stacker Trailer 4414",
           "msrp": null,
           "price": "$113,077",
+          "monthly": null
+        },
+        {
+          "href": "/coaches/2026-featherlite-stacker-trailer-4414-white-24ft-2755",
+          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2755/Images/2755_Exterior-05.jpg",
+          "alt": "2026 Featherlite 24' Stacker Trailer 4414",
+          "title": "2026 Featherlite 24' Stacker Trailer 4414",
+          "msrp": null,
+          "price": "$103,698",
           "monthly": null
         }
       ]
