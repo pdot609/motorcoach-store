@@ -79,3 +79,21 @@
     flex-wrap: wrap;
   }
 }
+
+/* showroom-perf-fix */
+/* SAL never initializes on this static clone — keep cards visible */
+.mc-card[data-sal],
+.mc-card[data-sal].sal-animate,
+[data-sal] {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+.mc-showroom__loader { display: none !important; }
+.mc-showroom__grid img {
+  content-visibility: auto;
+  background: #1a1a1a;
+}
+.mc-showroom, .mc-listing-page {
+  content-visibility: visible;
+}
