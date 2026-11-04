@@ -12,15 +12,10 @@
 .mc-listing-page .mc-listing-section{background:#0e0e0e;padding:24px 0 80px}
 .mc-listing-page .mc-listing-section > .inner{width:min(1500px,calc(100% - 48px));margin:0 auto}
 .mc-showroom__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:28px}
-.mc-card{background:#161616;color:#fff;overflow:hidden}
-.mc-card-inner{display:flex;flex-direction:column;height:100%}
+/* Match HubSpot listing cards: white face, dark values (never white-on-white) */
+.mc-card{background:transparent;color:inherit;overflow:hidden}
 .mc-card-media{position:relative}
-.mc-card-media img{width:100%;height:auto;display:block;aspect-ratio:16/10;object-fit:cover}
-.mc-card-body{padding:18px 18px 22px;display:flex;flex-direction:column;gap:14px;flex:1}
-.mc-card-specs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 16px}
-.mc-card-specs .mc-spec span{display:block;color:#9a9a9a;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
-.mc-card-specs .mc-spec b{font-weight:400;font-size:15px;color:#fff}
-.mc-card-price-value{color:var(--gold,#b79b5d);font-size:24px}
+.mc-card-media img{width:100%;height:auto;display:block;object-fit:cover}
 .mc-card-btn{margin-top:auto}
 .mc-showroom__bar{margin:0 0 24px}
 .mc-filters,.filters-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
@@ -78,6 +73,40 @@
   .mc-showroom__bar, .mc-filters {
     flex-wrap: wrap;
   }
+}
+
+/* card-theme-fix: HubSpot main.css paints .mc-card-inner white with dark body text.
+   Our earlier overrides set value <b> to #fff → invisible specs on every showroom. */
+.mc-card .mc-card-inner {
+  background: var(--color-text-main, #fff) !important;
+  color: var(--color-bg-main, #0e0e0e);
+}
+.mc-card .mc-card-body {
+  color: var(--color-bg-main, #0e0e0e) !important;
+}
+.mc-card .mc-spec span:not(.mc-card-price-value, .mc-card-price-before) {
+  color: var(--color-text-placeholder, #a4a4a4) !important;
+}
+.mc-card .mc-spec b {
+  color: var(--color-bg-main, #0e0e0e) !important;
+  font-weight: 400 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.mc-card .mc-card-price,
+.mc-card .mc-card-price-value {
+  color: var(--color-gold, #b79b5d) !important;
+}
+.mc-card .mc-btn-black {
+  background: #0e0e0e !important;
+  color: #fff !important;
+  border-color: #0e0e0e !important;
+}
+
+/* Keep listing grid usable without fighting HubSpot's media/body widths */
+.mc-showroom__grid.row > .mc-card,
+.mc-showroom__grid > .mc-card {
+  min-width: 0;
 }
 
 /* showroom-perf-fix */
