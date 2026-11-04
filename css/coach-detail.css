@@ -264,3 +264,81 @@
 .coach-page .links-col { display:flex; flex-wrap:wrap; gap:12px; justify-content:flex-end; }
 .coach-page .foot-info-row .after-price-info { margin: 8px 0 0; max-width: 420px; }
 .coach-page .common-info-section + .gallery-section { margin-top: 0; }
+
+
+/* mobile-coach-optimize */
+@media (max-width: 900px) {
+  .coach-page .common-info-section .inner {
+    width: min(100% - 28px, 916px) !important;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .coach-page .title-row h1 {
+    font-size: clamp(22px, 6.5vw, 30px);
+  }
+  .coach-page .specs-bar-row {
+    gap: 12px 4%;
+    margin-bottom: 28px;
+  }
+  .coach-page .mc-spec {
+    flex: 1 1 calc(50% - 4%) !important;
+    max-width: calc(50% - 2%) !important;
+    min-width: 0 !important;
+  }
+  .coach-page .action-bar-row {
+    margin-bottom: 28px;
+  }
+  .coach-page .action-col {
+    flex: 0 0 50% !important;
+    width: 50% !important;
+    max-width: 50% !important;
+  }
+  .coach-page .action-col-btn {
+    min-height: 100px;
+    padding: 16px 8px;
+  }
+  .coach-page .foot-info-row {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    gap: 12px;
+  }
+  .coach-page .links-col {
+    justify-content: center !important;
+  }
+  .coach-page .mc-card-price-value {
+    font-size: clamp(22px, 7vw, 28px);
+  }
+  .coach-page .after-price-info {
+    text-align: center !important;
+    max-width: none !important;
+  }
+  .coach-page .single-pager-section {
+    padding: 28px 16px;
+  }
+  .coach-page .pager-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .coach-page .single-pager a {
+    max-width: 100%;
+  }
+  .coach-page .pager-next {
+    margin-left: 0;
+    text-align: left;
+    flex-direction: row;
+  }
+  .coach-page .form-wrap {
+    width: min(100% - 28px, 916px);
+    margin-bottom: 48px;
+  }
+  .coach-page .form-wrap .form {
+    grid-template-columns: 1fr !important;
+  }
+  .coach-page .ready-band {
+    padding: 48px 16px 28px;
+  }
+  .coach-lightbox {
+    padding: 12px;
+  }
+}

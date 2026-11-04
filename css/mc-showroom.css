@@ -186,3 +186,177 @@
 /* Coming-soon modal fallback if remote module CSS is slow/blocked */
 .inventory-modal { display: none !important; position: fixed; inset: 0; z-index: 9999; }
 .inventory-modal.active { display: flex !important; align-items: center; justify-content: center; }
+
+/* mobile-optimize */
+@media (max-width: 900px) {
+  .mc-listing-page .showroom-hero-section {
+    min-height: 220px !important;
+    max-height: 280px !important;
+  }
+  .mc-listing-page .showroom-hero-section .inner {
+    width: min(100% - 28px, 1500px);
+    padding: 28px 0 22px;
+  }
+  .mc-listing-page .showroom-hero-section h1 {
+    font-size: clamp(28px, 10vw, 40px);
+  }
+
+  .mc-showroom__bar,
+  .mc-showroom .filters-row,
+  .mc-showroom .col-filters,
+  .mc-showroom .col-search,
+  .mc-showroom .col-sort {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+  }
+  .mc-showroom .filters-row.row {
+    display: flex !important;
+    flex-direction: column;
+    gap: 14px;
+    margin: 0 !important;
+  }
+  .mc-filters,
+  .filters-row .mc-filters {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    align-items: stretch;
+  }
+  .mc-filter {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  .mc-select__toggle,
+  .mc-filter__label,
+  .mc-btn,
+  .mc-btn-sm {
+    width: 100%;
+    min-height: 44px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+  .mc-filter-inner,
+  .mc-select__menu,
+  .mc-range {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+  .mc-filter--range .mc-filter-inner {
+    min-width: 0;
+  }
+  .mc-showroom__search,
+  .mc-showroom input[type="search"],
+  .mc-showroom .search-input,
+  .mc-showroom [class*="search"] input {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    min-height: 44px;
+  }
+  .mc-showroom__count {
+    font-size: 13px;
+    margin: 4px 0 14px;
+  }
+
+  /* Cards: always stack image over details on phones/tablets */
+  .mc-card .mc-card-inner,
+  .mc-card:nth-child(odd) .mc-card-inner,
+  .mc-card:nth-child(even) .mc-card-inner {
+    flex-direction: column !important;
+  }
+  .mc-card .mc-card-media,
+  .mc-card .mc-card-body {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .mc-card .mc-card-body {
+    padding: 16px 14px 18px !important;
+  }
+  .mc-card .mc-card-specs {
+    column-gap: 6% !important;
+    row-gap: 0.65rem !important;
+  }
+  .mc-card .mc-spec {
+    width: 47% !important;
+  }
+  .mc-card .mc-card-foot {
+    gap: 12px;
+  }
+  .mc-card .mc-card-price,
+  .mc-card .mc-card-price-value {
+    font-size: clamp(20px, 6vw, 26px) !important;
+    text-align: center;
+    width: 100%;
+  }
+  .mc-card .mc-card-btn,
+  .mc-card .mc-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .mc-showroom__grid.row,
+  .mc-showroom__grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding: 0 2px;
+  }
+
+  .showrooms-listing-section .inner,
+  .mc-listing-page .mc-listing-section > .inner,
+  .mc-listing-page .showrooms-listing-section .inner {
+    width: min(100% - 24px, 1500px) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .logo-slider.swiper.swiper-loading,
+  .logo-slider.swiper.mc-logo-static,
+  .logo-slider.swiper.swiper-ready {
+    max-height: none;
+    padding: 8px 0;
+  }
+  .logo-slider.mc-logo-static .swiper-slide,
+  .logo-slider.swiper-ready .swiper-slide {
+    height: 48px;
+  }
+  .logo-slider img {
+    max-height: 36px !important;
+    max-width: 88px !important;
+  }
+
+  /* Coming soon / inventory modal on small screens */
+  .coming-soon-section {
+    padding: 24px 0 !important;
+  }
+  .inventory-modal.active {
+    align-items: flex-start !important;
+    padding: 16px !important;
+  }
+  .inventory-modal-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 28px 16px 20px !important;
+    box-sizing: border-box;
+  }
+  .inventory-modal-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .mc-filters,
+  .filters-row .mc-filters {
+    grid-template-columns: 1fr;
+  }
+  .mc-card .mc-spec b {
+    font-size: 14px !important;
+  }
+}

@@ -1397,3 +1397,120 @@ p { margin: 0 0 1.1em; }
   .explore-close-copy, .explore-close-media { width: 100%; border-right: 1px solid #484848; }
   .explore-close-media { aspect-ratio: 16 / 10; }
 }
+
+
+/* mobile-site-optimize */
+html, body { overflow-x: clip; }
+@media (max-width: 900px) {
+  .header-contacts {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    padding: 8px 12px 6px;
+  }
+  .header-contacts a {
+    font-size: 10px;
+    word-break: break-all;
+  }
+  .utility {
+    grid-template-columns: auto 1fr auto !important;
+    min-height: 72px !important;
+    padding: 6px 10px 0 !important;
+    gap: 8px !important;
+  }
+  .logo {
+    width: min(58vw, 240px) !important;
+    min-width: 0 !important;
+    padding: 4px 6px !important;
+  }
+  .menu-toggle,
+  .phone-icon {
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
+    padding: 10px 8px !important;
+    font-size: 12px !important;
+  }
+  .nav-row.open {
+    top: var(--header, 124px);
+    z-index: 40;
+    padding: 8px 0 16px;
+  }
+  .nav-link {
+    padding: 14px 18px !important;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .submenu a {
+    padding: 12px 22px !important;
+    min-height: 44px;
+  }
+
+  .hero {
+    min-height: min(78vh, 640px);
+  }
+  .hero-copy,
+  .page-hero-copy {
+    width: min(100% - 28px, var(--wide, 1500px)) !important;
+    padding-inline: 0;
+  }
+  .cta-row, .hero .actions, .ready-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .cta-row a, .hero .actions a, .ready-actions a, .btn, .button {
+    min-height: 44px;
+    justify-content: center;
+  }
+
+  .scroller {
+    grid-auto-columns: minmax(240px, 84%) !important;
+    gap: 14px;
+    padding-bottom: 8px;
+  }
+  .section.newest .coach-card,
+  .coach-card {
+    width: 100%;
+  }
+  .showroom-card {
+    min-height: 0;
+  }
+  .showroom-card .media {
+    min-height: 240px !important;
+  }
+
+  .form, .form-wrap .form {
+    grid-template-columns: 1fr !important;
+  }
+  .form input, .form textarea, .form select, .form button {
+    min-height: 44px;
+    font-size: 16px; /* prevent iOS zoom */
+  }
+  .form textarea { min-height: 110px; }
+
+  .journey, .journey .inner, .footer-inner {
+    width: min(100% - 28px, 1500px) !important;
+  }
+  .footer-links {
+    grid-template-columns: 1fr !important;
+    justify-items: center;
+  }
+
+  /* HubSpot imported sections sometimes force fixed paddings */
+  .dnd-section, .row-fluid .span12 {
+    max-width: 100%;
+  }
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: clamp(28px, 9vw, 36px) !important; }
+  h2 { font-size: clamp(24px, 7vw, 30px) !important; }
+  .header-contacts li:not(:first-child):not(:nth-child(2)) { display: none; }
+}
