@@ -26,8 +26,12 @@
   <noscript><link rel="stylesheet" href="https://www.themotorcoachstore.com/hubfs/hub_generated/template_assets/1/193672364047/1779919120009/template_main.css"></noscript>
 <link rel="preload" href="https://www.themotorcoachstore.com/hubfs/hub_generated/module_assets/1/217630506888/1790865927281/module_Dev_Dynamic_Listing.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://www.themotorcoachstore.com/hubfs/hub_generated/module_assets/1/217630506888/1790865927281/module_Dev_Dynamic_Listing.min.css"></noscript>
+<link rel="preload" href="https://www.themotorcoachstore.com/hubfs/hub_generated/module_assets/1/196850366245/1781114072032/module_Showroom_-_Coming_Soon_Section.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://www.themotorcoachstore.com/hubfs/hub_generated/module_assets/1/196850366245/1781114072032/module_Showroom_-_Coming_Soon_Section.min.css"></noscript>
+<link rel="preload" href="https://www.themotorcoachstore.com/hubfs/hub_generated/module_assets/1/217630507028/1786106706393/module_preowned-sec01.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://www.themotorcoachstore.com/hubfs/hub_generated/module_assets/1/217630507028/1786106706393/module_preowned-sec01.min.css"></noscript>
 <link rel="stylesheet" href="css/site.css">
-<link rel="stylesheet" href="css/mc-showroom.css?v=20261104d">
+<link rel="stylesheet" href="css/mc-showroom.css?v=20261104e">
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
@@ -148,54 +152,15 @@
   </div>
 </div>
 
-<script>  
+<script>
 document.addEventListener('DOMContentLoaded', function () {
   const section = document.querySelector('#logo-slider-section-mod-id_widget_1773492976925');
-  const slider = section?.querySelector('.logo-slider.swiper');
+  const slider = section && section.querySelector('.logo-slider.swiper');
   if (!slider) return;
-  
-  slider.classList.add('swiper-loading');
-
-  const wrapper = slider.querySelector('.swiper-wrapper');
-  const original = Array.from(wrapper.children);
-  const targetWidth = slider.clientWidth * 2;
-  let guard = 0;
-  while (wrapper.scrollWidth < targetWidth && guard < 30) {
-    original.forEach(el => wrapper.appendChild(el.cloneNode(true)));
-    guard++;
-  }
-
-  setTimeout(() => {
-    const slides = wrapper.children.length;
-    if (slides < 5) {
-      original.forEach(el => wrapper.appendChild(el.cloneNode(true)));
-    }
-
-    const swiper = new Swiper(slider, {
-      spaceBetween: 60,
-      speed: 5000,
-      direction: 'horizontal',
-      autoplay: { delay: 0, disableOnInteraction: false, pauseOnMouseEnter: false },
-      loop: true,
-      slidesPerView: 'auto',
-      freeMode: { enabled: true, momentum: false },
-      allowTouchMove: false,
-      simulateTouch: false,
-      keyboard: { enabled: false },
-      watchSlidesProgress: true,
-      breakpoints: { 768: { spaceBetween: 100 } }
-    });
-
-    slider.addEventListener('click', () => {
-      if (!swiper.autoplay.running) swiper.autoplay.start();
-    });
-    
-    slider.classList.remove('swiper-loading');
-    slider.classList.add('swiper-ready');
-    
-  }, 100);
+  // Without Swiper CSS/JS, the old clone loop stacked slides vertically (~8k px gap).
+  slider.classList.remove('swiper-loading');
+  slider.classList.add('swiper-ready', 'mc-logo-static');
 });
-
 </script>
 </div>
 
@@ -4673,6 +4638,6 @@ document.addEventListener('DOMContentLoaded', function () {
   <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><a href="./" aria-label="The Motorcoach Store home"><img src="https://www.themotorcoachstore.com/hs-fs/hubfs/motorcoach-theme/assets/images/motorcoach-logo-png-x3.png?width=240" alt="The Motorcoach Store" data-fallback="logo" decoding="async"></a><p class="lede" style="margin-top:16px"><a href="tel:+19412832516">941 283 2516</a> · <a href="mailto:sales@themotorcoach.store">sales@themotorcoach.store</a><br>5821 24th Street East, Bradenton, FL 34203</p></div><ul class="footer-links"><li><a href="explore-showrooms">New Showrooms</a></li><li><a href="pre-owned">Pre-Owned Showrooms</a></li><li><a href="certified-pre-owned">Certified Pre-Owned (CPO)</a></li><li><a href="pre-delivery-inspection">Pre-Delivery Inspection (PDI)</a></li><li><a href="fractionalmotorcoachownership-page">Fractional Ownership</a></li><li><a href="sell-your-coach">Sell Your Coach</a></li><li><a href="trade-rv">Trade-in</a></li><li><a href="rv-insurance">RV Insurance</a></li><li><a href="service">Service</a></li><li><a href="paint-and-body">Paint/Body</a></li><li><a href="ceramic-coating">Ceramic Coating</a></li><li><a href="rv-financing">Motorcoach Financing</a></li><li><a href="about">About</a></li><li><a href="news">News</a></li><li><a href="contact-us">Contact Us</a></li></ul><nav class="footer-social" aria-label="Social"><a href="https://www.facebook.com/TheMotorcoachStoreOfficial/" target="_blank" rel="noreferrer">Facebook</a><a href="https://www.instagram.com/the_motorcoach_store/" target="_blank" rel="noreferrer">Instagram</a><a href="https://www.linkedin.com/company/themotorcoachstore/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://www.youtube.com/@themotorcoachstore" target="_blank" rel="noreferrer">YouTube</a><a href="https://www.tiktok.com/@the_motorcoach_store" target="_blank" rel="noreferrer">TikTok</a></nav><div class="footer-base"><p>Copyright 2026 The Motorcoach Store. All Rights Reserved.</p><nav aria-label="Legal"><a href="privacy">Privacy Policy</a><a href="terms">Terms of Use</a><a href="accessibility">Website Accessibility</a></nav></div></div></footer>
   <script defer src="js/base-path.js"></script>
 <script defer src="js/site.js"></script>
-<script defer src="js/mc-showroom.js?v=20261104d"></script>
+<script defer src="js/mc-showroom.js?v=20261104e"></script>
 </body>
 </html>

@@ -138,6 +138,8 @@ def extract_asset_links(html: str) -> tuple[list[str], list[str]]:
                 "swiper",
                 "glightbox",
                 "listing",
+                "coming_soon",
+                "preowned-sec01",
             )
         ):
             if href.startswith("//"):
