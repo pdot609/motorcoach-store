@@ -233,6 +233,9 @@
     gap: 10px;
     width: 100%;
     align-items: stretch;
+    overflow: visible !important;
+    max-height: none !important;
+    height: auto !important;
   }
   .mc-filter {
     width: 100% !important;
@@ -361,11 +364,13 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
   .mc-filters,
   .filters-row .mc-filters {
     grid-template-columns: 1fr;
   }
+}
+@media (max-width: 480px) {
   .mc-card .mc-spec b {
     font-size: 14px !important;
   }
