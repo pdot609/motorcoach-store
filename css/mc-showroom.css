@@ -210,11 +210,21 @@
     max-width: 100% !important;
     float: none !important;
   }
+  .mc-showroom .filters-row,
   .mc-showroom .filters-row.row {
     display: flex !important;
-    flex-direction: column;
-    gap: 14px;
+    flex-flow: column nowrap !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    gap: 14px !important;
     margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+  .mc-showroom .mc-filters {
+    flex-flow: row wrap !important;
   }
   .mc-filters,
   .filters-row .mc-filters {
