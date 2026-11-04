@@ -9,16 +9,19 @@
   const priceRoot = document.querySelector("[data-price-filter]");
   const sortRoot = document.querySelector(".sort-filter, [data-sort-filter]");
 
+  const cardPrices = cards.map((card) => num(card.dataset.price)).filter((v) => v != null);
+  const derivedMax = cardPrices.length ? Math.max(...cardPrices) : null;
   const state = {
     q: (params.get("q") || "").trim().toLowerCase(),
     sort: params.get("sort") || "",
     priceMin: num(priceRoot?.dataset.min) ?? 0,
-    priceMax: num(priceRoot?.dataset.max) ?? Number.MAX_SAFE_INTEGER,
+    priceMax: Math.max(num(priceRoot?.dataset.max) ?? 0, derivedMax ?? 0) || Number.MAX_SAFE_INTEGER,
     lo: null,
     hi: null,
   };
   state.lo = state.priceMin;
   state.hi = state.priceMax;
+  if (priceRoot) priceRoot.dataset.max = String(state.priceMax);
 
   function num(value) {
     const n = Number(value);
