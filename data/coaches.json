@@ -1755,7 +1755,7 @@
     "channels": [
       "new"
     ],
-    "price": 2315272,
+    "price": 2272315,
     "miles": "New",
     "engine": "Volvo 500hp",
     "floorplan": "H3 45",
@@ -2226,6 +2226,40 @@
     "prev": {
       "slug": "2026-ogv-luxury-coach-vcruise-8ob-rear-bath-galley-black-cream-2739",
       "title": "2026 OGV Luxury Coach V-Cruise 8OB"
+    }
+  },
+  {
+    "slug": "prevost-loki-lc023-prevost-h3-45-double-slide-bath-anda-half-bunk-beds-volvo-500hp-2841",
+    "stock": "2841",
+    "title": "2026 Prevost Loki H3 45 LC023",
+    "year": 2026,
+    "make": "prevost",
+    "model": "loki coach lc023",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new"
+    ],
+    "price": 1755575,
+    "miles": "New",
+    "engine": "Volvo 500hp",
+    "floorplan": "H3 45",
+    "slides": "Double Slide",
+    "baths": "Bath and a Half",
+    "bunks": "Double Bunk",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2841/Images/2841%20Hero%20Image.jpg",
+    "virtual": true,
+    "virtualTour": "#lb-virtual-196510679664",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2841/Documents/LC023%20LOKI%20Printable%20Build%20Sheet%20(Revised%2004.16.26).pdf?hsLang=en",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/LC023%20Floorplan.pdf?hsLang=en",
+      "checkInSheet": "#"
+    },
+    "featured": false,
+    "created": 0,
+    "prev": {
+      "slug": "prevost-loki-lc023-prevost-h3-45-double-slide-bath-anda-half-bunk-beds-volvo-500hp-2841"
     }
   }
 ]
