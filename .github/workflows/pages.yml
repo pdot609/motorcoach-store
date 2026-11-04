@@ -9,7 +9,7 @@ permissions:
   id-token: write
 concurrency:
   group: pages-deploy
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   deploy:
     environment:
@@ -19,10 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Prepare static site
-        run: |
-          touch .nojekyll
-          # Keep artifact lean: drop git metadata/tools docs if present in checkout extras
-          rm -rf .git
+        run: touch .nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
