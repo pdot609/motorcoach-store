@@ -8,7 +8,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: pages
+  group: pages-deploy
   cancel-in-progress: true
 jobs:
   deploy:
@@ -18,8 +18,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Ensure nojekyll
-        run: touch .nojekyll
+      - name: Prepare static site
+        run: |
+          touch .nojekyll
+          # Keep artifact lean: drop git metadata/tools docs if present in checkout extras
+          rm -rf .git
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
