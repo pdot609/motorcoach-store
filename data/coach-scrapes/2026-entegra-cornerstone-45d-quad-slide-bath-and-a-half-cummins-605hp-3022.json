@@ -5,7 +5,7 @@
   "pageTitle": "2026 Entegra Cornerstone 45D \u2022 Quad Slide \u2022 Bath and a Half \u2022 Cummins 605hp \u2022 12,437 miles - The Motorcoach Store",
   "h1": "2026 Entegra Cornerstone 45D",
   "condition": "certified pre-owned",
-  "price": "$433,333",
+  "price": "$533,333",
   "hero": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3022/3022%20HERO%20IMAGE.jpg",
   "specs": [
     [
@@ -38,9 +38,9 @@
     ]
   ],
   "actions": {
-    "build": "https://www.themotorcoachstore.com/hubfs/Inventory/3022/Documents/3022%20Build%20Sheet.pdf?hsLang=en",
-    "floor": "https://www.themotorcoachstore.com/hubfs/Inventory/3022/Documents/3022%20FLOORPLAN.pdf?hsLang=en",
-    "checkin": "https://www.themotorcoachstore.com/hubfs/Inventory/3022/Documents/3022%20Check-in%20Sheet.pdf?hsLang=en",
+    "build": "https://www.themotorcoachstore.com/hubfs/Inventory/3022/Documents/3022%20Build%20Sheet.pdf",
+    "floor": "https://www.themotorcoachstore.com/hubfs/Inventory/3022/Documents/3022%20FLOORPLAN.pdf",
+    "checkin": "https://www.themotorcoachstore.com/hubfs/Inventory/3022/Documents/3022%20Check-in%20Sheet.pdf",
     "virtual": "#lb-virtual-224033033614",
     "video": "#",
     "matterport": "https://my.matterport.com/show/?m=Ab8q3Gt7WGA"
@@ -107,5 +107,5 @@
     "next": null
   },
   "stock": "3022",
-  "scrapedAt": 1793611847
+  "scrapedAt": 1793772112
 }

@@ -1,0 +1,58 @@
+{
+  "slug": "prevost-loki-quad-slide-lc015-sold",
+  "ok": true,
+  "url": "https://www.themotorcoachstore.com/coach/prevost-loki-quad-slide-lc015-sold?hsLang=en",
+  "pageTitle": "2026 Prevost Loki H3 45 #LC015 - The Motorcoach Store",
+  "h1": "2026 Prevost Loki H3 45 LC015",
+  "condition": "new",
+  "price": "",
+  "hero": "https://www.themotorcoachstore.com/hs-fs/hubfs/Loki/Loki_Coach_LC015.jpg",
+  "specs": [
+    [
+      "Slides",
+      "Triple Slide"
+    ],
+    [
+      "Bath(s)",
+      "Bath and a Half"
+    ],
+    [
+      "Bunk Beds",
+      "None"
+    ],
+    [
+      "Floorplan",
+      "H3 45"
+    ],
+    [
+      "Engine",
+      "Volvo 500hp"
+    ],
+    [
+      "Mileage",
+      "0 mi"
+    ],
+    [
+      "Mileage",
+      "New"
+    ]
+  ],
+  "actions": {
+    "build": "#",
+    "floor": "#",
+    "checkin": "#",
+    "virtual": "#lb-virtual-210280513039",
+    "video": "#",
+    "matterport": ""
+  },
+  "gallery": [],
+  "pager": {
+    "prev": {
+      "slug": "prevost-loki-lc016-prevost-h3-45-vip-quad-slide-2026-conversion-in-production-sold",
+      "title": "2026 Prevost Loki H3 45 LC016"
+    },
+    "next": null
+  },
+  "stock": "",
+  "scrapedAt": 1793772130
+}

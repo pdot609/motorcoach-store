@@ -42,6 +42,15 @@
       "enterLabel": "Enter Prevost Loki Coach Showroom",
       "cards": [
         {
+          "href": "/coaches/2027-prevost-loki-h3-45-triple-slide-bath-and-a-half-volvo-500hp-lc030-2671",
+          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2671/2671%20HERO%20IMAGE%201.jpg",
+          "alt": "2027 Prevost Loki H3 45",
+          "title": "2027 Prevost Loki H3 45",
+          "msrp": null,
+          "price": "$2,476,177",
+          "monthly": null
+        },
+        {
           "href": "/coaches/2027-prevost-loki-h345-quad-slide-bath-anda-half-volvo-500hp-lc029-2968",
           "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2968/2968%20HERO%20IMAGE%202.jpg",
           "alt": "2027 Prevost Loki H3 45",
@@ -58,15 +67,6 @@
           "msrp": null,
           "price": "$2,272,315",
           "monthly": null
-        },
-        {
-          "href": "/coaches/prevost-loki-lc023-prevost-h3-45-double-slide-bath-anda-half-bunk-beds-volvo-500hp-2841",
-          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2841/Images/2841%20Hero%20Image.jpg",
-          "alt": "2026 Prevost Loki H3 45 LC023",
-          "title": "2026 Prevost Loki H3 45 LC023",
-          "msrp": null,
-          "price": "$1,755,575",
-          "monthly": null
         }
       ]
     },
@@ -80,8 +80,17 @@
       "enterLabel": "Enter OGV Luxury Coach Showroom",
       "cards": [
         {
+          "href": "/coaches/2026-ogv-luxury-coach-vcruise-10ob-no-slides-rear-bath-mercedes-208hp-2626",
+          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2626/2626%20HERO%20IMAGE.jpg",
+          "alt": "2026 OGV Luxury Coach V-Cruise 10OB",
+          "title": "2026 OGV Luxury Coach V-Cruise 10OB",
+          "msrp": null,
+          "price": "$253,112",
+          "monthly": null
+        },
+        {
           "href": "/coaches/2026-ogv-luxury-coach-awd-v-cruise-8oba-blue-grey-3019",
-          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3019/2726%20HERO%20IMAGE.jpg",
+          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3019/3019%20HERO%20IMAGE.jpg",
           "alt": "2026 OGV Luxury Coach V-Cruise 8OBA",
           "title": "2026 OGV Luxury Coach V-Cruise 8OBA",
           "msrp": null,
@@ -93,27 +102,45 @@
           "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2974/2974%20HERO%20IMAGE.jpg",
           "alt": "2027 OGV Luxury Coach V-Cruise 10OBW",
           "title": "2027 OGV Luxury Coach V-Cruise 10OBW",
-          "msrp": "MSRP $266,424",
-          "price": "$199,795",
-          "monthly": "Monthly Payment: $1,616"
+          "msrp": null,
+          "price": "$266,424",
+          "monthly": null
         },
         {
           "href": "/coaches/2026-ogv-luxury-coach-v-tour-5rl4a-mercedes-208hp-awd-2801",
           "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2801/2801%20HERO%20IMAGE.jpg",
           "alt": "2026 OGV Luxury Coach V-Tour 5RL4A",
           "title": "2026 OGV Luxury Coach V-Tour 5RL4A",
-          "msrp": "MSRP $231,212",
-          "price": "$167,522",
-          "monthly": "Monthly Payment: $1,457"
+          "msrp": null,
+          "price": "$231,212",
+          "monthly": null
         },
         {
           "href": "/coaches/2026-ogv-luxury-coach-vsport-9rb7-nobath-mercedes-208hp-white-stonegrey-2750",
           "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2750/2750%20HERO%20IMAGE.jpg",
           "alt": "2026 OGV Luxury Coach V-Sport 9RB7",
           "title": "2026 OGV Luxury Coach V-Sport 9RB7",
-          "msrp": "MSRP $209,162",
-          "price": "$156,872",
-          "monthly": "Monthly Payment: $1,269"
+          "msrp": null,
+          "price": "$209,162",
+          "monthly": null
+        },
+        {
+          "href": "/coaches/2026-ogv-luxury-coach-vdrive-10ob-nobath-black-cream-2741",
+          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2741/2741%20HERO%20IMAGE.jpg",
+          "alt": "2026 OGV Luxury Coach V-Drive 10OB",
+          "title": "2026 OGV Luxury Coach V-Drive 10OB",
+          "msrp": null,
+          "price": "$240,947",
+          "monthly": null
+        },
+        {
+          "href": "/coaches/2026-ogv-luxury-coach-vcruise-8ob-rear-bath-galley-black-cream-2739",
+          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2739/2739%20HERO%20IMAGE.jpg",
+          "alt": "2026 OGV Luxury Coach V-Cruise 8OB",
+          "title": "2026 OGV Luxury Coach V-Cruise 8OB",
+          "msrp": null,
+          "price": "$232,127",
+          "monthly": null
         }
       ]
     },
@@ -131,35 +158,35 @@
           "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2674/2674%20HERO%20IMAGE.jpg",
           "alt": "2026 ShowHauler Adventure A4501",
           "title": "2026 ShowHauler Adventure A4501",
-          "msrp": "MSRP $968,568",
-          "price": "$699,999",
+          "msrp": null,
+          "price": "$968,568",
           "monthly": null
         },
         {
           "href": "/coaches/2026-showhauler-adventure-a4502-triple-slide-bath-and-a-half-detroit-600hp-deluxe-white-taupe-copper",
           "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2832/2832%20HERO%20IMAGE.jpg",
-          "alt": "2026 SHOWHAULER ADVENTURE A4502",
-          "title": "2026 SHOWHAULER ADVENTURE A4502",
-          "msrp": "MSRP $975,244",
-          "price": "$699,999",
+          "alt": "2026 ShowHauler Adventure A4502",
+          "title": "2026 ShowHauler Adventure A4502",
+          "msrp": null,
+          "price": "$975,244",
           "monthly": null
         },
         {
           "href": "/coaches/2026-showhauler-adventure-a4502-triple-slide-bath-and-a-half-detroit-600hp-deluxe-black-taupe-silver-2838",
           "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/2838%20HERO%20IMAGE.jpg",
-          "alt": "2026 SHOWHAULER ADVENTURE A4502",
-          "title": "2026 SHOWHAULER ADVENTURE A4502",
-          "msrp": "MSRP $975,244",
-          "price": "$699,999",
+          "alt": "2026 ShowHauler Adventure A4502",
+          "title": "2026 ShowHauler Adventure A4502",
+          "msrp": null,
+          "price": "$975,244",
           "monthly": null
         },
         {
           "href": "/coaches/2026-showhauler-adventure-a4502-triple-slide-bath-and-a-half-detroit-600hp-momentum-black-taupe-silver-top-2856",
           "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2856/2856%20HERO%20IMAGE.jpg",
-          "alt": "2026 SHOWHAULER ADVENTURE A4502",
-          "title": "2026 SHOWHAULER ADVENTURE A4502",
-          "msrp": "MSRP $975,244",
-          "price": "$699,999",
+          "alt": "2026 ShowHauler Adventure A4502",
+          "title": "2026 ShowHauler Adventure A4502",
+          "msrp": null,
+          "price": "$975,244",
           "monthly": null
         }
       ]
@@ -174,21 +201,39 @@
       "enterLabel": "Enter Featherlite Stacker Trailers Showroom",
       "cards": [
         {
+          "href": "/coaches/2016-renegade-stacker-trailer-26foot-matches-newell-2604",
+          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2604/Images/2016%20Renegade%20Stacker%20Trailer%20Exterior-04.jpg",
+          "alt": "2016 Renegade 26' Stacker Trailer",
+          "title": "2016 Renegade 26' Stacker Trailer",
+          "msrp": null,
+          "price": "$77,777",
+          "monthly": null
+        },
+        {
+          "href": "/coaches/2009-prevost-featherlite-h345-double-slide-mid-bath-detroit-515hp-allison-2767",
+          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2767/2767%20HERO%20IMAGE.jpg",
+          "alt": "2009 Prevost Featherlite H3 45",
+          "title": "2009 Prevost Featherlite H3 45",
+          "msrp": null,
+          "price": "$399,999",
+          "monthly": null
+        },
+        {
+          "href": "/coaches/2026-featherlite-stacker-trailer-4953-white-24ft-2995",
+          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2995/2995%20HERO%20IMAGE%201.jpg",
+          "alt": "2026 Featherlite 24' Stacker Trailer 4953",
+          "title": "2026 Featherlite 24' Stacker Trailer 4953",
+          "msrp": null,
+          "price": "$209,722",
+          "monthly": null
+        },
+        {
           "href": "/coaches/2026-featherlite-stacker-trailer-4414-white-26ft-2880",
           "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/26%20WHITE%20Featherlite%20Trailer.jpg",
           "alt": "2026 Featherlite 26' Stacker Trailer 4414",
           "title": "2026 Featherlite 26' Stacker Trailer 4414",
-          "msrp": "MSRP $124,990",
-          "price": "$112,491",
-          "monthly": null
-        },
-        {
-          "href": "/coaches/2026-featherlite-stacker-trailer-4414-black-24ft-2879",
-          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/24%20BLACK%20Featherlite%20Trailer.jpg",
-          "alt": "2026 Featherlite 24' Stacker Trailer 4414",
-          "title": "2026 Featherlite 24' Stacker Trailer 4414",
-          "msrp": "MSRP $116,668",
-          "price": "$100,800",
+          "msrp": null,
+          "price": "$124,990",
           "monthly": null
         },
         {
@@ -196,8 +241,8 @@
           "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/24%20WHITE%20Featherlite%20Trailer.jpg",
           "alt": "2026 Featherlite 24' Stacker Trailer 4414",
           "title": "2026 Featherlite 24' Stacker Trailer 4414",
-          "msrp": "MSRP $114,071",
-          "price": "$102,664",
+          "msrp": null,
+          "price": "$114,071",
           "monthly": null
         },
         {
@@ -205,8 +250,26 @@
           "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/26%20BLACK%20Featherlite%20Trailer.jpg",
           "alt": "2026 Featherlite 26' Stacker Trailer 4414",
           "title": "2026 Featherlite 26' Stacker Trailer 4414",
-          "msrp": "MSRP $123,640",
-          "price": "$111,276",
+          "msrp": null,
+          "price": "$123,640",
+          "monthly": null
+        },
+        {
+          "href": "/coaches/2026-featherlite-stacker-trailer-4414-white-5333-2860",
+          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/2026%20Featherlite%20Trailer%204414%20White%2024%20Exterior-05.1.jpg",
+          "alt": "2026 Featherlite 24' Stacker Trailer 4414",
+          "title": "2026 Featherlite 24' Stacker Trailer 4414",
+          "msrp": null,
+          "price": "$114,791",
+          "monthly": null
+        },
+        {
+          "href": "/coaches/2026-featherlite-stacker-trailer-4414-white-5335-2864",
+          "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/26Ft%20White%20Stacker/2026%20Featherlite%20Trailer%20White%20Exterior-05.jpg",
+          "alt": "2026 Featherlite 26' Stacker Trailer 4414",
+          "title": "2026 Featherlite 26' Stacker Trailer 4414",
+          "msrp": null,
+          "price": "$122,860",
           "monthly": null
         }
       ]
