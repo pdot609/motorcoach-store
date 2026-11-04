@@ -37,7 +37,7 @@
 .mc-showroom__grid.row{display:grid}
 
 /* replica-responsive */
-.mc-listing-page, .mc-showroom { overflow-x: clip; }
+.mc-listing-page, .mc-showroom { overflow-x: clip; overflow-y: visible; }
 .mc-showroom__grid.row, .mc-showroom__grid {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
@@ -73,6 +73,32 @@
   .mc-showroom__bar, .mc-filters {
     flex-wrap: wrap;
   }
+}
+
+/* listing-overflow-fix: HubSpot .section { overflow:hidden } clips stacked cards */
+.mc-listing-page .showrooms-listing-section,
+.mc-listing-page .section.showrooms-listing-section,
+.showrooms-listing-section {
+  overflow: visible !important;
+  height: auto !important;
+  max-height: none !important;
+}
+.mc-listing-page .mc-showroom,
+.mc-listing-page .mc-showroom__grid,
+.mc-listing-page .showrooms-listing-section .inner,
+.mc-listing-page .showrooms-listing-section .row,
+.mc-listing-page .showrooms-listing-section .col {
+  overflow: visible !important;
+}
+.mc-listing-page,
+.mc-listing-page .mc-showroom {
+  overflow-x: clip;
+  overflow-y: visible !important;
+}
+/* Keep inventory near the filters — hero was eating the first viewport */
+.mc-listing-page .showroom-hero-section {
+  min-height: min(42vw, 420px) !important;
+  max-height: 420px !important;
 }
 
 /* card-theme-fix: HubSpot main.css paints .mc-card-inner white with dark body text.
