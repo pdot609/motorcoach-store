@@ -5,7 +5,10 @@
     return;
   }
 
-  fetch(sitePath("/data/explore-showrooms.json"))
+  const pathFor = typeof sitePath === "function" ? sitePath : (path) => path;
+  const jsonUrl = pathFor("/data/explore-showrooms.json");
+
+  fetch(jsonUrl)
     .then((response) => {
       if (!response.ok) throw new Error(String(response.status));
       return response.json();

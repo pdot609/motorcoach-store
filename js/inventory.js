@@ -59,9 +59,28 @@ function conditionLabel(condition) {
   return condition;
 }
 
+function brandMatches(coach, brand) {
+  if (!brand) return true;
+  if (coach.brand && coach.brand === brand) return true;
+  const needle = String(brand).toLowerCase();
+  const hay = [coach.brand, coach.make, coach.model, coach.slug, coach.title]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+  if (needle === "prevost-loki" || needle === "loki") {
+    return hay.includes("loki");
+  }
+  if (needle === "adventure" || needle === "showhauler") {
+    return hay.includes("showhauler") || hay.includes("adventure");
+  }
+  if (needle === "featherlite") return hay.includes("featherlite");
+  if (needle === "ogv") return hay.includes("ogv");
+  return hay.includes(needle);
+}
+
 function inScope(coach, query) {
   if (query.channel && !coach.channels.includes(query.channel)) return false;
-  if (query.brand && coach.brand !== query.brand) return false;
+  if (query.brand && !brandMatches(coach, query.brand)) return false;
   if (query.status && query.status !== "all" && coach.status !== query.status) return false;
   return true;
 }
@@ -519,7 +538,7 @@ function filterCoaches(coaches, query) {
   const q = (query.q ?? "").trim().toLowerCase();
   const filtered = coaches.filter((coach) => {
     if (query.channel && !coach.channels.includes(query.channel)) return false;
-    if (query.brand && coach.brand !== query.brand) return false;
+    if (query.brand && !brandMatches(coach, query.brand)) return false;
     if (query.status && query.status !== "all" && coach.status !== query.status) return false;
     if (query.make && coach.make !== query.make) return false;
     if (query.model && coach.model !== query.model) return false;
@@ -591,7 +610,7 @@ function facetMakes(coaches, query) {
   const makes = new Set();
   coaches.forEach((coach) => {
     if (query.channel && !coach.channels.includes(query.channel)) return;
-    if (query.brand && coach.brand !== query.brand) return;
+    if (query.brand && !brandMatches(coach, query.brand)) return;
     if (query.status && query.status !== "all" && coach.status !== query.status) return;
     if (coach.make) makes.add(coach.make);
   });
