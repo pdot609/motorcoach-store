@@ -153,16 +153,24 @@ def rewrite_contacts(html: str) -> str:
 
 
 def rewrite_links(html: str) -> str:
-    # Absolute site links → root-relative
+    # Absolute page links → root-relative. NEVER rewrite HubSpot CDN asset hosts
+    # (/hubfs, /hs-fs, raw theme assets) — those must stay on themotorcoachstore.com.
     html = re.sub(
         r'https://www\.themotorcoachstore\.com/(coach|inventory)/([^"?#]+)(?:\?[^"#]*)?',
         r"/coaches/\2",
         html,
     )
     html = re.sub(r'href="/(coach|inventory)/([^"?#]+)(?:\?[^"]*)?"', r'href="/coaches/\2"', html)
+
+    def _page_only(m: re.Match) -> str:
+        path = m.group(1)
+        if path.startswith(("hubfs/", "hs-fs/", "_hcms/", "hs/")):
+            return m.group(0)
+        return f"/{path}"
+
     html = re.sub(
         r'https://www\.themotorcoachstore\.com/([^"\'\s?#]+)(?:\?hsLang=en)?',
-        r"/\1",
+        _page_only,
         html,
     )
     html = html.replace("?hsLang=en", "")
