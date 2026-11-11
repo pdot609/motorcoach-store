@@ -1,0 +1,31 @@
+/* Bridge styles so the redesigned original homepage modules fit local chrome */
+.page-home .home-main {
+  overflow-x: clip;
+}
+.page-home .home-main img {
+  max-width: 100%;
+  height: auto;
+}
+.page-home .home-main a {
+  text-decoration: none;
+}
+/* Keep local sticky header above HubSpot absolute layers */
+.page-home .site-header {
+  position: relative;
+  z-index: 40;
+}
+
+/* Let HubSpot homepage modules keep their dark luxury look */
+.page-home .home-main .hero,
+.page-home .home-main .statsbar,
+.page-home .home-main .section {
+  width: 100%;
+}
+.page-home .home-main .t-display-1,
+.page-home .home-main .t-accent {
+  font-family: Georgia, "Times New Roman", serif;
+}
+.page-home .home-main .unit__price,
+.page-home .home-main .mc-card-price-value {
+  white-space: nowrap;
+}

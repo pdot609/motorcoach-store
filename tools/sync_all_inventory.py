@@ -32,9 +32,59 @@ JUNK = {
 
 # Keep user-requested overrides even if live scrape differs.
 PRICE_OVERRIDES = {
+    "2654": 888888,
+    "2671": 2476177,
+    "2674": 968568,
+    "2689": 113077,
+    "2692": 113779,
+    "2739": 232127,
+    "2741": 240947,
+    "2750": 209162,
+    "2755": 103698,
+    "2767": 299999,
+    "2801": 231212,
+    "2811": 599999,
+    "2832": 975244,
+    "2838": 975244,
+    "2845": 399999,
+    "2847": 399999,
+    "2854": 199999,
+    "2856": 975244,
+    "2860": 114791,
+    "2864": 122860,
+    "2871": 755555,
+    "2880": 124990,
+    "2883": 999999,
+    "2892": 55555,
+    "2893": 1111111,
+    "2896": 888888,
+    "2897": 1111111,
+    "2898": 955555,
+    "2899": 888888,
+    "2907": 999999,
     "2912": 2272315,
-    "2841": 1755575,
-    "3022": 433333,
+    "2920": 1333333,
+    "2924": 123640,
+    "2925": 114071,
+    "2938": 999999,
+    "2946": 1555555,
+    "2951": 344444,
+    "2953": 144444,
+    "2955": 57999,
+    "2959": 1111111,
+    "2968": 2596533,
+    "2969": 222222,
+    "2974": 266424,
+    "2985": 1333333,
+    "2986": 455555,
+    "2990": 344444,
+    "2995": 209722,
+    "2996": 1444444,
+    "3003": 699999,
+    "3019": 149999,
+    "3037": 218790,
+    "3039": 1999999,
+    "3041": 455555,
 }
 
 MAKE_ALIASES = {
@@ -62,18 +112,49 @@ def fetch(url: str) -> str:
 
 
 def discover_slugs() -> list[str]:
-    sm = fetch("https://www.themotorcoachstore.com/sitemap.xml")
-    locs = re.findall(r"<loc>([^<]+)</loc>", sm)
     slugs: dict[str, None] = {}
-    for loc in locs:
-        m = re.search(r"/(?:coach|inventory|coaches)/([a-z0-9][a-z0-9\-]+)/?$", loc, re.I)
-        if not m:
+    # Listing pages are authoritative for current inventory (sitemap may omit /coach URLs).
+    listing_urls = [
+        "https://www.themotorcoachstore.com/pre-owned-old/?hsLang=en",
+        "https://www.themotorcoachstore.com/new-coaches?hsLang=en",
+        "https://www.themotorcoachstore.com/certified-pre-owned?hsLang=en",
+        "https://www.themotorcoachstore.com/motorcoach-showroom-new-prevost-loki-coach?hsLang=en",
+        "https://www.themotorcoachstore.com/motorcoach-showroom-ogv?hsLang=en",
+        "https://www.themotorcoachstore.com/motorcoach-showroom-new-adventure-showhauler?hsLang=en",
+        "https://www.themotorcoachstore.com/motorcoach-showroom-new-featherlite-stacker-trailers?hsLang=en",
+        "https://www.themotorcoachstore.com/?hsLang=en",
+    ]
+    for url in listing_urls:
+        try:
+            html = fetch(url)
+        except Exception as exc:
+            print(f"listing fetch fail {url}: {exc}")
             continue
-        slug = m.group(1)
-        if slug.lower() in JUNK or len(slug) < 8:
-            continue
-        slugs[slug] = None
+        for m in re.finditer(
+            r'href="(?:https://www\.themotorcoachstore\.com)?/coach/([a-z0-9][a-z0-9\-]+)/?',
+            html,
+            re.I,
+        ):
+            slug = m.group(1)
+            if slug.lower() in JUNK or len(slug) < 8:
+                continue
+            slugs[slug] = None
+    try:
+        sm = fetch("https://www.themotorcoachstore.com/sitemap.xml")
+        locs = re.findall(r"<loc>([^<]+)</loc>", sm)
+        for loc in locs:
+            m = re.search(r"/(?:coach|inventory|coaches)/([a-z0-9][a-z0-9\-]+)/?$", loc, re.I)
+            if not m:
+                continue
+            slug = m.group(1)
+            if slug.lower() in JUNK or len(slug) < 8:
+                continue
+            # Only add sitemap coaches already seen on listings? Prefer listings-only for active inventory.
+            # Keep sitemap as supplemental only if already in listing set — skip extras.
+    except Exception as exc:
+        print(f"sitemap fail: {exc}")
     return sorted(slugs)
+
 
 
 def parse_money(text: str | None) -> int | None:

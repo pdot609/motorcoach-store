@@ -258,7 +258,17 @@ def action_block(cls: str, href: str, label: str, icon_name: str, filter_id: str
 
 
 def load_shell() -> tuple[str, str]:
-    sample = (ROOT / "coaches" / "2024-newell-p50quad-slide-bath-and-a-half-3" / "index.html").read_text()
+    # Prefer any existing coach PDP; fall back to pre-owned chrome.
+    candidates = sorted((ROOT / "coaches").glob("*/index.html"))
+    sample_path = None
+    for path in candidates:
+        text = path.read_text(encoding="utf-8", errors="ignore")
+        if 'class="site-header"' in text and 'class="site-footer"' in text:
+            sample_path = path
+            sample = text
+            break
+    if sample_path is None:
+        sample = (ROOT / "pre-owned" / "index.html").read_text(encoding="utf-8", errors="ignore")
     header = re.search(r'(<a class="skip"[\s\S]*?</header>)', sample).group(1)
     footer = re.search(r'(<footer class="site-footer">[\s\S]*?</footer>)', sample).group(1)
     return header, footer
@@ -324,7 +334,8 @@ def render_page(coach: dict, scraped: dict, header: str, footer: str) -> str:
     h1 = scraped.get("h1") or coach.get("title") or "Coach"
     page_title = scraped.get("pageTitle") or f"{h1} - The Motorcoach Store"
     condition = scraped.get("condition") or "pre-owned"
-    price = scraped.get("price") or money(coach.get("price")) or "Call for price"
+    # Prefer local coaches.json price so site-specific pricing is preserved.
+    price = money(coach.get("price")) or scraped.get("price") or "Call for price"
     hero = scraped.get("hero") or coach.get("image") or ""
     gallery = scraped.get("gallery") or []
     actions = scraped.get("actions") or {}

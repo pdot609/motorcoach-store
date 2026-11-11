@@ -9,10 +9,6 @@
   "hero": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/Stacker%20Trailer%20Photos/26%20WHITE%20Featherlite%20Trailer.jpg",
   "specs": [
     [
-      "Slides",
-      "-"
-    ],
-    [
       "Bath(s)",
       "None"
     ],
@@ -23,10 +19,6 @@
     [
       "Floorplan",
       "26' L x 11' H x 8'6\" W"
-    ],
-    [
-      "Engine",
-      "-"
     ],
     [
       "Mileage",
@@ -85,5 +77,5 @@
     "next": null
   },
   "stock": "2880",
-  "scrapedAt": 1793772114
+  "scrapedAt": 1794403373
 }

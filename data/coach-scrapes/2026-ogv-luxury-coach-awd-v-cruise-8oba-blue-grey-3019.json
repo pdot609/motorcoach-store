@@ -40,7 +40,7 @@
   "actions": {
     "build": "https://www.themotorcoachstore.com/hubfs/Inventory/3019/Documents/3019%20Build%20Sheet_1.pdf",
     "floor": "https://www.themotorcoachstore.com/hubfs/Inventory/3019/Documents/3019%20Floorplan.pdf",
-    "checkin": "https://www.themotorcoachstore.com/hubfs/Inventory/3019/Documents/3019%20Check-in%20Sheet.pdf",
+    "checkin": "https://www.themotorcoachstore.com/hubfs/Inventory/3019/Documents/3019%20Check-in%20Sheet%201.pdf",
     "virtual": "#lb-virtual-225506273853",
     "video": "#",
     "matterport": "https://my.matterport.com/show/?m=w4k5c4fWL1Y"
@@ -77,11 +77,11 @@
   ],
   "pager": {
     "prev": {
-      "slug": "2026-entegra-cornerstone-45d-quad-slide-bath-and-a-half-cummins-605hp-3022",
-      "title": "2026 Entegra Cornerstone 45D"
+      "slug": "2027-prevost-loki-h3-45-triple-slide-bath-and-a-half-volvo-500hp-lc030-2671",
+      "title": "2027 Prevost Loki H3 45"
     },
     "next": null
   },
   "stock": "3019",
-  "scrapedAt": 1793772118
+  "scrapedAt": 1794403375
 }

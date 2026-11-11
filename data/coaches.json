@@ -1,5 +1,41 @@
 [
   {
+    "slug": "2004-featherlite-stacker-trailer-2892",
+    "stock": "2892",
+    "title": "2004 Featherlite Stacker Trailer",
+    "year": 2004,
+    "make": "featherlite",
+    "model": "",
+    "condition": "pre-owned",
+    "status": "available",
+    "channels": [
+      "pre-owned",
+      "featherlite"
+    ],
+    "price": 55555,
+    "miles": "\u2014",
+    "engine": "",
+    "floorplan": "\u2014",
+    "slides": "",
+    "baths": "",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2892/2892%20HERO%20IMAGE.jpg",
+    "virtual": false,
+    "created": 1794403079486,
+    "featured": false,
+    "virtualTour": "",
+    "video": "#",
+    "documents": {
+      "buildSheet": "#",
+      "floorPlan": "#",
+      "checkInSheet": "#"
+    },
+    "prev": {
+      "slug": "2026-ogv-luxury-coach-awd-v-cruise-8oba-blue-grey-3019",
+      "title": "2026 OGV Luxury Coach V-Cruise 8OBA"
+    }
+  },
+  {
     "slug": "2009-prevost-featherlite-h345-double-slide-mid-bath-detroit-515hp-allison-2767",
     "stock": "2767",
     "title": "2009 Prevost Featherlite H3 45",
@@ -118,7 +154,7 @@
       "pre-owned"
     ],
     "price": 57999,
-    "miles": 73114,
+    "miles": 111480,
     "engine": "Volvo 500hp",
     "floorplan": "H3 45",
     "slides": "Double Slide",
@@ -486,8 +522,8 @@
       "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2985/Documents/2985%20Check-in%20Sheet.pdf"
     },
     "prev": {
-      "slug": "2026-ogv-luxury-coach-awd-v-cruise-8oba-blue-grey-3019",
-      "title": "2026 OGV Luxury Coach V-Cruise 8OBA"
+      "slug": "2004-featherlite-stacker-trailer-2892",
+      "title": "2004 Featherlite Stacker Trailer"
     }
   },
   {
@@ -626,8 +662,8 @@
       "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2906/Documents/2996%20Check-in%20Sheet.pdf"
     },
     "prev": {
-      "slug": "2026-showhauler-adventure-a4501-quad-slide-bath-and-a-half-detroit-600hp-black-taupe-copper",
-      "title": "2026 ShowHauler Adventure A4501"
+      "slug": "2019-prevost-marathon-x3-45-double-slide-mid-bath-colco-500hp-2920",
+      "title": "2019 Prevost Marathon X3 45"
     }
   },
   {
@@ -913,42 +949,6 @@
     }
   },
   {
-    "slug": "2023-newmar-london-aire-4551-triple-slide-bath-and-a-half-cummins-605hp-3018",
-    "stock": "3018",
-    "title": "2023 Newmar London Aire 4551",
-    "year": 2023,
-    "make": "newmar",
-    "model": "london aire",
-    "condition": "certified",
-    "status": "available",
-    "channels": [
-      "certified",
-      "pre-owned"
-    ],
-    "price": 499999,
-    "miles": 24328,
-    "engine": "Cummins 605hp",
-    "floorplan": "4551",
-    "slides": "Triple Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3018/3018%20HERO%20IMAGE.jpg",
-    "virtual": true,
-    "created": 1792058040000,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=t7WQqjLu4bp",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3018/Documents/3018%20Build%20Sheet.pdf",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/3018/Documents/3018%20FLOORPLAN.pdf",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3018/Documents/3018%20Check-in%20Sheet.pdf"
-    },
-    "prev": {
-      "slug": "2018-newmar-king-aire-4531-triple-slide-bath-and-a-half-cummins-605hp-3024",
-      "title": "2018 Newmar King Aire 4531"
-    }
-  },
-  {
     "slug": "2024-foretravel-realm-presidential-lv2-quad-slide-bath-and-a-half-cummins-605hp-2871",
     "stock": "2871",
     "title": "2024 Foretravel Realm Presidential LV2",
@@ -1052,44 +1052,8 @@
       "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3041/Documents/3041%20Check-in%20Sheet.pdf"
     },
     "prev": {
-      "slug": "2026-featherlite-stacker-trailer-4414-white-5332-2692",
-      "title": "2026 Featherlite 26' Stacker Trailer 4414"
-    }
-  },
-  {
-    "slug": "2026-entegra-cornerstone-45d-quad-slide-bath-and-a-half-cummins-605hp-3022",
-    "stock": "3022",
-    "title": "2026 Entegra Cornerstone 45D",
-    "year": 2026,
-    "make": "entegra",
-    "model": "cornerstone",
-    "condition": "certified",
-    "status": "available",
-    "channels": [
-      "certified",
-      "pre-owned"
-    ],
-    "price": 433333,
-    "miles": 12437,
-    "engine": "Cummins 605hp",
-    "floorplan": "45D",
-    "slides": "Quad Slide",
-    "baths": "Bath and a Half",
-    "bunks": "None",
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3022/3022%20HERO%20IMAGE.jpg",
-    "virtual": true,
-    "created": 1793185200000,
-    "featured": false,
-    "virtualTour": "https://my.matterport.com/show/?m=Ab8q3Gt7WGA",
-    "video": "#",
-    "documents": {
-      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3022/Documents/3022%20Build%20Sheet.pdf",
-      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/3022/Documents/3022%20FLOORPLAN.pdf",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3022/Documents/3022%20Check-in%20Sheet.pdf"
-    },
-    "prev": {
-      "slug": "2027-prevost-loki-h3-45-triple-slide-bath-and-a-half-volvo-500hp-lc030-2671",
-      "title": "2027 Prevost Loki H3 45"
+      "slug": "2022-newmar-dutch-star-4369-triple-slide-bath-and-a-half-cummins-450hp-3045",
+      "title": "2022 Newmar Dutch Star 4369"
     }
   },
   {
@@ -1445,11 +1409,11 @@
     "documents": {
       "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3019/Documents/3019%20Build%20Sheet_1.pdf",
       "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/3019/Documents/3019%20Floorplan.pdf",
-      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3019/Documents/3019%20Check-in%20Sheet.pdf"
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3019/Documents/3019%20Check-in%20Sheet%201.pdf"
     },
     "prev": {
-      "slug": "2026-entegra-cornerstone-45d-quad-slide-bath-and-a-half-cummins-605hp-3022",
-      "title": "2026 Entegra Cornerstone 45D"
+      "slug": "2027-prevost-loki-h3-45-triple-slide-bath-and-a-half-volvo-500hp-lc030-2671",
+      "title": "2027 Prevost Loki H3 45"
     }
   },
   {
@@ -1628,8 +1592,8 @@
       "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/2674/Documents/2674%20Check-In%20Sheet.pdf"
     },
     "prev": {
-      "slug": "2019-prevost-marathon-x3-45-double-slide-mid-bath-colco-500hp-2920",
-      "title": "2019 Prevost Marathon X3 45"
+      "slug": "2027-ogv-luxury-coach-v-cruise-10obwa-mercedes-208hp-3037",
+      "title": "2027 OGV Luxury Coach V-Cruise 10OBWA"
     }
   },
   {
@@ -1774,6 +1738,42 @@
     "prev": {
       "slug": "2026-featherlite-stacker-trailer-4953-white-24ft-2995",
       "title": "2026 Featherlite 24' Stacker Trailer 4953"
+    }
+  },
+  {
+    "slug": "2027-ogv-luxury-coach-v-cruise-10obwa-mercedes-208hp-3037",
+    "stock": "3037",
+    "title": "2027 OGV Luxury Coach V-Cruise 10OBWA",
+    "year": 2027,
+    "make": "ogv",
+    "model": "",
+    "condition": "new",
+    "status": "available",
+    "channels": [
+      "new",
+      "ogv"
+    ],
+    "price": 218790,
+    "miles": "New",
+    "engine": "Mercedes 208hp",
+    "floorplan": "10OBWA",
+    "slides": "No Slides",
+    "baths": "Rear Bath w/ Galley",
+    "bunks": "None",
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3037/3037%20HERO%20IMAGE.jpg",
+    "virtual": true,
+    "created": 1794403089774,
+    "featured": false,
+    "virtualTour": "https://my.matterport.com/show/?m=XDAM8Q2Qxkm",
+    "video": "#",
+    "documents": {
+      "buildSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3037/Documents/3037%20Build%20Sheet.pdf",
+      "floorPlan": "https://www.themotorcoachstore.com/hubfs/Inventory/3037/Documents/3037%20Floorplan.pdf",
+      "checkInSheet": "https://www.themotorcoachstore.com/hubfs/Inventory/3037/Documents/3037%20Check-in%20Sheet.pdf"
+    },
+    "prev": {
+      "slug": "2018-newmar-dutch-star-4327-triple-slide-bath-and-a-half-cummins-450hp-3051",
+      "title": "2018 Newmar Dutch Star 4327"
     }
   },
   {
