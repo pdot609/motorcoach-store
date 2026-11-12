@@ -25,7 +25,7 @@ HOST = "www.themotorcoachstore.com"
 PRICE_OVERRIDES = {
     "2955": (57999, "$57,999"),  # 2014 Prevost Liberty H3 45
     "2953": (144444, "$144,444"),  # 2015 Tiffin Allegro Bus 45 LP
-    "3039": (1999999, "$1,999,999"),  # 2021 Prevost Marathon H3-45
+    "3039": (599999, "$599,999"),  # 2021 Prevost Marathon H3-45
     "2969": (222222, "$222,222"),  # 2021 Newmar Dutch Star 4369
     "2854": (199999, "$199,999"),  # 2020 Newmar Mountain Aire 4551
     "2767": (299999, "$299,999"),  # 2009 Prevost Featherlite H3 45
@@ -138,14 +138,14 @@ def rewrite_contacts(html: str) -> str:
     html = html.replace("mailto:service@themotorcoachstore.com", "mailto:service@themotorcoach.store")
     # Phone → clone phone
     replacements = [
-        ("(941) 896-4819", "941 283 2516"),
-        ("941-896-4819", "941 283 2516"),
-        ("941.896.4819", "941 283 2516"),
-        ("941 896 4819", "941 283 2516"),
-        ("9418964819", "9412832516"),
-        ("tel:+19418964819", "tel:+19412832516"),
-        ("tel:19418964819", "tel:+19412832516"),
-        ("tel:9418964819", "tel:+19412832516"),
+        ("941 283 2516", "941 283 2516"),
+        ("941 283 2516", "941 283 2516"),
+        ("941 283 2516", "941 283 2516"),
+        ("941 283 2516", "941 283 2516"),
+        ("9412832516", "9412832516"),
+        ("tel:+19412832516", "tel:+19412832516"),
+        ("tel:19412832516", "tel:+19412832516"),
+        ("tel:9412832516", "tel:+19412832516"),
     ]
     for a, b in replacements:
         html = html.replace(a, b)

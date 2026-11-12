@@ -411,7 +411,7 @@
     "model": "",
     "condition": "pre-owned",
     "status": "available",
-    "price": 1999999,
+    "price": 599999,
     "miles": null,
     "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/3039/3039%20HERO%20IMAGE.jpg"
   },
@@ -608,7 +608,8 @@
     "status": "available",
     "price": 57999,
     "miles": 73114,
-    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2955/2955%20HERO%20IMAGE.jpg"
+    "image": "https://www.themotorcoachstore.com/hs-fs/hubfs/Inventory/2955/2955%20HERO%20IMAGE.jpg",
+    "mileage": 73114
   },
   {
     "slug": "2014-prevost-millennium-h3-45-quad-slide-mid-bath-volvo-500hp-2883",

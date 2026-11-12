@@ -65,7 +65,7 @@ PRICE_OVERRIDES = {
     "3003": (699999, "$699,999"),
     "3019": (149999, "$149,999"),
     "3037": (218790, "$218,790"),
-    "3039": (1999999, "$1,999,999"),
+    "3039": (599999, "$599,999"),
     "3041": (455555, "$455,555"),
 }
 
@@ -109,8 +109,8 @@ def rewrite_content(html: str) -> str:
     html = html.replace("service@themotorcoachstore.com", "service@themotorcoach.store")
     html = html.replace("mailto:sales@themotorcoachstore.com", "mailto:sales@themotorcoach.store")
     html = html.replace("mailto:service@themotorcoachstore.com", "mailto:service@themotorcoach.store")
-    html = html.replace("941-896-4819", "941 283 2516")
-    html = html.replace("941.896.4819", "941 283 2516")
+    html = html.replace("941 283 2516", "941 283 2516")
+    html = html.replace("941 283 2516", "941 283 2516")
     html = re.sub(
         r'href="https://www\.themotorcoachstore\.com/(coach|inventory)/([^"?#]+)(?:\?[^"]*)?"',
         r'href="coaches/\2"',

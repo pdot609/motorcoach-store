@@ -16,6 +16,12 @@ REL_ATTR = re.compile(
 REL_URL = re.compile(r"""url\((?P<q>['"]?)/(?P<path>hubfs|hs-fs)/""", re.I)
 
 
+DOUBLE = re.compile(
+    r"hs-fshttps://(?:www\.)?themotorcoachstore\.com/hubfs",
+    re.I,
+)
+
+
 def fix_text(text: str) -> tuple[str, int]:
     n = 0
 
@@ -34,9 +40,29 @@ def fix_text(text: str) -> tuple[str, int]:
         n += 1
         return f"url({m.group('q')}{CDN}/{m.group('path')}/"
 
+    # Repair prior corruption first: .../hs-fshttps://host/hubfs/... → .../hs-fs/hubfs/...
+    doubled = len(DOUBLE.findall(text))
+    if doubled:
+        text = DOUBLE.sub("hs-fs/hubfs", text)
+        n += doubled
+
     text = BAD.sub(bad_sub, text)
     text = REL_ATTR.sub(rel_attr_sub, text)
     text = REL_URL.sub(rel_url_sub, text)
+
+    # Absolute-ize remaining relative asset roots without breaking /hs-fs/hubfs/
+    def abs_asset(m: re.Match) -> str:
+        nonlocal n
+        # Skip /hubfs that is already part of /hs-fs/hubfs
+        start = m.start()
+        if text[max(0, start - 6) : start].endswith("hs-fs"):
+            return m.group(0)
+        n += 1
+        return f"{CDN}/{m.group(1)}/"
+
+    text = re.sub(r"(?<![:\w])/(hubfs|hs-fs)/", abs_asset, text)
+    # Final safety pass
+    text = DOUBLE.sub("hs-fs/hubfs", text)
     return text, n
 
 
@@ -93,3 +119,14 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+# Never rewrite /hubfs that is already under /hs-fs/hubfs (would create hs-fshttps://.../hubfs)
+
+def repair_doubled_hs_fs(text: str) -> str:
+    import re
+    return re.sub(
+        r"hs-fshttps://(?:www\.)?themotorcoachstore\.com/hubfs",
+        "hs-fs/hubfs",
+        text,
+        flags=re.I,
+    )
