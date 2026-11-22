@@ -36,7 +36,7 @@ document.querySelectorAll("form.form").forEach((form) => {
     try {
       const payload = await deliverInquiry(fields);
       if (!payload.ok) {
-        paint(form, payload.errors || { form: payload.error || "The sales mailbox did not accept the message. Call 941 283 2516." });
+        paint(form, payload.errors || { form: payload.error || "The sales mailbox did not accept the message. Call 941 283 3084." });
         button.disabled = false;
         button.textContent = label;
         return;
@@ -44,10 +44,10 @@ document.querySelectorAll("form.form").forEach((form) => {
       showSent(
         form,
         "Request sent",
-        `Reference ${payload.reference}. This request was delivered to ${payload.to || SALES_EMAIL}. Call 941 283 2516 if you need a time today.`
+        `Reference ${payload.reference}. This request was delivered to ${payload.to || SALES_EMAIL}. Call 941 283 3084 if you need a time today.`
       );
     } catch {
-      paint(form, { form: "The message did not leave this page. Check the connection and try again, or call 941 283 2516." });
+      paint(form, { form: "The message did not leave this page. Check the connection and try again, or call 941 283 3084." });
       button.disabled = false;
       button.textContent = label;
     }
@@ -120,7 +120,7 @@ async function deliverInquiry(fields) {
     error:
       formSubmit.error ||
       dispatched.error ||
-      "The mailbox did not accept the message. Call 941 283 2516.",
+      "The mailbox did not accept the message. Call 941 283 3084.",
   };
 }
 
@@ -175,7 +175,7 @@ async function sendFormSubmit(fields, reference, destination) {
     if (!response.ok || payload.success === "false" || payload.success === false) {
       return {
         ok: false,
-        error: payload.message || "The sales mailbox did not accept the message. Call 941 283 2516.",
+        error: payload.message || "The sales mailbox did not accept the message. Call 941 283 3084.",
       };
     }
     return { ok: true };
@@ -229,7 +229,7 @@ async function sendGitHubDispatch(fields, reference, destination) {
     const detail = await response.json().catch(() => ({}));
     return {
       ok: false,
-      error: detail.message || "The sales mailbox did not accept the message. Call 941 283 2516.",
+      error: detail.message || "The sales mailbox did not accept the message. Call 941 283 3084.",
     };
   } catch {
     return { ok: false, error: "The sales mailbox could not be reached." };
@@ -270,7 +270,7 @@ async function sendWeb3Forms(fields, reference, destination) {
   if (!response.ok || payload.success === false) {
     return {
       ok: false,
-      error: payload.message || "The sales mailbox did not accept the message. Call 941 283 2516.",
+      error: payload.message || "The sales mailbox did not accept the message. Call 941 283 3084.",
     };
   }
   return { ok: true };
@@ -310,7 +310,7 @@ async function sendHubSpot(fields, reference) {
     return {
       ok: false,
       status: response.status,
-      error: hubError || "The sales mailbox did not accept the message. Call 941 283 2516.",
+      error: hubError || "The sales mailbox did not accept the message. Call 941 283 3084.",
     };
   }
   return { ok: true };

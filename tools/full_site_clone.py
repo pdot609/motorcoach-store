@@ -30,6 +30,7 @@ PRICE_OVERRIDES = {
     "2854": (199999, "$199,999"),  # 2020 Newmar Mountain Aire 4551
     "2767": (299999, "$299,999"),  # 2009 Prevost Featherlite H3 45
     "2912": (2272315, "$2,272,315"),  # 2027 Prevost Loki H3 45
+    "3041": (344444, "$344,444"),  # 2025 Newmar Mountain Aire 3825
 }
 
 # Miles override for Liberty (also customized on this site)
@@ -138,14 +139,18 @@ def rewrite_contacts(html: str) -> str:
     html = html.replace("mailto:service@themotorcoachstore.com", "mailto:service@themotorcoach.store")
     # Phone → clone phone
     replacements = [
-        ("941 283 2516", "941 283 2516"),
-        ("941 283 2516", "941 283 2516"),
-        ("941 283 2516", "941 283 2516"),
-        ("941 283 2516", "941 283 2516"),
-        ("9412832516", "9412832516"),
-        ("tel:+19412832516", "tel:+19412832516"),
-        ("tel:19412832516", "tel:+19412832516"),
-        ("tel:9412832516", "tel:+19412832516"),
+        ("941 283 3084", "941 283 3084"),
+        ("941-283-2516", "941-283-3084"),
+        ("(941) 283-2516", "(941) 283-3084"),
+        ("(941) 283 2516", "(941) 283 3084"),
+        ("9412833084", "9412833084"),
+        ("tel:+19412833084", "tel:+19412833084"),
+        ("tel:19412833084", "tel:+19412833084"),
+        ("tel:9412833084", "tel:+19412833084"),
+        # also rewrite if already on old clone phone formats when re-cloning
+        ("941 283 3084", "941 283 3084"),
+        ("9412833084", "9412833084"),
+        ("tel:+19412833084", "tel:+19412833084"),
     ]
     for a, b in replacements:
         html = html.replace(a, b)

@@ -98,7 +98,7 @@ async function loadInventory(mount) {
     coaches = await response.json();
     mount._coaches = coaches;
   } catch {
-    mount.replaceChildren(empty("The showroom list did not load", "Call 941 283 2516 and the desk can read the current inventory."));
+    mount.replaceChildren(empty("The showroom list did not load", "Call 941 283 3084 and the desk can read the current inventory."));
     return;
   }
   render(mount, coaches, fixed, queryFromLocation());

@@ -124,7 +124,7 @@ class Handler(BaseHTTPRequestHandler):
                 smtp.send_message(msg)
         except Exception as exc:
             print("smtp_fail", type(exc).__name__, exc, flush=True)
-            self.respond(502, {"error": "The mailbox did not accept the message. Call 941 283 2516."})
+            self.respond(502, {"error": "The mailbox did not accept the message. Call 941 283 3084."})
             return
         print(f"sent {ref} to {destination}", flush=True)
         self.respond(200, {"ok": True, "reference": ref, "to": destination})
