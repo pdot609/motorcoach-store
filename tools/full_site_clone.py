@@ -137,24 +137,37 @@ def rewrite_contacts(html: str) -> str:
     html = html.replace("service@themotorcoachstore.com", "service@themotorcoach.store")
     html = html.replace("mailto:sales@themotorcoachstore.com", "mailto:sales@themotorcoach.store")
     html = html.replace("mailto:service@themotorcoachstore.com", "mailto:service@themotorcoach.store")
-    # Phone → clone phone
-    replacements = [
-        ("941 283 3084", "941 283 3084"),
-        ("941-283-3084", "941-283-3084"),
-        ("(941) 283-3084", "(941) 283-3084"),
-        ("(941) 283 3084", "(941) 283 3084"),
-        ("9412833084", "9412833084"),
-        ("tel:+19412833084", "tel:+19412833084"),
-        ("tel:19412833084", "tel:+19412833084"),
-        ("tel:9412833084", "tel:+19412833084"),
-        # also rewrite if already on old clone phone formats when re-cloning
-        ("941 283 3084", "941 283 3084"),
-        ("9412833084", "9412833084"),
-        ("tel:+19412833084", "tel:+19412833084"),
+    # Phone → single official number
+    phone_pairs = [
+        ("941 283 2516", "941 283 3084"),
+        ("941-283-2516", "941-283-3084"),
+        ("(941) 283-2516", "(941) 283-3084"),
+        ("(941) 283 2516", "(941) 283 3084"),
+        ("9412832516", "9412833084"),
+        ("tel:+19412832516", "tel:+19412833084"),
+        ("tel:19412832516", "tel:+19412833084"),
+        ("tel:9412832516", "tel:+19412833084"),
+        ("941 896 4819", "941 283 3084"),
+        ("941-896-4819", "941-283-3084"),
+        ("(941) 896-4819", "(941) 283-3084"),
+        ("(941) 896 4819", "(941) 283 3084"),
+        ("9418964819", "9412833084"),
+        ("tel:+19418964819", "tel:+19412833084"),
+        ("tel:19418964819", "tel:+19412833084"),
+        ("tel:9418964819", "tel:+19412833084"),
+        ("941 757 8314", "941 283 3084"),
+        ("941-757-8314", "941-283-3084"),
+        ("(941) 757-8314", "(941) 283-3084"),
+        ("(941) 757 8314", "(941) 283 3084"),
+        ("9417578314", "9412833084"),
+        ("tel:+19417578314", "tel:+19412833084"),
+        ("tel:19417578314", "tel:+19412833084"),
+        ("tel:9417578314", "tel:+19412833084"),
     ]
-    for a, b in replacements:
+    for a, b in phone_pairs:
         html = html.replace(a, b)
     return html
+
 
 
 def rewrite_links(html: str) -> str:
